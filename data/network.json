@@ -1,0 +1,1670 @@
+{
+    "cities": {
+        "Aberdeen": {"coords": [39.50843, -76.16319], "size": "S"},
+        "Abilene": {"coords": [32.44892, -99.73429], "size": "S"},
+        "Ada": {"coords": [34.77634, -96.67937], "size": "S"},
+        "Air Force Academy": {"coords": [39.02426, -104.84435], "size": "S"},
+        "Akron": {"coords": [41.07657, -81.51752], "size": "M"},
+        "Albany": {"coords": [44.63043, -123.10266], "size": "S"},
+        "Albany-Rensselaer": {"coords": [42.64106, -73.7412], "size": "M"},
+        "Albert Lea": {"coords": [43.64926, -93.36171], "size": "S"},
+        "Albion": {"coords": [42.24728, -84.75576], "size": "S"},
+        "Albuquerque": {"coords": [35.08204, -106.6478], "size": "L"},
+        "Aldershot": {"coords": [43.31332, -79.85562], "size": "M"},
+        "Alexandria (LA)": {"coords": [31.30815, -92.43827], "size": "S"},
+        "Alexandria (VA)": {"coords": [38.80632, -77.06249], "size": "M"},
+        "Alliance": {"coords": [40.92116, -81.09249], "size": "S"},
+        "Alpine": {"coords": [30.35714, -103.66161], "size": "S"},
+        "Alton": {"coords": [38.92112, -90.15733], "size": "S"},
+        "Altoona": {"coords": [40.51456, -78.40153], "size": "S"},
+        "Alva": {"coords": [36.81004, -98.66577], "size": "S"},
+        "Amarillo": {"coords": [35.21189, -101.82235], "size": "M"},
+        "Amsterdam": {"coords": [42.95368, -74.21953], "size": "S"},
+        "Anaheim": {"coords": [33.80246, -117.87785], "size": "L"},
+        "Andover": {"coords": [40.98086, -74.74472], "size": "S"},
+        "Ann Arbor": {"coords": [42.28777, -83.74318], "size": "M"},
+        "Anniston": {"coords": [33.64911, -85.83214], "size": "S"},
+        "Antioch-Pittsburg": {"coords": [38.0178, -121.81616], "size": "S"},
+        "Appleton": {"coords": [44.26305, -88.41297], "size": "S"},
+        "Arcadia": {"coords": [37.59227, -90.62431], "size": "S"},
+        "Ardmore": {"coords": [34.17277, -97.12532], "size": "S"},
+        "Arkadelphia": {"coords": [34.11417, -93.05296], "size": "S"},
+        "Arkansas City": {"coords": [37.06004, -97.03302], "size": "S"},
+        "Arlington": {"coords": [35.29685, -89.66221], "size": "S"},
+        "Asheville": {"coords": [35.58612, -82.56675], "size": "M"},
+        "Ashland (KY)": {"coords": [38.48106, -82.63993], "size": "S"},
+        "Ashland (VA)": {"coords": [37.75962, -77.48121], "size": "S"},
+        "Athens (GA)": {"coords": [33.97683, -83.3888], "size": "M"},
+        "Athens (OH)": {"coords": [39.33203, -82.12968], "size": "S"},
+        "Athens (TN)": {"coords": [35.4457, -84.60018], "size": "S"},
+        "Atlanta": {"coords": [33.79941, -84.3926], "size": "L"},
+        "Atmore": {"coords": [31.02399, -87.49681], "size": "S"},
+        "Auburn (CA)": {"coords": [38.90383, -121.08292], "size": "S"},
+        "Auburn (GA)": {"coords": [32.60964, -85.48392], "size": "S"},
+        "Augusta": {"coords": [33.46903, -81.98201], "size": "M"},
+        "Austin": {"coords": [30.26958, -97.75707], "size": "L"},
+        "Back Bay": {"coords": [42.34735, -71.07572], "size": "S"},
+        "Baker City": {"coords": [44.77558, -117.84011], "size": "S"},
+        "Bakersfield": {"coords": [35.37219, -119.00769], "size": "L"},
+        "Baldwin": {"coords": [44.96761, -92.37196], "size": "S"},
+        "Baltimore (MD)": {"coords": [39.30772, -76.61541], "size": "L"},
+        "Baltimore (OH)": {"coords": [39.84927, -82.59876], "size": "S"},
+        "Bangor": {"coords": [42.31478, -86.11147], "size": "S"},
+        "Barstow": {"coords": [34.9047, -117.0247], "size": "S"},
+        "Bartlesville": {"coords": [36.75229, -95.97889], "size": "S"},
+        "Baton Rouge": {"coords": [30.44514, -91.174], "size": "M"},
+        "Battle Creek": {"coords": [42.31833, -85.18767], "size": "S"},
+        "Bay St. Louis": {"coords": [30.30873, -89.33399], "size": "S"},
+        "Beaumont": {"coords": [30.07634, -94.12761], "size": "S"},
+        "Beaver Falls": {"coords": [40.75151, -80.32505], "size": "S"},
+        "Bedford": {"coords": [37.33573, -79.52195], "size": "S"},
+        "Bellingham": {"coords": [48.72045, -122.5111], "size": "S"},
+        "Bellows Falls": {"coords": [43.13639, -72.44467], "size": "S"},
+        "Bennington": {"coords": [42.90455, -73.21218], "size": "S"},
+        "Benson": {"coords": [31.9688, -110.29706], "size": "S"},
+        "Berkeley": {"coords": [37.86705, -122.3006], "size": "S"},
+        "Berlin (CT)": {"coords": [41.63595, -72.765], "size": "S"},
+        "Berlin (MD)": {"coords": [38.32623, -75.22212], "size": "S"},
+        "Big Spring": {"coords": [32.25471, -101.4782], "size": "S"},
+        "Bigelow": {"coords": [40.10983, -95.28859], "size": "S"},
+        "Billings": {"coords": [45.78259, -108.50153], "size": "S"},
+        "Biloxi": {"coords": [30.39905, -88.89164], "size": "S"},
+        "Bingen-White Salmon": {"coords": [45.71502, -121.46873], "size": "S"},
+        "Birmingham": {"coords": [33.51266, -86.80665], "size": "L"},
+        "Bismarck": {"coords": [46.80462, -100.78649], "size": "S"},
+        "Black River Falls": {"coords": [44.30701, -90.81142], "size": "S"},
+        "Blairstown": {"coords": [40.98025, -74.95977], "size": "S"},
+        "Bloomington-Normal": {"coords": [40.50887, -88.98434], "size": "S"},
+        "Boise": {"coords": [43.60196, -116.21485], "size": "M"},
+        "Boston": {"coords": [42.35192, -71.05507], "size": "L"},
+        "Boston (North)": {"coords": [42.36644, -71.06197], "size": "L"},
+        "Boulder": {"coords": [40.02697, -105.2499], "size": "M"},
+        "Bowling Green (KY)": {"coords": [36.96995, -86.47695], "size": "S"},
+        "Bowling Green (OH)": {"coords": [41.37436, -83.64459], "size": "S"},
+        "Bozeman": {"coords": [45.68261, -111.01828], "size": "S"},
+        "Brattleboro": {"coords": [42.85091, -72.55665], "size": "S"},
+        "Bridgeport (CT)": {"coords": [41.17787, -73.18712], "size": "M"},
+        "Bridgeport (NE)": {"coords": [41.66681, -103.10314], "size": "S"},
+        "Bristol": {"coords": [36.61536, -82.16783], "size": "S"},
+        "Brookhaven": {"coords": [31.58307, -90.44088], "size": "S"},
+        "Broomfield": {"coords": [39.90779, -105.07911], "size": "S"},
+        "Browning": {"coords": [48.53406, -113.01315], "size": "S"},
+        "Brownsville": {"coords": [35.59098, -89.26111], "size": "S"},
+        "Brunswick": {"coords": [43.91157, -69.96551], "size": "S"},
+        "Bryan": {"coords": [41.4803, -84.55187], "size": "S"},
+        "Buckeye": {"coords": [33.37772, -112.58694], "size": "S"},
+        "Buffalo": {"coords": [42.87837, -78.87378], "size": "L"},
+        "Buffalo (Depew)": {"coords": [42.90724, -78.72705], "size": "M"},
+        "Bunnell": {"coords": [29.47919, -81.26801], "size": "S"},
+        "Burbank Airport": {"coords": [34.19301, -118.35355], "size": "S", "airport": true},
+        "Burbank Downtown": {"coords": [34.17862, -118.31177], "size": "S"},
+        "Burgaw": {"coords": [34.54977, -77.92792], "size": "S"},
+        "Burke Centre": {"coords": [38.79737, -77.29884], "size": "S"},
+        "Burlington (IA)": {"coords": [40.80575, -91.10175], "size": "S"},
+        "Burlington (NC)": {"coords": [36.09417, -79.43465], "size": "S"},
+        "Burlington (VT)": {"coords": [44.47572, -73.21953], "size": "M"},
+        "BWI Thurgood Marshall Airport": {"coords": [39.19246, -76.69438], "size": "S", "airport": true},
+        "Caliente": {"coords": [37.61361, -114.51315], "size": "S"},
+        "California": {"coords": [38.6286, -92.56286], "size": "S"},
+        "Camarillo": {"coords": [34.21641, -119.03368], "size": "S"},
+        "Cambridge": {"coords": [45.5707, -93.22126], "size": "S"},
+        "Camden (SC)": {"coords": [34.24815, -80.62519], "size": "S"},
+        "Camden (TN)": {"coords": [36.04842, -88.09335], "size": "S"},
+        "Canadian": {"coords": [35.91506, -100.38822], "size": "S"},
+        "Canton": {"coords": [40.7942, -81.37041], "size": "M"},
+        "Carbondale": {"coords": [37.72423, -89.21628], "size": "S"},
+        "Carlinville": {"coords": [39.27899, -89.88941], "size": "S"},
+        "Carpinteria": {"coords": [34.3967, -119.52308], "size": "S"},
+        "Cartersville": {"coords": [34.16772, -84.79719], "size": "S"},
+        "Cary": {"coords": [35.78841, -78.78228], "size": "S"},
+        "Casey": {"coords": [39.2979, -87.9936], "size": "S"},
+        "Casper": {"coords": [42.85563, -106.30347], "size": "S"},
+        "Castle Rock": {"coords": [39.37287, -104.858], "size": "S"},
+        "Castleton": {"coords": [43.61345, -73.1713], "size": "S"},
+        "Cedar Rapids": {"coords": [41.97958, -91.66596], "size": "M"},
+        "Centralia (IL)": {"coords": [38.52741, -89.13608], "size": "S"},
+        "Centralia (WA)": {"coords": [46.71739, -122.95292], "size": "S"},
+        "Champaign-Urbana": {"coords": [40.11583, -88.24118], "size": "M"},
+        "Chariton": {"coords": [41.01389, -93.30119], "size": "S"},
+        "Charleston": {"coords": [38.34631, -81.63827], "size": "M"},
+        "Charlotte": {"coords": [35.23115, -80.84883], "size": "L"},
+        "Charlotte Douglas Airport": {"coords": [35.22791, -80.94388], "size": "S", "airport": true},
+        "Charlottesville": {"coords": [38.03145, -78.49181], "size": "S"},
+        "Chatsworth": {"coords": [34.25301, -118.59946], "size": "S"},
+        "Chattanooga": {"coords": [35.04625, -85.28153], "size": "M"},
+        "Chemult": {"coords": [43.21667, -121.78143], "size": "S"},
+        "Cheyenne": {"coords": [41.13157, -104.81439], "size": "S"},
+        "Chicago": {"coords": [41.87860, -87.63888], "size": "L"},
+        "Chico": {"coords": [39.72337, -121.84613], "size": "S"},
+        "Childress": {"coords": [34.42231, -100.20986], "size": "S"},
+        "Chipley": {"coords": [30.78074, -85.53763], "size": "S"},
+        "Christiansburg": {"coords": [37.12126, -80.40636], "size": "S"},
+        "Cincinnati": {"coords": [39.10992, -84.53763], "size": "L"},
+        "Claremont": {"coords": [43.3691, -72.37766], "size": "S"},
+        "Clarendon": {"coords": [34.93996, -100.88865], "size": "S"},
+        "Claxton": {"coords": [32.16094, -81.898], "size": "S"},
+        "Clayton": {"coords": [36.44931, -103.18476], "size": "S"},
+        "Cleburne": {"coords": [32.34976, -97.38221], "size": "S"},
+        "Clemson": {"coords": [34.69103, -82.8325], "size": "S"},
+        "Cleveland": {"coords": [41.50546, -81.6962], "size": "L"},
+        "Cleveland Airport": {"coords": [41.41171, -81.83008], "size": "S", "airport": true},
+        "Clifton Forge": {"coords": [37.81436, -79.82811], "size": "S"},
+        "Clovis": {"coords": [34.39849, -103.23004], "size": "S"},
+        "Coachella": {"coords": [33.68106, -116.17448], "size": "S"},
+        "Coatesville": {"coords": [39.98575, -75.82094], "size": "S"},
+        "Cocoa": {"coords": [28.39891, -80.75311], "size": "S"},
+        "Colfax": {"coords": [39.09987, -120.95293], "size": "S"},
+        "College Station": {"coords": [30.61142, -96.34495], "size": "M"},
+        "Colorado Springs": {"coords": [38.82876, -104.83002], "size": "M"},
+        "Columbia (MO)": {"coords": [38.96848, -92.32876], "size": "M"},
+        "Columbia (SC)": {"coords": [33.99426, -81.04028], "size": "M"},
+        "Columbus (GA)": {"coords": [32.47389, -84.98412], "size": "M"},
+        "Columbus (IN)": {"coords": [39.20516, -85.92476], "size": "S"},
+        "Columbus (OH)": {"coords": [39.97086, -83.00068], "size": "L"},
+        "Columbus (WI)": {"coords": [43.34071, -89.01259], "size": "S"},
+        "Connellsville": {"coords": [40.02017, -79.59282], "size": "S"},
+        "Connersville": {"coords": [39.64598, -85.13316], "size": "S"},
+        "Corcoran": {"coords": [36.09923, -119.55764], "size": "S"},
+        "Cordele": {"coords": [31.97008, -83.77837], "size": "S"},
+        "Cordelia": {"coords": [38.21017, -122.13606], "size": "S"},
+        "Cornwells Heights": {"coords": [40.07174, -74.95209], "size": "S"},
+        "Corpus Cristi": {"coords": [27.79638, -97.40301], "size": "M"},
+        "Corsicana": {"coords": [32.09882, -96.46339], "size": "S"},
+        "Coshocton": {"coords": [40.27274, -81.84999], "size": "S"},
+        "Craig": {"coords": [40.51076, -107.54027], "size": "S"},
+        "Cramerton": {"coords": [35.23457, -81.0715], "size": "S"},
+        "Crawford": {"coords": [42.68353, -103.40587], "size": "S"},
+        "Crawfordsville": {"coords": [40.04486, -86.89934], "size": "S"},
+        "Crestline": {"coords": [40.78702, -82.73435], "size": "S"},
+        "Creston": {"coords": [41.05698, -94.36141], "size": "S"},
+        "Crestview": {"coords": [30.75673, -86.57058], "size": "S"},
+        "Croton-Harmon": {"coords": [41.18983, -73.88262], "size": "S"},
+        "Crystal City": {"coords": [38.85923, -77.04838], "size": "S"},
+        "Culpeper": {"coords": [38.47216, -77.99347], "size": "S"},
+        "Cumberland": {"coords": [39.65052, -78.75793], "size": "S"},
+        "Cut Bank": {"coords": [48.63849, -112.33157], "size": "S"},
+        "Cypress": {"coords": [29.9705, -95.70035], "size": "S"},
+        "Dalhart": {"coords": [36.06515, -102.52249], "size": "S"},
+        "Dallas": {"coords": [32.77608, -96.80811], "size": "L"},
+        "Dalton": {"coords": [34.76952, -84.96602], "size": "S"},
+        "Danville": {"coords": [36.58406, -79.38381], "size": "S"},
+        "Davenport": {"coords": [41.51938, -90.58156], "size": "M"},
+        "Davis": {"coords": [38.54349, -121.73775], "size": "S"},
+        "Dayton": {"coords": [39.75488, -84.19398], "size": "M"},
+        "Daytona Beach": {"coords": [29.21072, -81.0255], "size": "S"},
+        "Dearborn": {"coords": [42.30707, -83.23523], "size": "S"},
+        "Decatur (AL)": {"coords": [34.59957, -86.98673], "size": "S"},
+        "Decatur (TX)": {"coords": [33.23286, -97.57965], "size": "S"},
+        "Deerfield Beach": {"coords": [26.31681, -80.12221], "size": "S"},
+        "Defuniak Springs": {"coords": [30.71996, -86.11392], "size": "S"},
+        "Del Rio": {"coords": [29.36234, -100.90261], "size": "S"},
+        "DeLand": {"coords": [29.01784, -81.35262], "size": "S"},
+        "Delaware": {"coords": [40.30046, -83.05839], "size": "S"},
+        "Delray Beach": {"coords": [26.45413, -80.09105], "size": "S"},
+        "Delta": {"coords": [39.35447, -112.58543], "size": "S"},
+        "Deming": {"coords": [32.27162, -107.75417], "size": "S"},
+        "Denison": {"coords": [33.77691, -96.55952], "size": "S"},
+        "Denmark": {"coords": [33.32624, -81.1436], "size": "S"},
+        "Denton": {"coords": [33.21426, -97.12655], "size": "S"},
+        "Denver": {"coords": [39.75537, -105.00294], "size": "L"},
+        "Des Moines": {"coords": [41.58353, -93.62163], "size": "M"},
+        "Detroit": {"coords": [42.32873, -83.07776], "size": "L"},
+        "Detroit (New Center)": {"coords": [42.368, -83.07231], "size": "L"},
+        "Detroit Airport": {"coords": [42.23796, -83.33647], "size": "S", "airport": true},
+        "Detroit Lakes": {"coords": [46.81979, -95.84598], "size": "S"},
+        "Devils Lake": {"coords": [48.11039, -98.86151], "size": "S"},
+        "Dickinson (ND)": {"coords": [46.87855, -102.78857], "size": "S"},
+        "Dickinson (TN)": {"coords": [36.07807, -87.39152], "size": "S"},
+        "Dillon": {"coords": [34.41758, -79.37218], "size": "S"},
+        "Dodge City": {"coords": [37.75243, -100.01628], "size": "S"},
+        "Douglas": {"coords": [42.7608, -105.38701], "size": "S"},
+        "Dover (DE)": {"coords": [39.15477, -75.53153], "size": "S"},
+        "Dover (NH)": {"coords": [43.19809, -70.87818], "size": "S"},
+        "Dover (NJ)": {"coords": [40.88363, -74.55552], "size": "S"},
+        "Dowagiac": {"coords": [41.98099, -86.10889], "size": "S"},
+        "Downingtown": {"coords": [40.00216, -75.71075], "size": "S"},
+        "Du Quoin": {"coords": [38.01224, -89.24014], "size": "S"},
+        "Dublin": {"coords": [32.53541, -82.90965], "size": "S"},
+        "Duluth": {"coords": [46.78155, -92.10398], "size": "M"},
+        "Dunsmuir": {"coords": [41.21122, -122.27056], "size": "S"},
+        "Durand": {"coords": [42.90937, -83.98252], "size": "S"},
+        "Durham (NC)": {"coords": [35.99751, -78.90647], "size": "S"},
+        "Durham (NH)": {"coords": [43.13935, -70.93612], "size": "S"},
+        "Dwight": {"coords": [41.08991, -88.4308], "size": "S"},
+        "Dyer": {"coords": [41.49411, -87.51482], "size": "S"},
+        "East Glacier Park": {"coords": [48.44233, -113.21952], "size": "S"},
+        "East Point": {"coords": [33.67826, -84.43921], "size": "S"},
+        "East St. Paul": {"coords": [44.9735, -93.0247], "size": "S"},
+        "East Stroudsburg": {"coords": [40.99851, -75.18097], "size": "S"},
+        "Eastland": {"coords": [32.40622, -98.81735], "size": "S"},
+        "Eau Claire": {"coords": [44.82077, -91.50208], "size": "S"},
+        "Edmond": {"coords": [35.65132, -97.48368], "size": "S"},
+        "Edmonds": {"coords": [47.81108, -122.38414], "size": "S"},
+        "Effingham": {"coords": [39.11708, -88.54718], "size": "S"},
+        "El Paso": {"coords": [31.75738, -106.4959], "size": "M"},
+        "Elizabethtown (KY)": {"coords": [37.68923, -85.86487], "size": "S"},
+        "Elizabethtown (PA)": {"coords": [40.14691, -76.61222], "size": "S"},
+        "Elkhart": {"coords": [41.68066, -85.97175], "size": "S"},
+        "Elko": {"coords": [40.8365, -115.75049], "size": "S"},
+        "Ellensburg": {"coords": [46.99411, -120.55515], "size": "S"},
+        "Elora": {"coords": [35.13352, -115.5331], "size": "S"},
+        "Elyria": {"coords": [41.36869, -82.10352], "size": "S"},
+        "Emeryville": {"coords": [37.84044, -122.29179], "size": "S"},
+        "Emporia": {"coords": [38.40113, -96.18405], "size": "S"},
+        "Engle": {"coords": [33.17516, -107.03207], "size": "S"},
+        "Ephrata": {"coords": [47.32084, -119.54929], "size": "S"},
+        "Erie": {"coords": [42.12073, -80.08231], "size": "M"},
+        "Essex": {"coords": [48.27526, -113.61012], "size": "S"},
+        "Essex Junction": {"coords": [44.49257, -73.1102], "size": "S"},
+        "Eugene": {"coords": [44.05518, -123.09232], "size": "M"},
+        "Evanston": {"coords": [41.26889, -110.96435], "size": "S"},
+        "Evansville": {"coords": [37.99234, -87.55457], "size": "M"},
+        "Everett": {"coords": [47.97548, -122.19767], "size": "S"},
+        "Evergreen": {"coords": [31.43349, -86.95521], "size": "S"},
+        "Excelsior Springs": {"coords": [39.34048, -94.24206], "size": "S"},
+        "Exeter": {"coords": [42.98102, -70.95869], "size": "S"},
+        "Exton": {"coords": [40.01955, -75.62176], "size": "S"},
+        "Fairfield-Vacaville": {"coords": [38.28535, -121.96811], "size": "S"},
+        "Fargo": {"coords": [46.88098, -96.78513], "size": "M"},
+        "Faribault": {"coords": [44.2942, -93.26543], "size": "S"},
+        "Fayetteville (AR)": {"coords": [36.0661, -94.16641], "size": "M"},
+        "Fayetteville (NC)": {"coords": [35.05507, -78.88476], "size": "M"},
+        "Ferrisburgh-Vergennes": {"coords": [44.18092, -73.24882], "size": "S"},
+        "Findlay": {"coords": [41.04106, -83.65551], "size": "S"},
+        "Fitzgerald": {"coords": [31.71609, -83.25053], "size": "S"},
+        "Flagstaff": {"coords": [35.19229, -111.6388], "size": "S"},
+        "Flatonia": {"coords": [29.68732, -97.10932], "size": "S"},
+        "Flint": {"coords": [43.01545, -83.65151], "size": "M"},
+        "Florence": {"coords": [34.1993, -79.75752], "size": "S"},
+        "Foley Blvd": {"coords": [45.14088, -93.28812], "size": "S"},
+        "Folkston": {"coords": [30.8303, -82.00774], "size": "S"},
+        "Follansbee": {"coords": [40.31243, -80.60801], "size": "S"},
+        "Fond du Lac": {"coords": [43.78182, -88.45617], "size": "S"},
+        "Forsyth": {"coords": [33.03569, -83.93468], "size": "S"},
+        "Fort Collins": {"coords": [40.58985, -105.0788], "size": "M"},
+        "Fort Edward": {"coords": [43.26974, -73.58039], "size": "S"},
+        "Fort Lauderdale": {"coords": [26.11994, -80.1698], "size": "M"},
+        "Fort Madison": {"coords": [40.62953, -91.31364], "size": "S"},
+        "Fort Morgan": {"coords": [40.24716, -103.80281], "size": "S"},
+        "Fort Myers": {"coords": [26.63402, -81.86026], "size": "M"},
+        "Fort Pierce": {"coords": [27.4467, -80.3245], "size": "S"},
+        "Fort Sumner": {"coords": [34.47402, -104.24159], "size": "S"},
+        "Fort Wayne": {"coords": [41.07175, -85.13898], "size": "M"},
+        "Fort Worth": {"coords": [32.75266, -97.32647], "size": "L"},
+        "Framingham": {"coords": [42.27614, -71.41967], "size": "S"},
+        "Franklin": {"coords": [39.48315, -86.05229], "size": "S"},
+        "Fraser-Winter Park": {"coords": [39.94761, -105.81762], "size": "S"},
+        "Fredericksburg": {"coords": [38.29843, -77.45693], "size": "S"},
+        "Freeport": {"coords": [43.85511, -70.10222], "size": "S"},
+        "Fremont (CA)": {"coords": [37.55913, -122.00738], "size": "S"},
+        "Fremont (NE)": {"coords": [41.42961, -96.49744], "size": "S"},
+        "Fresno": {"coords": [36.73843, -119.78265], "size": "L"},
+        "Fullerton": {"coords": [33.86884, -117.92287], "size": "S"},
+        "Fulton": {"coords": [36.52356, -88.88726], "size": "S"},
+        "Fuquay-Varina": {"coords": [35.58633, -78.8012], "size": "S"},
+        "Gainesville (GA)": {"coords": [34.28877, -83.81962], "size": "S"},
+        "Gainesville (TX)": {"coords": [33.62508, -97.14072], "size": "S"},
+        "Galesburg": {"coords": [40.94464, -90.36393], "size": "S"},
+        "Gallup": {"coords": [35.52917, -108.74054], "size": "S"},
+        "Garden City": {"coords": [37.9642, -100.87329], "size": "S"},
+        "Garnett": {"coords": [38.27718, -95.24282], "size": "S"},
+        "Gastonia": {"coords": [35.26467, -81.18653], "size": "S"},
+        "Geneseo": {"coords": [41.45477, -90.16086], "size": "S"},
+        "Georgetown": {"coords": [38.69295, -75.38509], "size": "S"},
+        "Gilbert": {"coords": [33.35326, -111.7903], "size": "S"},
+        "Gilman": {"coords": [40.75268, -87.99792], "size": "S"},
+        "Gilroy": {"coords": [37.00418, -121.56668], "size": "S"},
+        "Glasgow": {"coords": [48.19504, -106.63589], "size": "S"},
+        "Glendale": {"coords": [34.12371, -118.25888], "size": "S"},
+        "Glendive": {"coords": [47.10887, -104.70851], "size": "S"},
+        "Glenview": {"coords": [42.07494, -87.80563], "size": "S"},
+        "Glenwood Springs": {"coords": [39.54802, -107.32315], "size": "S"},
+        "Goldsboro": {"coords": [35.39331, -77.99216], "size": "S"},
+        "Goleta": {"coords": [34.43775, -119.84319], "size": "S"},
+        "Gonzales": {"coords": [30.23633, -90.91467], "size": "S"},
+        "Gooding": {"coords": [42.94544, -114.71105], "size": "S"},
+        "Goodyear": {"coords": [33.42943, -112.35052], "size": "S"},
+        "Granby": {"coords": [40.08415, -105.93569], "size": "S"},
+        "Grand Forks": {"coords": [47.91744, -97.11086], "size": "S"},
+        "Grand Junction": {"coords": [39.06456, -108.57054], "size": "S"},
+        "Grand Rapids": {"coords": [42.95568, -85.67231], "size": "M"},
+        "Granite Falls": {"coords": [44.80885, -95.55765], "size": "S"},
+        "Great America": {"coords": [37.40685, -121.96709], "size": "S"},
+        "Green Bay": {"coords": [44.51692, -88.02053], "size": "M"},
+        "Green River": {"coords": [38.99216, -110.16534], "size": "S"},
+        "Greencastle": {"coords": [39.65395, -86.86797], "size": "S"},
+        "Greenfield": {"coords": [42.58588, -72.60069], "size": "S"},
+        "Greensboro": {"coords": [36.06962, -79.787], "size": "M"},
+        "Greensburg": {"coords": [40.30453, -79.547], "size": "S"},
+        "Greenville (AL)": {"coords": [31.82765, -86.62833], "size": "S"},
+        "Greenville (IL)": {"coords": [38.88619, -89.41004], "size": "S"},
+        "Greenville (SC)": {"coords": [34.8585, -82.41359], "size": "L"},
+        "Greenwood": {"coords": [33.51715, -90.17645], "size": "S"},
+        "Greybull": {"coords": [44.4917, -108.05704], "size": "S"},
+        "Griffin": {"coords": [33.25032, -84.26293], "size": "S"},
+        "Grimsby": {"coords": [43.19593, -79.55806], "size": "S"},
+        "Grover Beach": {"coords": [35.12126, -120.62926], "size": "S"},
+        "Guadalupe": {"coords": [34.9629, -120.57348], "size": "S"},
+        "Gulfport": {"coords": [30.36903, -89.09478], "size": "S"},
+        "Guthrie": {"coords": [35.87748, -97.42954], "size": "S"},
+        "Hamburg": {"coords": [40.59555, -95.66524], "size": "S"},
+        "Hamilton": {"coords": [39.39679, -84.56428], "size": "S"},
+        "Hamlet": {"coords": [34.88365, -79.69904], "size": "S"},
+        "Hammond": {"coords": [30.50718, -90.46213], "size": "S"},
+        "Hammond-Whiting": {"coords": [41.69108, -87.50659], "size": "S"},
+        "Hampton": {"coords": [42.74435, -93.21895], "size": "S"},
+        "Hanford": {"coords": [36.3261, -119.65196], "size": "S"},
+        "Hannibal": {"coords": [39.71197, -91.35616], "size": "S"},
+        "Harper": {"coords": [37.29112, -98.02428], "size": "S"},
+        "Harpers Ferry": {"coords": [39.32452, -77.7311], "size": "S"},
+        "Harrington": {"coords": [38.92759, -75.57804], "size": "S"},
+        "Harrisburg": {"coords": [40.26221, -76.87766], "size": "M"},
+        "Hartford": {"coords": [41.76881, -72.68157], "size": "L"},
+        "Hastings": {"coords": [40.58395, -98.38764], "size": "S"},
+        "Hattiesburg": {"coords": [31.32709, -89.2864], "size": "S"},
+        "Haverhill": {"coords": [42.77298, -71.08655], "size": "S"},
+        "Havre": {"coords": [48.55458, -109.67835], "size": "S"},
+        "Hawarden": {"coords": [42.99767, -96.48904], "size": "S"},
+        "Hayden": {"coords": [40.49644, -107.26075], "size": "S"},
+        "Hayward": {"coords": [37.66596, -122.09934], "size": "S"},
+        "Hazlehurst": {"coords": [31.86108, -90.39442], "size": "S"},
+        "Hearne": {"coords": [30.87863, -96.59263], "size": "S"},
+        "Helena": {"coords": [46.60198, -112.02705], "size": "S"},
+        "Helper": {"coords": [39.68395, -110.85376], "size": "S"},
+        "Hempstead": {"coords": [30.09709, -96.0798], "size": "S"},
+        "Hereford": {"coords": [34.81528, -102.39702], "size": "S"},
+        "Hermann": {"coords": [38.70729, -91.43246], "size": "S"},
+        "Hermiston": {"coords": [45.83876, -119.28981], "size": "S"},
+        "Hickory": {"coords": [35.73181, -81.34066], "size": "S"},
+        "Hicksville": {"coords": [40.76711, -73.52861], "size": "S"},
+        "High Point": {"coords": [35.95722, -80.00619], "size": "S"},
+        "Hinckley": {"coords": [46.01528, -92.93847], "size": "S"},
+        "Holdenville": {"coords": [35.08601, -96.40304], "size": "S"},
+        "Holdrege": {"coords": [40.43607, -99.36991], "size": "S"},
+        "Holland": {"coords": [42.79107, -86.09643], "size": "S"},
+        "Hollywood": {"coords": [26.01189, -80.16781], "size": "S"},
+        "Holyoke": {"coords": [42.20415, -72.60231], "size": "S"},
+        "Homewood": {"coords": [41.56203, -87.66784], "size": "S"},
+        "Hope": {"coords": [33.66899, -93.59225], "size": "S"},
+        "Hot Sulphur Springs": {"coords": [40.07496, -106.10987], "size": "S"},
+        "Houston": {"coords": [29.7674, -95.3675], "size": "L"},
+        "Hudson": {"coords": [44.98669, -92.75693], "size": "S"},
+        "Humboldt": {"coords": [35.82449, -88.92028], "size": "S"},
+        "Huntingdon": {"coords": [40.48366, -78.01178], "size": "S"},
+        "Huntington": {"coords": [38.41594, -82.4397], "size": "S"},
+        "Huntsville": {"coords": [34.73497, -86.59008], "size": "M"},
+        "Hutchinson": {"coords": [38.05564, -97.93095], "size": "S"},
+        "Independence (KS)": {"coords": [37.23222, -95.70932], "size": "S"},
+        "Independence (MO)": {"coords": [39.08686, -94.42976], "size": "S"},
+        "Indianapolis": {"coords": [39.76245, -86.16023], "size": "L"},
+        "Indio": {"coords": [33.71646, -116.21105], "size": "S"},
+        "Iowa City": {"coords": [41.65347, -91.5339], "size": "S"},
+        "Iowa Falls": {"coords": [42.51334, -93.27379], "size": "S"},
+        "Irvine": {"coords": [33.65679, -117.73346], "size": "S"},
+        "Jackson (MI)": {"coords": [42.24797, -84.39981], "size": "S"},
+        "Jackson (MS)": {"coords": [32.30091, -90.19096], "size": "M"},
+        "Jacksonville": {"coords": [30.32642, -81.66981], "size": "L"},
+        "Jacksonville (Clifford Lane)": {"coords": [30.3656, -81.72389], "size": "L"},
+        "Jamaica": {"coords": [40.69986, -73.80763], "size": "S", "airport": true},
+        "Jamestown": {"coords": [46.90902, -98.70634], "size": "S"},
+        "Jefferson City": {"coords": [38.5788, -92.17005], "size": "S"},
+        "Jesup": {"coords": [31.60587, -81.88193], "size": "S"},
+        "Johnstown": {"coords": [40.3298, -78.92183], "size": "S"},
+        "Joliet": {"coords": [41.52457, -88.07894], "size": "M"},
+        "Jupiter": {"coords": [26.93611, -80.09371], "size": "S"},
+        "Kalamazoo": {"coords": [42.29542, -85.58406], "size": "M"},
+        "Kankakee": {"coords": [41.11916, -87.86577], "size": "S"},
+        "Kannapolis": {"coords": [35.49605, -80.62473], "size": "S"},
+        "Kansas City": {"coords": [39.08479, -94.58535], "size": "L"},
+        "Kelso-Longview": {"coords": [46.14219, -122.91325], "size": "S"},
+        "Kent": {"coords": [41.15133, -81.36051], "size": "S"},
+        "Kenton": {"coords": [40.64481, -83.61214], "size": "S"},
+        "Kewanee": {"coords": [41.246, -89.92757], "size": "S"},
+        "Kingman": {"coords": [35.18824, -114.05249], "size": "S"},
+        "Kings Mountain": {"coords": [35.24447, -81.34255], "size": "S"},
+        "Kingston": {"coords": [41.48404, -71.56067], "size": "S"},
+        "Kingstree": {"coords": [33.66361, -79.8291], "size": "S"},
+        "Kirkwood": {"coords": [38.58095, -90.40678], "size": "S"},
+        "Kissimmee": {"coords": [28.29371, -81.40423], "size": "S"},
+        "Klamath Falls": {"coords": [42.22551, -121.77184], "size": "S"},
+        "Knoxville": {"coords": [35.97263, -83.91638], "size": "L"},
+        "Kremmling": {"coords": [40.05175, -106.38466], "size": "S"},
+        "La Crosse": {"coords": [43.83325, -91.24722], "size": "S"},
+        "La Grande": {"coords": [45.32659, -118.08834], "size": "S"},
+        "La Grange (GA)": {"coords": [33.03467, -85.02984], "size": "S"},
+        "La Grange (IL)": {"coords": [41.81575, -87.87103], "size": "S"},
+        "La Grange (KY)": {"coords": [38.40707, -85.38052], "size": "S"},
+        "La Junta": {"coords": [37.98835, -103.54314], "size": "S"},
+        "La Plata": {"coords": [40.02914, -92.49387], "size": "S"},
+        "Lafayette (IN)": {"coords": [40.41943, -86.89615], "size": "M"},
+        "Lafayette (LA)": {"coords": [30.2267, -92.01425], "size": "M"},
+        "Lake Charles": {"coords": [30.23816, -93.21713], "size": "S"},
+        "Lake City": {"coords": [30.19627, -82.63839], "size": "S"},
+        "Lake Elmo": {"coords": [44.99828, -92.8806], "size": "S"},
+        "Lakeland": {"coords": [28.04575, -81.95188], "size": "S"},
+        "Lamar": {"coords": [38.08974, -102.61841], "size": "S"},
+        "Lamy": {"coords": [35.48097, -105.87996], "size": "S"},
+        "Lancaster": {"coords": [40.05431, -76.30774], "size": "S"},
+        "Lansing": {"coords": [42.71893, -84.49589], "size": "M"},
+        "Lapeer": {"coords": [43.04944, -83.30615], "size": "S"},
+        "Laramie": {"coords": [41.30878, -105.59619], "size": "S"},
+        "Laredo": {"coords": [27.50605, -99.51754], "size": "M"},
+        "Las Cruces": {"coords": [32.30637, -106.78651], "size": "S"},
+        "Las Vegas (NM)": {"coords": [35.59344, -105.21265], "size": "S"},
+        "Las Vegas (NV)": {"coords": [36.17151, -115.14816], "size": "L"},
+        "Latrobe": {"coords": [40.31815, -79.38525], "size": "S"},
+        "Laurel": {"coords": [31.69232, -89.12799], "size": "S"},
+        "Lawrence": {"coords": [38.97123, -95.23033], "size": "S"},
+        "Leavenworth": {"coords": [47.60603, -120.64325], "size": "S"},
+        "Lee's Summit": {"coords": [38.91267, -94.37833], "size": "S"},
+        "Lewistown": {"coords": [40.5882, -77.58034], "size": "S"},
+        "Lexington (KY)": {"coords": [38.04417, -84.51095], "size": "M"},
+        "Lexington (NC)": {"coords": [35.82111, -80.25163], "size": "S"},
+        "Libby": {"coords": [48.39493, -115.54891], "size": "S"},
+        "Lillington": {"coords": [35.39116, -78.81275], "size": "S"},
+        "Lima": {"coords": [40.7448, -84.10574], "size": "S"},
+        "Lincoln (IL)": {"coords": [40.1481, -89.36328], "size": "S"},
+        "Lincoln (NE)": {"coords": [40.81588, -96.71394], "size": "M"},
+        "Lincoln Park": {"coords": [39.73214, -105.00564], "size": "S"},
+        "Litchfield": {"coords": [45.12593, -94.52992], "size": "S"},
+        "Little Rock": {"coords": [34.75038, -92.28714], "size": "M"},
+        "Littleton": {"coords": [39.61197, -105.01488], "size": "S"},
+        "Live Oak": {"coords": [30.29703, -82.98348], "size": "S"},
+        "Lodi": {"coords": [38.1332, -121.27181], "size": "S"},
+        "Lompoc-Surf": {"coords": [34.68298, -120.60499], "size": "S"},
+        "Longmont": {"coords": [40.16025, -105.10557], "size": "S"},
+        "Longview": {"coords": [32.49413, -94.72774], "size": "S"},
+        "Lordsburg": {"coords": [32.35007, -108.70702], "size": "S"},
+        "Lorton": {"coords": [38.70841, -77.2206], "size": "S"},
+        "Los Angeles": {"coords": [34.05603, -118.23476], "size": "L"},
+        "Louisville (CO)": {"coords": [39.98079, -105.13067], "size": "S"},
+        "Louisville (KY)": {"coords": [38.25323, -85.7259], "size": "L"},
+        "Loveland": {"coords": [40.39515, -105.07613], "size": "S"},
+        "Lovell": {"coords": [44.84198, -108.39217], "size": "S"},
+        "Lynchburg": {"coords": [37.40646, -79.15706], "size": "S"},
+        "Macclenny": {"coords": [30.2814, -82.12275], "size": "S"},
+        "Macomb": {"coords": [40.46137, -90.67098], "size": "S"},
+        "Macon": {"coords": [32.84284, -83.62775], "size": "M"},
+        "Madera": {"coords": [37.02257, -120.07512], "size": "S"},
+        "Madill": {"coords": [34.09356, -96.76629], "size": "S"},
+        "Madison (FL)": {"coords": [30.4598, -83.41392], "size": "S"},
+        "Madison (WI)": {"coords": [43.07242, -89.38018], "size": "M"},
+        "Malta": {"coords": [48.36042, -107.8719], "size": "S"},
+        "Malvern": {"coords": [34.36563, -92.8137], "size": "S"},
+        "Manassas": {"coords": [38.75022, -77.4725], "size": "S"},
+        "Manchester": {"coords": [43.17207, -73.0467], "size": "S"},
+        "Marianna": {"coords": [30.77406, -85.23486], "size": "S"},
+        "Maricopa": {"coords": [33.05614, -112.0475], "size": "S"},
+        "Marietta": {"coords": [33.94898, -84.54956], "size": "S"},
+        "Marion": {"coords": [35.68119, -82.01058], "size": "S"},
+        "Marks": {"coords": [34.25822, -90.27234], "size": "S"},
+        "Marshall (MN)": {"coords": [44.45016, -95.79679], "size": "S"},
+        "Marshall (TX)": {"coords": [32.55158, -94.36738], "size": "S"},
+        "Martinez": {"coords": [38.01908, -122.13883], "size": "S"},
+        "Martinsburg": {"coords": [39.45863, -77.96089], "size": "S"},
+        "Marysville": {"coords": [40.2379, -83.36228], "size": "S"},
+        "Mason City": {"coords": [43.14421, -93.21056], "size": "S"},
+        "Mattoon": {"coords": [39.48301, -88.37586], "size": "S"},
+        "Maysville": {"coords": [38.65215, -83.7711], "size": "S"},
+        "McComb": {"coords": [31.24456, -90.45124], "size": "S"},
+        "McCook": {"coords": [40.19751, -100.62567], "size": "S"},
+        "McGregor": {"coords": [31.44333, -97.405], "size": "S"},
+        "Melbourne": {"coords": [28.10121, -80.62231], "size": "S"},
+        "Memphis": {"coords": [35.1324, -90.05942], "size": "L"},
+        "Mendota": {"coords": [41.54975, -89.11794], "size": "S"},
+        "Menomonie": {"coords": [44.91348, -91.92268], "size": "S"},
+        "Merced": {"coords": [37.30731, -120.47676], "size": "M"},
+        "Meriden": {"coords": [41.53877, -72.80141], "size": "S"},
+        "Meridian": {"coords": [32.36398, -88.69648], "size": "S"},
+        "Metropark": {"coords": [40.5681, -74.32963], "size": "S"},
+        "Miami": {"coords": [25.84946, -80.25798], "size": "L"},
+        "Middlebury": {"coords": [44.01742, -73.16977], "size": "S"},
+        "Middletown (DE)": {"coords": [39.45913, -75.72121], "size": "S"},
+        "Middletown (PA)": {"coords": [40.19567, -76.73652], "size": "S"},
+        "Midland": {"coords": [31.9821, -102.09845], "size": "S"},
+        "Miles City": {"coords": [46.40983, -105.84005], "size": "S"},
+        "Milford (DE)": {"coords": [38.91051, -75.43183], "size": "S"},
+        "Milford (UT)": {"coords": [38.39688, -113.00752], "size": "S"},
+        "Millsboro": {"coords": [38.58832, -75.29257], "size": "S"},
+        "Milwaukee": {"coords": [43.03438, -87.9174], "size": "L"},
+        "Milwaukee Airport": {"coords": [42.94057, -87.92473], "size": "S", "airport": true},
+        "Mineola": {"coords": [32.66211, -95.48906], "size": "S"},
+        "Minneapolis": {"coords": [44.98326, -93.27707], "size": "L"},
+        "Minot": {"coords": [48.23612, -101.2986], "size": "S"},
+        "Missoula": {"coords": [46.87701, -113.99512], "size": "S"},
+        "Mitchell": {"coords": [43.70886, -98.03086], "size": "S"},
+        "Moapa": {"coords": [36.68406, -114.62123], "size": "S"},
+        "Mobile": {"coords": [30.69085, -88.03828], "size": "M"},
+        "Modesto": {"coords": [37.66888, -120.91237], "size": "M"},
+        "Mojave": {"coords": [35.05543, -118.175], "size": "S"},
+        "Mojave Trails": {"coords": [34.55567, -115.75622], "size": "S"},
+        "Moline": {"coords": [41.50802, -90.51498], "size": "S"},
+        "Monahans": {"coords": [31.59557, -102.89061], "size": "S"},
+        "Monroe (LA)": {"coords": [32.49906, -92.12462], "size": "S"},
+        "Monroe (MI)": {"coords": [41.91834, -83.41286], "size": "S"},
+        "Montclair": {"coords": [40.80818, -74.20868], "size": "S"},
+        "Montgomery": {"coords": [32.38077, -86.31397], "size": "M"},
+        "Monticello": {"coords": [30.4968, -83.88212], "size": "S"},
+        "Montpelier": {"coords": [44.25566, -72.60637], "size": "S"},
+        "Montréal": {"coords": [45.50011, -73.56652], "size": "L"},
+        "Moorpark": {"coords": [34.28486, -118.87805], "size": "S"},
+        "Morgan Hill": {"coords": [37.12971, -121.65055], "size": "S"},
+        "Morganton": {"coords": [35.74189, -81.68093], "size": "S"},
+        "Morris": {"coords": [41.36416, -88.423], "size": "S"},
+        "Morristown (NJ)": {"coords": [40.79717, -74.47435], "size": "S"},
+        "Morristown (TN)": {"coords": [36.20602, -83.30942], "size": "S"},
+        "Mount Joy": {"coords": [40.10897, -76.50355], "size": "S"},
+        "Mount Pocono": {"coords": [41.11797, -75.35847], "size": "S"},
+        "Mount Vernon": {"coords": [48.4185, -122.33496], "size": "S"},
+        "Mountainair": {"coords": [34.51925, -106.23788], "size": "S"},
+        "Mt. Olive": {"coords": [35.19603, -78.06673], "size": "S"},
+        "Mt. Pleasant": {"coords": [40.97122, -91.55063], "size": "S"},
+        "Murfreesboro": {"coords": [35.8434, -86.39858], "size": "S"},
+        "Myrtle Beach": {"coords": [33.69501, -78.88525], "size": "M"},
+        "Mystic": {"coords": [41.35092, -71.96316], "size": "S"},
+        "Naperville": {"coords": [41.7796, -88.14553], "size": "S"},
+        "Nashville": {"coords": [36.15719, -86.78531], "size": "L"},
+        "Navasota": {"coords": [30.38534, -96.08983], "size": "S"},
+        "Needles": {"coords": [34.84063, -114.6059], "size": "S"},
+        "Neosho": {"coords": [36.8725, -94.37983], "size": "S"},
+        "Nephi": {"coords": [39.71216, -111.84135], "size": "S"},
+        "Nevada": {"coords": [42.01262, -93.45629], "size": "S"},
+        "New Brunswick": {"coords": [40.49665, -74.44609], "size": "S"},
+        "New Buffalo": {"coords": [41.79649, -86.74606], "size": "S"},
+        "New Carrollton": {"coords": [38.94842, -76.87228], "size": "S"},
+        "New Castle": {"coords": [40.97345, -80.37719], "size": "S"},
+        "New Haven": {"coords": [41.29755, -72.92661], "size": "M"},
+        "New Haven (State Street)": {"coords": [41.30525, -72.92202], "size": "S"},
+        "New Iberia": {"coords": [30.00841, -91.8238], "size": "S"},
+        "New Lexington": {"coords": [39.70936, -82.20832], "size": "S"},
+        "New London": {"coords": [41.3542, -72.09314], "size": "S"},
+        "New Orleans": {"coords": [29.94623, -90.07869], "size": "L"},
+        "New Orleans Airport": {"coords": [29.97731, -90.25419], "size": "S", "airport": true},
+        "New Rochelle": {"coords": [40.91142, -73.78421], "size": "S"},
+        "New York": {"coords": [40.75056, -73.99351], "size": "L"},
+        "Newark": {"coords": [40.73468, -74.16409], "size": "L"},
+        "Newark (Broad St)": {"coords": [40.74744, -74.17192], "size": "M"},
+        "Newark (DE)": {"coords": [39.67007, -75.75275], "size": "S"},
+        "Newark (OH)": {"coords": [40.05535, -82.40046], "size": "S"},
+        "Newark Liberty International Airport": {"coords": [40.70441, -74.19072], "size": "S", "airport": true},
+        "Newbern-Dyersburg": {"coords": [36.11251, -89.26244], "size": "S"},
+        "Newcastle": {"coords": [44.03744, -69.53882], "size": "S"},
+        "Newnan": {"coords": [33.3745, -84.79669], "size": "S"},
+        "Newport News": {"coords": [37.12232, -76.51702], "size": "S"},
+        "Newton": {"coords": [38.04712, -97.34455], "size": "S"},
+        "Newton Falls": {"coords": [41.19101, -80.97288], "size": "S"},
+        "Niagara Falls (NY)": {"coords": [43.10988, -79.0548], "size": "S"},
+        "Niagara Falls (ON)": {"coords": [43.10883, -79.06334], "size": "S"},
+        "Niles": {"coords": [41.83733, -86.25229], "size": "S"},
+        "Norfolk": {"coords": [36.84348, -76.27609], "size": "L"},
+        "Norman": {"coords": [35.21988, -97.44287], "size": "S"},
+        "Norristown": {"coords": [40.11263, -75.34414], "size": "S"},
+        "North Edwards": {"coords": [35.00397, -117.84042], "size": "S"},
+        "North Philadelphia": {"coords": [39.99719, -75.15523], "size": "S"},
+        "Northampton": {"coords": [42.31885, -72.62644], "size": "S"},
+        "Northfield": {"coords": [44.45775, -93.16337], "size": "S"},
+        "Northridge": {"coords": [34.23064, -118.54543], "size": "S"},
+        "Novato": {"coords": [38.10598, -122.56444], "size": "S"},
+        "Oak Creek": {"coords": [40.27355, -106.95379], "size": "S"},
+        "Oakland (CA)": {"coords": [37.79372, -122.27152], "size": "L"},
+        "Oakland (NE)": {"coords": [41.83685, -96.46769], "size": "S"},
+        "Oakland Coliseum": {"coords": [37.75248, -122.19821], "size": "S", "airport": true},
+        "Oakville": {"coords": [43.45556, -79.68226], "size": "S"},
+        "Oceanside": {"coords": [33.19055, -117.37821], "size": "S"},
+        "Oconomowoc": {"coords": [43.1094, -88.49867], "size": "S"},
+        "Ogden": {"coords": [41.22448, -111.98071], "size": "S"},
+        "Okeechobee": {"coords": [27.25188, -80.83066], "size": "S"},
+        "Oklahoma City": {"coords": [35.46537, -97.51262], "size": "L"},
+        "Okmulgee": {"coords": [35.62461, -95.96308], "size": "S"},
+        "Old Orchard Beach": {"coords": [43.51428, -70.37616], "size": "S"},
+        "Old Saybrook": {"coords": [41.3004, -72.37755], "size": "S"},
+        "Old Town": {"coords": [32.75522, -117.19952], "size": "S"},
+        "Olympia-Lacey": {"coords": [46.99135, -122.79393], "size": "M"},
+        "Omaha": {"coords": [41.24977, -95.92717], "size": "L"},
+        "Ontario (CA)": {"coords": [34.06163, -117.64959], "size": "S"},
+        "Ontario (OR)": {"coords": [44.02745, -116.96121], "size": "S"},
+        "Oregon City": {"coords": [45.36595, -122.59606], "size": "S"},
+        "Orlando": {"coords": [28.52597, -81.38166], "size": "L"},
+        "Osceola": {"coords": [41.03717, -93.76499], "size": "S"},
+        "Oshkosh": {"coords": [44.02332, -88.53164], "size": "S"},
+        "Ottawa": {"coords": [41.35312, -88.84542], "size": "S"},
+        "Ottumwa": {"coords": [41.01867, -92.41493], "size": "S"},
+        "Owatonna": {"coords": [44.08534, -93.23076], "size": "S"},
+        "Oxford": {"coords": [39.49996, -84.74148], "size": "S"},
+        "Oxnard": {"coords": [34.19942, -119.17616], "size": "S"},
+        "Palatka": {"coords": [29.64973, -81.64047], "size": "S"},
+        "Palm Springs": {"coords": [33.89774, -116.54812], "size": "M"},
+        "Pampa": {"coords": [35.53506, -100.95947], "size": "S"},
+        "Paola": {"coords": [38.57553, -94.88709], "size": "S"},
+        "Paoli": {"coords": [40.04282, -75.48361], "size": "S"},
+        "Parker": {"coords": [34.14992, -114.28799], "size": "S"},
+        "Parkesburg": {"coords": [39.95911, -75.92232], "size": "S"},
+        "Pascagoula": {"coords": [30.36784, -88.55954], "size": "S"},
+        "Pasco": {"coords": [46.23692, -119.08747], "size": "S"},
+        "Paso Robles": {"coords": [35.62267, -120.68776], "size": "S"},
+        "Pauls Valley": {"coords": [34.74177, -97.21837], "size": "S"},
+        "Pecos": {"coords": [31.42652, -103.4994], "size": "S"},
+        "Pensacola": {"coords": [30.4178, -87.20862], "size": "M"},
+        "Peoria (AZ)": {"coords": [33.5819, -112.23784], "size": "S"},
+        "Peoria (IL)": {"coords": [40.6887, -89.58872], "size": "M"},
+        "Perry": {"coords": [36.28664, -97.28345], "size": "S"},
+        "Peru-LaSalle": {"coords": [41.32497, -89.12396], "size": "S"},
+        "Petersburg": {"coords": [37.24192, -77.42869], "size": "S"},
+        "Pewaukee": {"coords": [43.08531, -88.26479], "size": "S"},
+        "Philadelphia": {"coords": [39.95603, -75.18187], "size": "L"},
+        "Phoenix": {"coords": [33.44429, -112.07206], "size": "L"},
+        "Picayune": {"coords": [30.52468, -89.68045], "size": "S"},
+        "Pierre": {"coords": [44.36965, -100.35679], "size": "S"},
+        "Pipestone": {"coords": [43.99946, -96.31155], "size": "S"},
+        "Pittsburgh": {"coords": [40.44467, -79.99155], "size": "L"},
+        "Pittsfield": {"coords": [42.45144, -73.25397], "size": "S"},
+        "Plano": {"coords": [41.66225, -88.5383], "size": "S"},
+        "Plattsburgh": {"coords": [44.69672, -73.44628], "size": "S"},
+        "Plymouth": {"coords": [41.33903, -86.31184], "size": "S"},
+        "Point Pleasant": {"coords": [38.84567, -82.13856], "size": "S"},
+        "Pomona": {"coords": [34.05912, -117.75133], "size": "S"},
+        "Ponca City": {"coords": [36.70083, -97.085], "size": "S"},
+        "Pontiac (IL)": {"coords": [40.87877, -88.63705], "size": "S"},
+        "Pontiac (MI)": {"coords": [42.63261, -83.29217], "size": "S"},
+        "Poplar Bluff": {"coords": [36.7539, -90.39336], "size": "S"},
+        "Port Henry": {"coords": [44.04237, -73.45884], "size": "S"},
+        "Port Huron": {"coords": [42.96049, -82.44376], "size": "S"},
+        "Portage": {"coords": [43.54702, -89.4672], "size": "S"},
+        "Portland (ME)": {"coords": [43.65409, -70.29125], "size": "M"},
+        "Portland (OR)": {"coords": [45.52908, -122.67677], "size": "L"},
+        "Potacello": {"coords": [42.86142, -112.44513], "size": "S"},
+        "Pottstown": {"coords": [40.24435, -75.64923], "size": "S"},
+        "Poughkeepsie": {"coords": [41.7071, -73.93766], "size": "S"},
+        "Prince-Beckley": {"coords": [37.8565, -81.06061], "size": "S"},
+        "Princeton (IL)": {"coords": [41.38526, -89.46692], "size": "S"},
+        "Princeton (MO)": {"coords": [40.39215, -93.579], "size": "S"},
+        "Princeton Junction": {"coords": [40.31635, -74.62383], "size": "S"},
+        "Providence": {"coords": [41.82924, -71.41328], "size": "L"},
+        "Provo": {"coords": [40.22587, -111.66398], "size": "M"},
+        "Pueblo": {"coords": [38.26251, -104.6174], "size": "S"},
+        "Purcell": {"coords": [35.01203, -97.35741], "size": "S"},
+        "Quantico": {"coords": [38.5217, -77.29312], "size": "S"},
+        "Quincy (FL)": {"coords": [30.58522, -84.5972], "size": "S"},
+        "Quincy (IL)": {"coords": [39.95701, -91.36852], "size": "S"},
+        "Raleigh": {"coords": [35.77729, -78.64751], "size": "L"},
+        "Randolph": {"coords": [43.92246, -72.66548], "size": "S"},
+        "Rantoul": {"coords": [40.3109, -88.15912], "size": "S"},
+        "Rapid City": {"coords": [44.08249, -103.22933], "size": "S"},
+        "Raton": {"coords": [36.90096, -104.43793], "size": "S"},
+        "Rawlins": {"coords": [41.78742, -107.23711], "size": "S"},
+        "Reading": {"coords": [40.33766, -75.92361], "size": "M"},
+        "Red Bluff": {"coords": [40.17566, -122.23851], "size": "S"},
+        "Red Wing": {"coords": [44.56633, -92.53706], "size": "S"},
+        "Redding": {"coords": [40.58372, -122.39333], "size": "S"},
+        "Reno": {"coords": [39.52872, -119.81156], "size": "M"},
+        "Rensselaer": {"coords": [40.94328, -87.15512], "size": "S"},
+        "Rhinecliff": {"coords": [41.92125, -73.95132], "size": "S"},
+        "Richmond": {"coords": [37.5351, -77.4287], "size": "L"},
+        "Richmond (CA)": {"coords": [37.93677, -122.3539], "size": "S"},
+        "Richmond (Staples Mill)": {"coords": [37.61769, -77.49694], "size": "M"},
+        "Riverside": {"coords": [33.97572, -117.3698], "size": "S"},
+        "Roanoke": {"coords": [37.27319, -79.94149], "size": "S"},
+        "Rochester (MN)": {"coords": [44.02739, -92.46569], "size": "M"},
+        "Rochester (NY)": {"coords": [43.1635, -77.60818], "size": "L"},
+        "Rock Springs": {"coords": [41.58867, -109.21573], "size": "S"},
+        "Rockford": {"coords": [42.26749, -89.09851], "size": "M"},
+        "Rockland": {"coords": [44.10077, -69.11324], "size": "S"},
+        "Rocklin": {"coords": [38.79105, -121.2374], "size": "S"},
+        "Rockville": {"coords": [39.08422, -77.14599], "size": "S"},
+        "Rocky Mount": {"coords": [35.93795, -77.79767], "size": "S"},
+        "Rolla": {"coords": [37.94961, -91.77], "size": "S"},
+        "Rome": {"coords": [43.19953, -75.44983], "size": "S"},
+        "Ronkonkoma": {"coords": [40.80834, -73.10588], "size": "S"},
+        "Roseland": {"coords": [27.83516, -80.49197], "size": "S"},
+        "Rosenberg": {"coords": [29.56098, -95.8047], "size": "S"},
+        "Roseville": {"coords": [38.74995, -121.28627], "size": "S"},
+        "Rouses Point": {"coords": [44.99506, -73.37121], "size": "S"},
+        "Route 128": {"coords": [42.21034, -71.14749], "size": "S"},
+        "Royal Oak": {"coords": [42.48927, -83.14761], "size": "S"},
+        "Rugby": {"coords": [48.36969, -99.99769], "size": "S"},
+        "Rutland": {"coords": [43.60576, -72.98175], "size": "S"},
+        "Saco": {"coords": [43.49605, -70.4492], "size": "S"},
+        "Sacramento": {"coords": [38.58637, -121.49924], "size": "L"},
+        "Saint-Jean-sur-Richelieu": {"coords": [45.31038, -73.2736], "size": "S"},
+        "Saint-Lambert": {"coords": [45.499, -73.50724], "size": "S"},
+        "Salem": {"coords": [44.93233, -123.02821], "size": "S"},
+        "Salinas": {"coords": [36.67922, -121.65666], "size": "S"},
+        "Salisbury (MD)": {"coords": [38.36247, -75.59617], "size": "S"},
+        "Salisbury (NC)": {"coords": [35.66736, -80.46619], "size": "S"},
+        "Salt Lake City": {"coords": [40.76256, -111.90906], "size": "L"},
+        "San Antonio": {"coords": [29.42046, -98.47789], "size": "L"},
+        "San Bernardino": {"coords": [34.10424, -117.30992], "size": "L"},
+        "San Clemente Pier": {"coords": [33.41964, -117.61973], "size": "S"},
+        "San Diego": {"coords": [32.71697, -117.16956], "size": "L"},
+        "San Francisco": {"coords": [37.7897, -122.39602], "size": "L"},
+        "San Jose": {"coords": [37.32902, -121.90312], "size": "L"},
+        "San Juan Capistrano": {"coords": [33.50087, -117.66392], "size": "S"},
+        "San Luis Obispo": {"coords": [35.27652, -120.65456], "size": "M"},
+        "San Marcos": {"coords": [29.87651, -97.94118], "size": "S"},
+        "San Tan Valley": {"coords": [33.17837, -111.5442], "size": "S"},
+        "San Ysidro": {"coords": [32.54472, -117.02889], "size": "S"},
+        "Sanderson": {"coords": [30.14023, -102.3995], "size": "S"},
+        "Sandpoint": {"coords": [48.2764, -116.54561], "size": "S"},
+        "Sandusky": {"coords": [41.44067, -82.71867], "size": "S"},
+        "Sanford": {"coords": [28.80878, -81.29144], "size": "S"},
+        "Santa Ana": {"coords": [33.75157, -117.85643], "size": "S"},
+        "Santa Barbara": {"coords": [34.41365, -119.69291], "size": "M"},
+        "Santa Clara": {"coords": [37.3531, -121.93624], "size": "S"},
+        "Saratoga Springs": {"coords": [43.08282, -73.81017], "size": "S"},
+        "Savannah": {"coords": [32.08361, -81.14841], "size": "M"},
+        "Schenectady": {"coords": [42.81456, -73.94273], "size": "S"},
+        "Schriever": {"coords": [29.74667, -90.81524], "size": "S"},
+        "Scottsburg": {"coords": [38.68713, -85.77139], "size": "S"},
+        "Scranton": {"coords": [41.40542, -75.66307], "size": "M"},
+        "Seaford": {"coords": [38.64239, -75.61678], "size": "S"},
+        "Seattle": {"coords": [47.59838, -122.3299], "size": "L"},
+        "Sebring": {"coords": [27.49655, -81.4343], "size": "S"},
+        "Sedalia": {"coords": [38.71156, -93.22838], "size": "S"},
+        "Seguin": {"coords": [29.58308, -97.96655], "size": "S"},
+        "Selbyville": {"coords": [38.45837, -75.2279], "size": "S"},
+        "Selma": {"coords": [35.53264, -78.2801], "size": "S"},
+        "Shelby": {"coords": [48.50684, -111.85715], "size": "S"},
+        "Shoshoni": {"coords": [43.27558, -108.11664], "size": "S"},
+        "Shreveport": {"coords": [32.50625, -93.75112], "size": "M"},
+        "Sidney": {"coords": [40.28632, -84.16215], "size": "S"},
+        "Sierra Blanca": {"coords": [31.17885, -105.36818], "size": "S"},
+        "Simi Valley": {"coords": [34.2702, -118.69516], "size": "S"},
+        "Sioux City": {"coords": [42.49212, -96.39996], "size": "S"},
+        "Sioux Falls": {"coords": [43.54945, -96.72084], "size": "M"},
+        "Slidell": {"coords": [30.27844, -89.78255], "size": "S"},
+        "Slinger": {"coords": [43.33024, -88.28911], "size": "S"},
+        "Sneads": {"coords": [30.70761, -84.92358], "size": "S"},
+        "Socorro": {"coords": [34.05664, -106.88392], "size": "S"},
+        "Solana Beach": {"coords": [32.99298, -117.27127], "size": "S"},
+        "Sonoma": {"coords": [38.24523, -122.43815], "size": "S"},
+        "South Bend": {"coords": [41.67826, -86.28742], "size": "M"},
+        "South Broadway": {"coords": [39.70157, -104.99], "size": "S"},
+        "South Portsmouth": {"coords": [38.72128, -82.96375], "size": "S"},
+        "Southern Pines": {"coords": [35.17494, -79.3904], "size": "S"},
+        "Sparks": {"coords": [39.53214, -119.75718], "size": "S"},
+        "Spartanburg": {"coords": [34.95352, -81.93751], "size": "S"},
+        "Spokane": {"coords": [47.65633, -117.41535], "size": "M"},
+        "Springfield (IL)": {"coords": [39.80234, -89.65157], "size": "M"},
+        "Springfield (MA)": {"coords": [42.10652, -72.59364], "size": "M"},
+        "Springfield (MO)": {"coords": [37.23121, -93.2792], "size": "M"},
+        "Springfield (OH)": {"coords": [39.92206, -83.81146], "size": "S"},
+        "St. Albans": {"coords": [44.81227, -73.08608], "size": "S"},
+        "St. Augustine": {"coords": [29.89441, -81.32214], "size": "S"},
+        "St. Catherines": {"coords": [43.14776, -79.25621], "size": "S"},
+        "St. Cloud": {"coords": [45.56783, -94.14895], "size": "S"},
+        "St. Joseph (MI)": {"coords": [42.10915, -86.48447], "size": "S"},
+        "St. Joseph (MO)": {"coords": [39.75386, -94.85395], "size": "S"},
+        "St. Louis": {"coords": [38.62421, -90.20361], "size": "L"},
+        "St. Paul": {"coords": [44.94702, -93.08544], "size": "L"},
+        "Stamford": {"coords": [41.0469, -73.542], "size": "S"},
+        "Stanley": {"coords": [48.3199, -102.3895], "size": "S"},
+        "Stanwood": {"coords": [48.24261, -122.35007], "size": "S"},
+        "Staples": {"coords": [46.3545, -94.79548], "size": "S"},
+        "Statesville": {"coords": [35.7755, -80.88793], "size": "S"},
+        "Staunton": {"coords": [38.14748, -79.07249], "size": "S"},
+        "Steamboat Springs Downtown": {"coords": [40.48271, -106.8322], "size": "S"},
+        "Steamboat Springs Resort": {"coords": [40.46426, -106.82794], "size": "S"},
+        "Sterling Ranch": {"coords": [39.51028, -105.01854], "size": "S"},
+        "Stockton": {"coords": [37.95708, -121.27888], "size": "M"},
+        "Stockton (San Joaquin)": {"coords": [37.9453, -121.28556], "size": "S"},
+        "Stuart": {"coords": [27.19824, -80.25346], "size": "S"},
+        "Sturtevant": {"coords": [42.71829, -87.90599], "size": "S"},
+        "Suisun-Fairfield": {"coords": [38.24345, -122.04119], "size": "S"},
+        "Summit": {"coords": [41.79497, -87.80965], "size": "S"},
+        "Superior": {"coords": [46.72824, -92.09988], "size": "S"},
+        "Sweetwater": {"coords": [32.47032, -100.40512], "size": "S"},
+        "Syracuse": {"coords": [43.07706, -76.16992], "size": "M"},
+        "Tacoma": {"coords": [47.2396, -122.42816], "size": "M"},
+        "Tallahassee": {"coords": [30.43273, -84.28476], "size": "M"},
+        "Tampa": {"coords": [27.95272, -82.45021], "size": "L"},
+        "Taylor": {"coords": [30.56766, -97.40795], "size": "S"},
+        "Tempe": {"coords": [33.42781, -111.94369], "size": "M"},
+        "Temple": {"coords": [31.09572, -97.34529], "size": "S"},
+        "Terre Haute": {"coords": [39.47573, -87.4128], "size": "S"},
+        "Texarkana": {"coords": [33.4199, -94.04295], "size": "S"},
+        "The Dalles": {"coords": [45.60168, -121.18041], "size": "S"},
+        "Thermopolis": {"coords": [43.64654, -108.20585], "size": "S"},
+        "Thompson Falls": {"coords": [47.59484, -115.34731], "size": "S"},
+        "Ticonderoga": {"coords": [43.85385, -73.38974], "size": "S"},
+        "Titusville": {"coords": [28.6057, -80.80975], "size": "S"},
+        "Toccoa": {"coords": [34.57844, -83.33182], "size": "S"},
+        "Toledo": {"coords": [41.63818, -83.5414], "size": "M"},
+        "Tomah": {"coords": [43.98602, -90.50551], "size": "S"},
+        "Topeka": {"coords": [39.05139, -95.6648], "size": "M"},
+        "Toronto": {"coords": [43.64456, -79.38034], "size": "L"},
+        "Trenton (MO)": {"coords": [40.07461, -93.61191], "size": "S"},
+        "Trenton (NJ)": {"coords": [40.21879, -74.75432], "size": "M"},
+        "Trinidad": {"coords": [37.17229, -104.50846], "size": "S"},
+        "Troy (MI)": {"coords": [42.54259, -83.19089], "size": "S"},
+        "Troy (OH)": {"coords": [40.03897, -84.19981], "size": "S"},
+        "Truckee": {"coords": [39.32749, -120.18567], "size": "S"},
+        "Tucson": {"coords": [32.22329, -110.9669], "size": "L"},
+        "Tukwila": {"coords": [47.46066, -122.24052], "size": "S"},
+        "Tullahoma": {"coords": [35.3624, -86.19836], "size": "S"},
+        "Tulsa": {"coords": [36.15375, -95.99838], "size": "L"},
+        "Turlock-Denair": {"coords": [37.52726, -120.79807], "size": "S"},
+        "Tuscaloosa": {"coords": [33.19341, -87.56014], "size": "S"},
+        "Tyrone": {"coords": [40.66766, -78.24047], "size": "S"},
+        "Uhrichsville": {"coords": [40.39197, -81.33207], "size": "S"},
+        "Utica (IL)": {"coords": [41.34264, -89.00718], "size": "S"},
+        "Utica (NY)": {"coords": [43.10418, -75.22322], "size": "M"},
+        "Valparaiso": {"coords": [41.46457, -87.06136], "size": "S"},
+        "Van Nuys": {"coords": [34.21139, -118.44833], "size": "S"},
+        "Vancouver (BC)": {"coords": [49.27379, -123.09791], "size": "L"},
+        "Vancouver (WA)": {"coords": [45.62876, -122.68661], "size": "S"},
+        "Ventura": {"coords": [34.27694, -119.29988], "size": "S"},
+        "Vernon": {"coords": [34.162, -99.28316], "size": "S"},
+        "Vero Beach": {"coords": [27.63822, -80.39711], "size": "S"},
+        "Victorville": {"coords": [34.53739, -117.29372], "size": "S"},
+        "Wallace": {"coords": [34.73551, -77.99629], "size": "S"},
+        "Wallingford": {"coords": [41.46161, -72.82279], "size": "S"},
+        "Walnut Ridge": {"coords": [36.06753, -90.95674], "size": "S"},
+        "Walsenburg": {"coords": [37.62568, -104.78105], "size": "S"},
+        "Walton": {"coords": [38.87174, -84.61124], "size": "S"},
+        "Warrensburg": {"coords": [38.76281, -93.7409], "size": "S"},
+        "Warsaw (IN)": {"coords": [41.23582, -85.85596], "size": "S"},
+        "Warsaw (NC)": {"coords": [34.99814, -78.09347], "size": "S"},
+        "Wasco": {"coords": [35.59393, -119.33193], "size": "S"},
+        "Washington (DC)": {"coords": [38.89725, -77.00634], "size": "L"},
+        "Washington (MO)": {"coords": [38.56157, -91.01246], "size": "S"},
+        "Waterbury": {"coords": [44.33501, -72.7518], "size": "S"},
+        "Waterloo": {"coords": [41.43175, -85.0243], "size": "S"},
+        "Watertown": {"coords": [43.18695, -88.72537], "size": "S"},
+        "Waycross": {"coords": [31.21051, -82.3576], "size": "S"},
+        "Wayzata": {"coords": [44.96978, -93.51494], "size": "S"},
+        "Weatherford": {"coords": [32.76361, -97.79854], "size": "S"},
+        "Wellington": {"coords": [37.26075, -97.39716], "size": "S"},
+        "Wells": {"coords": [43.32078, -70.61214], "size": "S"},
+        "Wenatchee": {"coords": [47.42164, -120.30654], "size": "S"},
+        "West Falmouth": {"coords": [43.73306, -70.29424], "size": "S"},
+        "West Glacier": {"coords": [48.4961, -113.97938], "size": "S"},
+        "West Palm Beach": {"coords": [26.71201, -80.05546], "size": "L"},
+        "Westerly": {"coords": [41.38119, -71.82986], "size": "S"},
+        "Westminster": {"coords": [39.85569, -105.06207], "size": "S"},
+        "Westport": {"coords": [44.18722, -73.45184], "size": "S"},
+        "Wheatland": {"coords": [42.056, -104.95145], "size": "S"},
+        "White River Junction": {"coords": [43.6478, -72.31751], "size": "S"},
+        "White Sulphur Springs": {"coords": [37.78661, -80.30382], "size": "S"},
+        "Whitefish": {"coords": [48.41355, -114.33571], "size": "S"},
+        "Whitehall": {"coords": [43.55475, -73.40321], "size": "S"},
+        "Wichita": {"coords": [37.68411, -97.32983], "size": "M"},
+        "Wichita Falls": {"coords": [33.91622, -98.49136], "size": "S"},
+        "Wickenburg": {"coords": [33.96909, -112.73279], "size": "S"},
+        "Williams": {"coords": [35.25137, -112.19072], "size": "S"},
+        "Williamsburg": {"coords": [37.27654, -76.70865], "size": "S"},
+        "Williston": {"coords": [48.14285, -103.6211], "size": "S"},
+        "Willmar": {"coords": [45.12244, -95.05172], "size": "S"},
+        "Wilmington (DE)": {"coords": [39.73719, -75.55126], "size": "M"},
+        "Wilmington (NC)": {"coords": [34.25209, -77.93932], "size": "M"},
+        "Wilson": {"coords": [35.72318, -77.90787], "size": "S"},
+        "Windsor (CT)": {"coords": [41.85215, -72.64229], "size": "S"},
+        "Windsor (ON)": {"coords": [42.30273, -83.03902], "size": "S"},
+        "Windsor Locks": {"coords": [41.91395, -72.62603], "size": "S"},
+        "Windsor-Mt. Ascutney": {"coords": [43.48008, -72.38485], "size": "S"},
+        "Winnemucca": {"coords": [40.96884, -117.73234], "size": "S"},
+        "Winona": {"coords": [44.04431, -91.64015], "size": "S"},
+        "Winslow": {"coords": [35.02167, -110.69498], "size": "S"},
+        "Winston-Salem": {"coords": [36.09465, -80.23837], "size": "M"},
+        "Winter Haven": {"coords": [28.00202, -81.73492], "size": "S"},
+        "Winter Park": {"coords": [28.5971, -81.35187], "size": "S"},
+        "Winter Park Resort": {"coords": [39.88758, -105.76324], "size": "S"},
+        "Wisconsin Dells": {"coords": [43.62663, -89.77753], "size": "S"},
+        "Wishram": {"coords": [45.65765, -120.96639], "size": "S"},
+        "Woburn": {"coords": [42.51735, -71.14421], "size": "S"},
+        "Wolf Point": {"coords": [48.09152, -105.64305], "size": "S"},
+        "Woodbridge": {"coords": [38.65896, -77.24793], "size": "S"},
+        "Woodward": {"coords": [36.4374, -99.38781], "size": "S"},
+        "Worcester": {"coords": [42.26123, -71.79496], "size": "M"},
+        "Worland": {"coords": [44.01594, -107.9632], "size": "S"},
+        "Wytheville": {"coords": [36.94214, -81.07837], "size": "S"},
+        "Yakima": {"coords": [46.6031, -120.50842], "size": "S"},
+        "Yates Center": {"coords": [37.88877, -95.69398], "size": "S"},
+        "Yazoo City": {"coords": [32.84842, -90.41516], "size": "S"},
+        "Yemassee": {"coords": [32.68828, -80.8469], "size": "S"},
+        "Yonkers": {"coords": [40.93561, -73.90231], "size": "S"},
+        "Youngstown": {"coords": [41.0996, -80.65652], "size": "M"},
+        "Yuba City": {"coords": [39.14179, -121.59941], "size": "S"},
+        "Yuma": {"coords": [32.72298, -114.61556], "size": "S"}
+    },
+
+    "routes": {
+        "Exists": {
+            "State-Supported": {
+                "Acela": {
+                    "name": "Washington - Boston",
+                    "type": "Exists",
+                    "stops": ["Washington (DC)", "BWI Thurgood Marshall Airport", "Baltimore (MD)", "Wilmington (DE)", "Philadelphia", "Trenton (NJ)", "Metropark", "Newark", "New York", "Stamford", "New Haven", "Providence", "Route 128", "Boston"]
+                },
+                "Adirondack": {
+                    "name": "New York - Montréal",
+                    "type": "Exists",
+                    "stops": ["New York", "Yonkers", "Croton-Harmon", "Poughkeepsie", "Rhinecliff", "Hudson", "Albany-Rensselaer", "Schenectady", "Saratoga Springs", "Fort Edward", "Whitehall", "Ticonderoga", "Port Henry", "Westport", "Plattsburgh", "Rouses Point", "Saint-Lambert", "Montréal"]
+                },
+                "Berkshire Flyer": {
+                    "name": "New York - Pittsfield",
+                    "type": "Exists",
+                    "stops": ["New York", "Yonkers", "Croton-Harmon", "Poughkeepsie", "Rhinecliff", "Hudson", "Albany-Rensselaer", "Pittsfield"]
+                },
+                "Blue Water": {
+                    "name": "Chicago - Port Huron",
+                    "type": "Exists",
+                    "stops": ["Chicago", "New Buffalo", "Niles", "Dowagiac", "Kalamazoo", "Battle Creek", "Lansing", "Durand", "Flint", "Lapeer", "Port Huron"]
+                },
+                "Borealis": {
+                    "name": "Chicago - St. Paul",
+                    "type": "Exists, Corridor ID Program",
+                    "stops": ["Chicago", "Glenview", "Sturtevant", "Milwaukee Airport", "Milwaukee", "Columbus (WI)", "Portage", "Wisconsin Dells", "Tomah", "La Crosse", "Winona", "Red Wing", "St. Paul"],
+                    "project": ["TCMC Service Expansion via La Crosse", "In 2024, the Borealis route opened as Minnesota's first state-supported service to supplement the daily Empire Builder along the Twin Cities-Milwaukee-Chicago corridor."]
+                },
+                "Capitol Corridor": {
+                    "name": "San Jose - Auburn",
+                    "type": "Exists",
+                    "stops": ["San Jose", "Santa Clara", "Great America", "Fremont (CA)", "Hayward", "Oakland Coliseum", "Oakland (CA)", "Emeryville", "Berkeley", "Richmond (CA)", "Martinez", "Suisun-Fairfield", "Fairfield-Vacaville", "Davis", "Sacramento", "Roseville", "Rocklin", "Auburn (CA)"]
+                },
+                "Carolinian": {
+                    "name": "New York - Charlotte",
+                    "type": "Exists",
+                    "stops": ["New York", "Newark", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore (MD)", "Washington (DC)", "Alexandria (VA)", "Quantico", "Fredericksburg", "Richmond (Staples Mill)", "Petersburg", "Rocky Mount", "Wilson", "Selma", "Raleigh", "Cary", "Durham (NC)", "Burlington (NC)", "Greensboro", "High Point", "Lexington (NC)", "Salisbury (NC)", "Kannapolis", "Charlotte"]
+                },
+                "Cascades": {
+                    "name": "Eugene - Vancouver",
+                    "type": "Exists",
+                    "stops": ["Eugene", "Albany", "Salem", "Oregon City", "Portland (OR)", "Vancouver (WA)", "Kelso-Longview", "Centralia (WA)", "Olympia-Lacey", "Tacoma", "Tukwila", "Seattle", "Edmonds", "Everett", "Stanwood", "Mount Vernon", "Bellingham", "Vancouver (BC)"]
+                },
+                "Downeaster": {
+                    "name": "Boston - Brunswick",
+                    "type": "Exists",
+                    "stops": ["Boston (North)", "Woburn", "Haverhill", "Exeter", "Durham (NH)", "Dover (NH)", "Wells", "Saco", "Old Orchard Beach", "Portland (ME)", "Freeport", "Brunswick"]
+                },
+                "Empire Service": {
+                    "name": "New York - Niagara Falls",
+                    "type": "Exists",
+                    "stops": ["New York", "Yonkers", "Croton-Harmon", "Poughkeepsie", "Rhinecliff", "Hudson", "Albany-Rensselaer", "Schenectady", "Amsterdam", "Utica (NY)", "Rome", "Syracuse", "Rochester (NY)", "Buffalo (Depew)", "Buffalo", "Niagara Falls (NY)"]
+                },
+                "Ethan Allen Express": {
+                    "name": "New York - Burlington",
+                    "type": "Exists",
+                    "stops": ["New York", "Yonkers", "Croton-Harmon", "Poughkeepsie", "Rhinecliff", "Hudson", "Albany-Rensselaer", "Schenectady", "Saratoga Springs", "Fort Edward", "Castleton", "Rutland", "Middlebury", "Ferrisburgh-Vergennes", "Burlington (VT)"]
+                },
+                "Gold Runner": {
+                    "type": "Exists",
+                    "branches": [
+                        {
+                            "name": "Bakersfield - Oakland",
+                            "stops": ["Bakersfield", "Wasco", "Corcoran", "Hanford", "Fresno", "Madera", "Merced", "Turlock-Denair", "Modesto", "Stockton (San Joaquin)", "Antioch-Pittsburg", "Martinez", "Richmond (CA)", "Emeryville", "Oakland (CA)"]
+                        },
+                        {
+                            "name": "Bakersfield - Sacramento",
+                            "stops": ["Bakersfield", "Wasco", "Corcoran", "Hanford", "Fresno", "Madera", "Merced", "Turlock-Denair", "Modesto", "Stockton", "Lodi", "Sacramento"]
+                        }
+                    ]
+                },
+                "Hartford Line": {
+                    "name": "New Haven - Springfield",
+                    "type": "Exists",
+                    "stops": ["New Haven", "New Haven (State Street)", "Wallingford", "Meriden", "Berlin (CT)", "Hartford", "Windsor (CT)", "Windsor Locks", "Springfield (MA)"]
+                },
+                "Heartland Flyer": {
+                    "name": "Fort Worth - Oklahoma City",
+                    "type": "Exists",
+                    "stops": ["Fort Worth", "Gainesville (TX)", "Ardmore", "Pauls Valley", "Purcell", "Norman", "Oklahoma City"]
+                },
+                "Hiawatha": {
+                    "name": "Chicago - Milwaukee",
+                    "type": "Exists",
+                    "stops": ["Chicago", "Glenview", "Sturtevant", "Milwaukee Airport", "Milwaukee"]
+                },
+                "Illini-Saluki": {
+                    "name": "Chicago - Carbondale",
+                    "type": "Exists",
+                    "stops": ["Chicago", "Homewood", "Kankakee", "Gilman", "Rantoul", "Champaign-Urbana", "Mattoon", "Effingham", "Centralia (IL)", "Du Quoin", "Carbondale"]
+                },
+                "Illinois Zephyr": {
+                    "name": "Chicago - Quincy",
+                    "type": "Exists",
+                    "stops": ["Chicago", "La Grange (IL)", "Naperville", "Plano", "Mendota", "Princeton (IL)", "Kewanee", "Galesburg", "Macomb", "Quincy (IL)"]
+                },
+                "Keystone Service": {
+                    "name": "New York - Harrisburg",
+                    "type": "Exists",
+                    "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "Cornwells Heights", "North Philadelphia", "Philadelphia", "Ardmore", "Paoli", "Exton", "Downingtown", "Coatesville", "Parkesburg", "Lancaster", "Mount Joy", "Elizabethtown (PA)", "Middletown (PA)", "Harrisburg"]
+                },
+                "Lincoln Service": {
+                    "name": "Chicago - St. Louis",
+                    "type": "Exists",
+                    "stops": ["Chicago", "Summit", "Joliet", "Dwight", "Pontiac (IL)", "Bloomington-Normal", "Lincoln (IL)", "Springfield (IL)", "Carlinville", "Alton", "St. Louis"]
+                },
+                "Maple Leaf": {
+                    "name": "New York - Toronto",
+                    "type": "Exists",
+                    "stops": ["New York", "Yonkers", "Croton-Harmon", "Poughkeepsie", "Rhinecliff", "Hudson", "Albany-Rensselaer", "Schenectady", "Amsterdam", "Utica (NY)", "Rome", "Syracuse", "Rochester (NY)", "Buffalo (Depew)", "Buffalo", "Niagara Falls (NY)", "Niagara Falls (ON)", "St. Catherines", "Grimsby", "Aldershot", "Oakville", "Toronto"]
+                },
+                "Mardi Gras Service": {
+                    "name": "New Orleans - Mobile",
+                    "type": "Exists, Corridor ID Program",
+                    "stops": ["New Orleans", "Bay St. Louis", "Gulfport", "Biloxi", "Pascagoula", "Mobile"],
+                    "project": ["Gulf Coast Passenger Rail", "Amtrak service east of New Orleans has been suspended since Hurricane Katrina. In 2025, the Mardi Gras route restores service along part of the original route."]
+                },
+                "Missouri River Runner": {
+                    "name": "St. Louis - Kansas City",
+                    "type": "Exists",
+                    "stops": ["St. Louis", "Kirkwood", "Washington (MO)", "Hermann", "Jefferson City", "Sedalia", "Warrensburg", "Lee's Summit", "Independence (MO)", "Kansas City"]
+                },
+                "Northeast Regional": {
+                    "type": "Exists",
+                    "branches": [
+                        {
+                            "name": "New York - Boston",
+                            "stops": ["New York", "New Rochelle", "Stamford", "Bridgeport (CT)", "New Haven", "New Haven (State Street)", "Old Saybrook", "New London", "Mystic", "Westerly", "Kingston", "Providence", "Route 128", "Back Bay", "Boston"]
+                        },
+                        {
+                            "name": "New York - Newport News",
+                            "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "North Philadelphia", "Philadelphia", "Wilmington (DE)", "Newark (DE)", "Aberdeen", "Baltimore (MD)", "BWI Thurgood Marshall Airport", "New Carrollton", "Washington (DC)", "Alexandria (VA)", "Woodbridge", "Quantico", "Fredericksburg", "Ashland (VA)", "Richmond (Staples Mill)", "Richmond", "Williamsburg", "Newport News"]
+                        },
+                        {
+                            "name": "New York - Norfolk",
+                            "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "North Philadelphia", "Philadelphia", "Wilmington (DE)", "Newark (DE)", "Aberdeen", "Baltimore (MD)", "BWI Thurgood Marshall Airport", "New Carrollton", "Washington (DC)", "Alexandria (VA)", "Woodbridge", "Quantico", "Fredericksburg", "Ashland (VA)", "Richmond (Staples Mill)", "Petersburg", "Norfolk"]
+                        },
+                        {
+                            "name": "New York - Roanoke",
+                            "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "North Philadelphia", "Philadelphia", "Wilmington (DE)", "Newark (DE)", "Aberdeen", "Baltimore (MD)", "BWI Thurgood Marshall Airport", "New Carrollton", "Washington (DC)", "Alexandria (VA)", "Burke Centre", "Manassas", "Culpeper", "Charlottesville", "Lynchburg", "Roanoke"]
+                        },
+                        {
+                            "name": "New York - Springfield",
+                            "stops": ["New York", "New Rochelle", "Stamford", "Bridgeport (CT)", "New Haven", "New Haven (State Street)", "Wallingford", "Meriden", "Berlin (CT)", "Hartford", "Windsor (CT)", "Windsor Locks", "Springfield (MA)"]
+                        }
+                    ]
+                },
+                "Pennsylvanian": {
+                    "name": "New York - Pittsburgh",
+                    "type": "Exists",
+                    "stops": ["New York", "Newark", "Trenton (NJ)", "Philadelphia", "Ardmore", "Paoli", "Exton", "Lancaster", "Elizabethtown (PA)", "Harrisburg", "Lewistown", "Huntingdon", "Tyrone", "Altoona", "Johnstown", "Latrobe", "Greensburg", "Pittsburgh"]
+                },
+                "Pacific Surfliner": {
+                    "name": "San Diego - San Luis Obispo",
+                    "type": "Exists",
+                    "stops": ["San Diego", "Old Town", "Solana Beach", "Oceanside", "San Clemente Pier", "San Juan Capistrano", "Irvine", "Santa Ana", "Anaheim", "Fullerton", "Los Angeles", "Glendale", "Burbank Downtown", "Burbank Airport", "Van Nuys", "Northridge", "Chatsworth", "Simi Valley", "Moorpark", "Camarillo", "Oxnard", "Ventura", "Carpinteria", "Santa Barbara", "Goleta", "Lompoc-Surf", "Guadalupe", "Grover Beach", "San Luis Obispo"]
+                },
+                "Pere Marquette": {
+                    "name": "Chicago - Grand Rapids",
+                    "type": "Exists",
+                    "stops": ["Chicago", "St. Joseph (MI)", "Bangor", "Holland", "Grand Rapids"]
+                },
+                "Piedmont": {
+                    "name": "Charlotte - Raleigh",
+                    "type": "Exists",
+                    "stops": ["Charlotte", "Salisbury (NC)", "Lexington (NC)", "High Point", "Greensboro", "Burlington (NC)", "Durham (NC)", "Cary", "Raleigh"]
+                },
+                "Valley Flyer": {
+                    "name": "New Haven - Greenfield",
+                    "type": "Exists",
+                    "stops": ["New Haven", "New Haven (State Street)", "Wallingford", "Meriden", "Berlin (CT)", "Hartford", "Windsor (CT)", "Windsor Locks", "Springfield (MA)", "Holyoke", "Northampton", "Greenfield"]
+                },
+                "Vermonter": {
+                    "name": "Washington - St. Albans",
+                    "type": "Exists",
+                    "stops": ["Washington (DC)", "New Carrollton", "BWI Thurgood Marshall Airport", "Baltimore (MD)", "Wilmington (DE)", "Philadelphia", "Trenton (NJ)", "Princeton Junction", "Metropark", "Newark", "New York", "Stamford", "Bridgeport (CT)", "New Haven", "Meriden", "Hartford", "Windsor Locks", "Springfield (MA)", "Holyoke", "Northampton", "Greenfield", "Brattleboro", "Bellows Falls", "Claremont", "Windsor-Mt. Ascutney", "White River Junction", "Randolph", "Montpelier", "Waterbury", "Essex Junction", "St. Albans"]
+                },
+                "Winter Park Express": {
+                    "name": "Denver - Winter Park",
+                    "type": "Temporary",
+                    "stops": ["Denver", "Winter Park Resort", "Fraser-Winter Park"]
+                },
+                "Wolverine": {
+                    "name": "Chicago - Pontiac (via New Center)",
+                    "type": "Exists",
+                    "stops": ["Chicago", "Hammond-Whiting", "New Buffalo", "Niles", "Dowagiac", "Kalamazoo", "Battle Creek", "Albion", "Jackson (MI)", "Ann Arbor", "Dearborn", "Detroit (New Center)", "Royal Oak", "Troy (MI)", "Pontiac (MI)"]
+                }
+            },
+            "Long-Distance": {
+                "Auto Train": {
+                    "name": "Lorton - Sanford",
+                    "type": "Exists",
+                    "stops": ["Lorton", "Sanford"]
+                },
+                "California Zephyr": {
+                    "name": "Chicago - Emeryville",
+                    "type": "Exists",
+                    "stops": ["Chicago", "Naperville", "Princeton (IL)", "Galesburg", "Burlington (IA)", "Mt. Pleasant", "Ottumwa", "Osceola", "Creston", "Omaha", "Lincoln (NE)", "Hastings", "Holdrege", "McCook", "Fort Morgan", "Denver", "Fraser-Winter Park", "Granby", "Glenwood Springs", "Grand Junction", "Green River", "Helper", "Provo", "Salt Lake City", "Elko", "Winnemucca", "Reno", "Truckee", "Colfax", "Roseville", "Sacramento", "Davis", "Martinez", "Richmond (CA)", "Emeryville"]
+                },
+                "Capitol Limited": {
+                    "name": "Chicago - Washington",
+                    "type": "Suspended",
+                    "stops": ["Chicago", "South Bend", "Elkhart", "Waterloo", "Bryan", "Toledo", "Sandusky", "Elyria", "Cleveland", "Alliance", "Pittsburgh", "Connellsville", "Cumberland", "Martinsburg", "Harpers Ferry", "Rockville", "Washington (DC)"]
+                },
+                "Cardinal": {
+                    "name": "Chicago - New York (via Cincinnati)",
+                    "type": "Exists",
+                    "stops": ["Chicago", "Dyer", "Rensselaer", "Lafayette (IN)", "Crawfordsville", "Indianapolis", "Connersville", "Oxford", "Cincinnati", "Maysville", "South Portsmouth", "Ashland (KY)", "Huntington", "Charleston", "Prince-Beckley", "White Sulphur Springs", "Clifton Forge", "Staunton", "Charlottesville", "Culpeper", "Manassas", "Alexandria (VA)", "Washington (DC)", "Baltimore (MD)", "Wilmington (DE)", "Philadelphia", "Trenton (NJ)", "Newark", "New York"]
+                },
+                "City of New Orleans": {
+                    "name": "Chicago - New Orleans",
+                    "type": "Exists",
+                    "stops": ["Chicago", "Homewood", "Kankakee", "Champaign-Urbana", "Mattoon", "Effingham", "Centralia (IL)", "Carbondale", "Fulton", "Newbern-Dyersburg", "Memphis", "Marks", "Greenwood", "Yazoo City", "Jackson (MS)", "Hazlehurst", "Brookhaven", "McComb", "Hammond", "New Orleans"]
+                },
+                "Coast Starlight": {
+                    "name": "Los Angeles - Seattle",
+                    "type": "Exists",
+                    "stops": ["Los Angeles", "Burbank Downtown", "Van Nuys", "Simi Valley", "Oxnard", "Santa Barbara", "San Luis Obispo", "Paso Robles", "Salinas", "San Jose", "Oakland (CA)", "Emeryville", "Martinez", "Davis", "Sacramento", "Chico", "Redding", "Dunsmuir", "Klamath Falls", "Chemult", "Eugene", "Albany", "Salem", "Portland (OR)", "Vancouver (WA)", "Kelso-Longview", "Centralia (WA)", "Olympia-Lacey", "Tacoma", "Seattle"]
+                },
+                "Crescent": {
+                    "name": "New York - New Orleans",
+                    "type": "Exists",
+                    "stops": ["New York", "Newark", "Metropark", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore (MD)", "BWI Thurgood Marshall Airport", "Washington (DC)", "Alexandria (VA)", "Manassas", "Culpeper", "Charlottesville", "Lynchburg", "Danville", "Greensboro", "High Point", "Salisbury (NC)", "Charlotte", "Gastonia", "Spartanburg", "Greenville (SC)", "Clemson", "Toccoa", "Gainesville (GA)", "Atlanta", "Anniston", "Birmingham", "Tuscaloosa", "Meridian", "Laurel", "Hattiesburg", "Picayune", "Slidell", "New Orleans"]
+                },
+                "Empire Builder": {
+                    "type": "Exists",
+                    "branches": [
+                        {
+                            "name": "Chicago - Portland",
+                            "stops": ["Chicago", "Glenview", "Milwaukee", "Columbus (WI)", "Portage", "Wisconsin Dells", "Tomah", "La Crosse", "Winona", "Red Wing", "St. Paul", "St. Cloud", "Staples", "Detroit Lakes", "Fargo", "Grand Forks", "Devils Lake", "Rugby", "Minot", "Stanley", "Williston", "Wolf Point", "Glasgow", "Malta", "Havre", "Shelby", "Cut Bank", "Browning", "East Glacier Park", "Essex", "West Glacier", "Whitefish", "Libby", "Sandpoint", "Spokane", "Pasco", "Wishram", "Bingen-White Salmon", "Vancouver (WA)", "Portland (OR)"]
+                        },
+                        {
+                            "name": "Chicago - Seattle",
+                            "stops": ["Chicago", "Glenview", "Milwaukee", "Columbus (WI)", "Portage", "Wisconsin Dells", "Tomah", "La Crosse", "Winona", "Red Wing", "St. Paul", "St. Cloud", "Staples", "Detroit Lakes", "Fargo", "Grand Forks", "Devils Lake", "Rugby", "Minot", "Stanley", "Williston", "Wolf Point", "Glasgow", "Malta", "Havre", "Shelby", "Cut Bank", "Browning", "East Glacier Park", "Essex", "West Glacier", "Whitefish", "Libby", "Sandpoint", "Spokane", "Ephrata", "Wenatchee", "Leavenworth", "Everett", "Edmonds", "Seattle"]
+                        }
+                    ]
+                },
+                "Floridian": {
+                    "type": "Temporary",
+                    "branches": [
+                        {
+                            "name": "Chicago - Miami (via Washington)",
+                            "stops": ["Chicago", "South Bend", "Elkhart", "Waterloo", "Bryan", "Toledo", "Sandusky", "Elyria", "Cleveland", "Alliance", "Pittsburgh", "Connellsville", "Cumberland", "Martinsburg", "Harpers Ferry", "Rockville", "Washington (DC)", "Alexandria (VA)", "Richmond (Staples Mill)", "Petersburg", "Rocky Mount", "Raleigh", "Cary", "Southern Pines", "Hamlet", "Camden (SC)", "Columbia (SC)", "Denmark", "Savannah", "Jacksonville (Clifford Lane)", "Palatka", "DeLand", "Winter Park", "Orlando", "Kissimmee", "Winter Haven", "Sebring", "Okeechobee", "West Palm Beach", "Delray Beach", "Deerfield Beach", "Fort Lauderdale", "Hollywood", "Miami"]
+                        },
+                        {
+                            "name": "Chicago - Tampa",
+                            "stops": ["Chicago", "South Bend", "Elkhart", "Waterloo", "Bryan", "Toledo", "Sandusky", "Elyria", "Cleveland", "Alliance", "Pittsburgh", "Connellsville", "Cumberland", "Martinsburg", "Harpers Ferry", "Rockville", "Washington (DC)", "Alexandria (VA)", "Richmond (Staples Mill)", "Petersburg", "Rocky Mount", "Raleigh", "Cary", "Southern Pines", "Hamlet", "Camden (SC)", "Columbia (SC)", "Denmark", "Savannah", "Jacksonville (Clifford Lane)", "Palatka", "DeLand", "Winter Park", "Orlando", "Kissimmee", "Lakeland", "Tampa"]
+                        }
+                    ]
+                },
+                "Lake Shore Limited": {
+                    "type": "Exists",
+                    "branches": [
+                        {
+                            "name": "Chicago - New York (via Cleveland)",
+                            "stops": ["Chicago", "South Bend", "Elkhart", "Waterloo", "Bryan", "Toledo", "Sandusky", "Elyria", "Cleveland", "Erie", "Buffalo (Depew)", "Rochester (NY)", "Syracuse", "Utica (NY)", "Schenectady", "Albany-Rensselaer", "Rhinecliff", "Poughkeepsie", "Croton-Harmon", "New York"]
+                        },
+                        {
+                            "name": "Chicago - Boston",
+                            "stops": ["Chicago", "South Bend", "Elkhart", "Waterloo", "Bryan", "Toledo", "Sandusky", "Elyria", "Cleveland", "Erie", "Buffalo (Depew)", "Rochester (NY)", "Syracuse", "Utica (NY)", "Schenectady", "Albany-Rensselaer", "Pittsfield", "Springfield (MA)", "Worcester", "Framingham", "Back Bay", "Boston"]
+                        }
+                    ]
+                },
+                "Palmetto": {
+                    "name": "New York - Savannah",
+                    "type": "Exists",
+                    "stops": ["New York", "Newark", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore (MD)", "BWI Thurgood Marshall Airport", "New Carrollton", "Washington (DC)", "Alexandria (VA)", "Richmond (Staples Mill)", "Petersburg", "Rocky Mount", "Wilson", "Selma", "Fayetteville (NC)", "Dillon", "Florence", "Kingstree", "Charleston", "Yemassee", "Savannah"]
+                },
+                "Silver Meteor": {
+                    "name": "New York - Miami (via Charleston)",
+                    "type": "Exists",
+                    "stops": ["New York", "Newark", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore (MD)", "Washington (DC)", "Fredericksburg", "Richmond (Staples Mill)", "Petersburg", "Rocky Mount", "Fayetteville (NC)", "Florence", "Kingstree", "Charleston", "Yemassee", "Savannah", "Jesup", "Jacksonville (Clifford Lane)", "Palatka", "DeLand", "Winter Park", "Orlando", "Kissimmee", "Winter Haven", "Sebring", "West Palm Beach", "Delray Beach", "Deerfield Beach", "Fort Lauderdale", "Hollywood", "Miami"]
+                },
+                "Silver Star": {
+                    "type": "Suspended",
+                    "branches": [
+                        {
+                            "name": "New York - Miami (via Columbia)",
+                            "stops": ["New York", "Newark", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore (MD)", "Washington (DC)", "Alexandria (VA)", "Richmond (Staples Mill)", "Petersburg", "Rocky Mount", "Raleigh", "Cary", "Southern Pines", "Hamlet", "Camden (SC)", "Columbia (SC)", "Denmark", "Savannah", "Jacksonville (Clifford Lane)", "Palatka", "DeLand", "Winter Park", "Orlando", "Kissimmee", "Winter Haven", "Sebring", "Okeechobee", "West Palm Beach", "Delray Beach", "Deerfield Beach", "Fort Lauderdale", "Hollywood", "Miami"]
+                        },
+                        {
+                            "name": "New York - Tampa (via Columbia)",
+                            "stops": ["New York", "Newark", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore (MD)", "Washington (DC)", "Alexandria (VA)", "Richmond (Staples Mill)", "Petersburg", "Rocky Mount", "Raleigh", "Cary", "Southern Pines", "Hamlet", "Camden (SC)", "Columbia (SC)", "Denmark", "Savannah", "Jacksonville (Clifford Lane)", "Palatka", "DeLand", "Winter Park", "Orlando", "Kissimmee", "Lakeland", "Tampa"]
+                        }
+                    ]
+                },
+                "Southwest Chief": {
+                    "name": "Chicago - Los Angeles (via Kansas City)",
+                    "type": "Exists",
+                    "stops": ["Chicago", "Naperville", "Mendota", "Princeton (IL)", "Galesburg", "Fort Madison", "La Plata", "Kansas City", "Lawrence", "Topeka", "Newton", "Hutchinson", "Dodge City", "Garden City", "Lamar", "La Junta", "Trinidad", "Raton", "Las Vegas (NM)", "Lamy", "Albuquerque", "Gallup", "Winslow", "Flagstaff", "Kingman", "Needles", "Barstow", "Victorville", "San Bernardino", "Riverside", "Fullerton", "Los Angeles"]
+                },
+                "Sunset Limited": {
+                    "name": "Los Angeles - New Orleans",
+                    "type": "Exists",
+                    "stops": ["Los Angeles", "Pomona", "Ontario (CA)", "Palm Springs", "Yuma", "Maricopa", "Tucson", "Benson", "Lordsburg", "Deming", "El Paso", "Alpine", "Sanderson", "Del Rio", "San Antonio", "Houston", "Beaumont", "Lake Charles", "Lafayette (LA)", "New Iberia", "Schriever", "New Orleans"]
+                },
+                "Texas Eagle": {
+                    "name": "Chicago - Los Angeles (via St. Louis)",
+                    "type": "Exists",
+                    "stops": ["Chicago", "Joliet", "Pontiac (IL)", "Bloomington-Normal", "Lincoln (IL)", "Springfield (IL)", "Carlinville", "Alton", "St. Louis", "Arcadia", "Poplar Bluff", "Walnut Ridge", "Little Rock", "Malvern", "Arkadelphia", "Hope", "Texarkana", "Marshall (TX)", "Longview", "Mineola", "Dallas", "Fort Worth", "Cleburne", "McGregor", "Temple", "Taylor", "Austin", "San Marcos", "San Antonio", "Del Rio", "Sanderson", "Alpine", "El Paso", "Deming", "Lordsburg", "Benson", "Tucson", "Maricopa", "Yuma", "Palm Springs", "Ontario (CA)", "Pomona", "Los Angeles"]
+                }
+            }
+        },
+        "Proposed": {
+            "State-Supported": {
+                "Atlanta - Savannah": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Atlanta", "East Point", "Griffin", "Forsyth", "Macon", "Dublin", "Claxton", "Savannah"],
+                    "project": ["Atlanta to Savannah Corridor", "Georgia's first state-supported route would connect inland Atlanta to coastal Savannah by way of Athens/Augusta or Macon."]
+                },
+                "Atlanta - Memphis": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Atlanta", "Marietta", "Cartersville", "Dalton", "Chattanooga", "Tullahoma", "Murfreesboro", "Nashville", "Dickinson (TN)", "Camden (TN)", "Humboldt", "Brownsville", "Arlington", "Memphis"],
+                    "project": ["Atlanta-Memphis Corridor", "The proposed route would run between Atlanta and Memphis with stops in Chattanooga and Nashville, one of the largest cities with no passenger rail."]
+                },
+                "Boston - Albany": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Boston", "Back Bay", "Framingham", "Worcester", "Springfield (MA)", "Pittsfield", "Albany-Rensselaer"],
+                    "project": ["Boston and Albany Corridor", "Most of Massachusetts' largest population centers sit along a straight line spanning the length of the state. A new state-supported route would supplement the existing Lake Shore Limited, increasing service from one to as many as eight daily round trips."]
+                },
+                "Charlotte - Kings Mountain": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Charlotte", "Charlotte Douglas Airport", "Cramerton", "Gastonia", "Kings Mountain"],
+                    "project": ["Charlotte to Kings Mountain Corridor", "This project aims to improve capacity along a small stretch of the Charlotte-Atlanta corridor by adding infill stations and a new service reaching as far as Kings Mountain."]
+                },
+                "Chicago - Cincinnati": {
+                    "type": "Unofficial",
+                    "stops": ["Chicago", "Dyer", "Rensselaer", "Lafayette (IN)", "Crawfordsville", "Indianapolis", "Connersville", "Oxford", "Hamilton", "Cincinnati"]
+                },
+                "Chicago - Cleveland": {
+                    "type": "Unofficial",
+                    "stops": ["Chicago", "Hammond-Whiting", "South Bend", "Elkhart", "Waterloo", "Bryan", "Toledo", "Sandusky", "Elyria", "Cleveland Airport", "Cleveland"]
+                },
+                "Chicago - Louisville": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Chicago", "Dyer", "Rensselaer", "Lafayette (IN)", "Crawfordsville", "Indianapolis", "Franklin", "Columbus (IN)", "Scottsburg", "Louisville (KY)"],
+                    "project": ["Louisville-Indianapolis Passenger Rail Corridor", "Louisville has not seen intercity rail service since Amtrak's Kentucky Cardinal was discontinued in the Early 2000s. A restoration of this route would connect the city to Indianapolis and Chicago while supplementing the Cardinal between the two."]
+                },
+                "Chicago - Moline": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Chicago", "Summit", "Joliet", "Morris", "Ottawa", "Utica (IL)", "Peru-LaSalle", "Geneseo", "Moline"],
+                    "project": ["Chicago to Quad Cities Service Extension", "The Quad Cities project aims to reactivate the Rock Island line with the goal of supporting Amtrak service to Moline."]
+                },
+                "Chicago - Peoria": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Chicago", "Summit", "Joliet", "Morris", "Ottawa", "Utica (IL)", "Peru-LaSalle", "Peoria (IL)"],
+                    "project": ["Peoria to Chicago Passenger Rail Service", "A short regional route would connect Chicago and its suburbs to Peoria, Illinois."]
+                },
+                "Cincinnati - Detroit": {
+                    "type": "Unofficial",
+                    "stops": ["Cincinnati", "Hamilton", "Dayton", "Troy (OH)", "Sidney", "Lima", "Findlay", "Bowling Green (OH)", "Toledo", "Monroe (MI)", "Detroit Airport", "Detroit"]
+                },
+                "Chicago - Pittsburgh": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Chicago", "Valparaiso", "Plymouth", "Warsaw (IN)", "Fort Wayne", "Lima", "Kenton", "Marysville", "Columbus (OH)", "Newark (OH)", "Coshocton", "Uhrichsville", "Follansbee", "Pittsburgh"],
+                    "project": ["Chicago, Fort Wayne, Columbus, and Pittsburgh", "This proposal aims to reinstate service on an existing alignment, bringing the first Amtrak service to Columbus and Fort Wayne."]
+                },
+                "Cleveland - Cincinnati": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Cleveland", "Cleveland Airport", "Crestline", "Delaware", "Columbus (OH)", "Springfield (OH)", "Dayton", "Hamilton", "Cincinnati"],
+                    "project": ["3C&D Corridor", "The 3C&D will be Ohio's flagship state-supported passenger service connecting the three largest cities, Dayton, and Cleveland's Airport."]
+                },
+                "Cleveland - Detroit": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Cleveland", "Cleveland Airport", "Elyria", "Sandusky", "Toledo", "Monroe (MI)", "Detroit Airport", "Detroit"],
+                    "project": ["Cleveland-Toledo-Detroit Corridor", "This route would connect Ohio's densely populated northern coast to Detroit and southeastern Michigan. It could also include stops at Cleveland's and Detroit's airports."]
+                },
+                "Cleveland - Pittsburgh": {
+                    "type": "Unofficial",
+                    "branches": [
+                        {
+                            "name": "Cleveland - Pittsburgh (via Akron)",
+                            "stops": ["Cleveland", "Kent", "Akron", "Canton", "Alliance", "Beaver Falls", "Pittsburgh"]
+                        },
+                        {
+                            "name": "Cleveland - Pittsburgh (via Youngstown)",
+                            "stops": ["Cleveland", "Kent", "Newton Falls", "Youngstown", "New Castle", "Beaver Falls", "Pittsburgh"]
+                        }
+                    ]
+                },
+                "Columbus - Charleston": {
+                    "type": "Unofficial",
+                    "stops": ["Columbus (OH)", "Baltimore (OH)", "New Lexington", "Athens (OH)", "Point Pleasant", "Charleston"]
+                },
+                "Fort Collins - Pueblo": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Fort Collins", "Loveland", "Longmont", "Boulder", "Louisville (CO)", "Broomfield", "Westminster", "Denver", "Lincoln Park", "South Broadway", "Littleton", "Sterling Ranch", "Castle Rock", "Air Force Academy", "Colorado Springs", "Pueblo"],
+                    "project": ["Colorado Front Range Corridor", "Most of Colorado's cities lie in a straight line along the front range. A new state-supported route would connect all of them between Fort Collins and Pueblo."]
+                },
+                "Fort Worth - Houston": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Fort Worth", "Dallas", "Corsicana", "Hearne", "College Station", "Navasota", "Hempstead", "Cypress", "Houston"],
+                    "project": ["Texas Triangle", "As of now, there is no direct passenger rail service between Houston and the Dallas-Fort Worth metroplex. A new state-supported route would create this connection for the first time since 1995."]
+                },
+                "Houston - San Antonio": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Houston", "Rosenberg", "Flatonia", "Seguin", "San Antonio"],
+                    "project": ["Houston to San Antonio Corridor", "A new state-supported service would supplement the three-times-per-week Sunset Limited with additional stops between Houston and San Antonio."]
+                },
+                "Los Angeles - Coachella": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Los Angeles", "Fullerton", "Riverside", "Palm Springs", "Indio", "Coachella"],
+                    "project": ["Coachella Valley Rail Corridor", "The alignment used for two of Amtrak's long-distance routes would be served by a state-supported line with additional stations between Indio and Palm Springs."]
+                },
+                "Miami - Jacksonville": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Miami", "Hollywood", "Fort Lauderdale", "Deerfield Beach", "Delray Beach", "West Palm Beach", "Okeechobee", "Sebring", "Winter Haven", "Kissimmee", "Orlando", "Winter Park", "DeLand", "Palatka", "Jacksonville (Clifford Lane)"],
+                    "project": ["Jacksonville-Orlando-Miami Corridor", "This project would create a state-supported route supplementing existing long-distance services between most of Florida's largest cities."]
+                },
+                "Miami - Tampa": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Miami", "Hollywood", "Fort Lauderdale", "Deerfield Beach", "Delray Beach", "West Palm Beach", "Okeechobee", "Sebring", "Winter Haven", "Kissimmee", "Orlando", "Kissimmee", "Lakeland", "Tampa"],
+                    "project": ["Miami-Orlando-Tampa Corridor", "This project would create a state-supported route supplementing existing long-distance services between most of Florida's largest cities."]
+                },
+                "Minneapolis - Duluth": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Minneapolis", "Foley Blvd", "Cambridge", "Hinckley", "Superior", "Duluth"],
+                    "project": ["Northern Lights Express", "A new state-supported route in Minnesota would connect the Twin Cities to the Twin Ports by way of Superior, Wisconsin."]
+                },
+                "Minneapolis - Eau Claire": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Minneapolis", "St. Paul", "East St. Paul", "Lake Elmo", "Hudson", "Baldwin", "Menomonie", "Eau Claire"],
+                    "project": ["Eau Claire-Twin Cities Corridor", "A short regional route would connect the Twin Cities and its eastern suburbs to central Wisconsin, interlining with potential future Borealis services."]
+                },
+                "New Orleans - Baton Rouge": {
+                    "type": "Corridor ID Program",
+                    "stops": ["New Orleans", "New Orleans Airport", "Gonzales", "Baton Rouge"],
+                    "project": ["Baton Rouge-New Orleans Corridor", "The alignment considered for this route last hosted passenger trains in 1969. A state-supported service would connect Louisiana's two largest cities and support future long-distance routes."]
+                },
+                "New York - Reading": {
+                    "type": "Corridor ID Program",
+                    "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "Cornwells Heights", "North Philadelphia", "Philadelphia", "Norristown", "Pottstown", "Reading"],
+                    "project": ["Reading-Philadelphia-New York Corridor", "A new service on the Northeast Corridor would extend from New York and Philadelphia to Reading, Pennsylvania with four to eight daily round trips. The town has not seen passenger trains since 1983."]
+                },
+                "New York - Scranton": {
+                    "type": "Corridor ID Program",
+                    "branches": [
+                        {
+                            "name": "New York - Scranton (North)",
+                            "stops": ["New York", "Newark (Broad St)", "Montclair", "Dover (NJ)", "Blairstown", "East Stroudsburg", "Mount Pocono", "Scranton"]
+                        },
+                        {
+                            "name": "New York - Scranton (South)",
+                            "stops": ["New York", "Newark (Broad St)", "Morristown (NJ)", "Dover (NJ)", "Blairstown", "East Stroudsburg", "Mount Pocono", "Scranton"]
+                        }
+                    ],
+                    "project": ["Scranton to New York Penn Station Corridor", "This route would follow a branched NJ Transit commuter line through Montclair, Morristown, and Dover. The plan would rebuild tracks to Lackawanna County, enabling three daily round trips between New York and Scranton."]
+                },
+                "Newport News - Christiansburg": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Newport News", "Williamsburg", "Richmond", "Lynchburg", "Roanoke", "Christiansburg"],
+                    "project": ["Commonwealth Corridor", "A new route would connect Newport News and Richmond to Virginia's New River Valley. It would serve many of the same stations as the Northeast Regional as well as multiple long-distance routes."]
+                },
+                "Phoenix - Tucson": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Tucson", "San Tan Valley", "Gilbert", "Tempe", "Phoenix", "Goodyear", "Buckeye"],
+                    "project": ["Phoenix-Tucson Corridor", "A service discontinued in 1997 would be reactivated to connect Phoenix and its surrounding cities to Tucson."]
+                },
+                "Raleigh - Fayetteville": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Raleigh", "Fuquay-Varina", "Lillington", "Fayetteville (NC)"],
+                    "project": ["Fayetteville to Raleigh Corridor", "This project would rebuild a stretch of track near the North Carolina coast to connect Fyetteville to Raleigh while bringing service to small towns in between."]
+                },
+                "Raleigh - Wilmington": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Raleigh", "Selma", "Goldsboro", "Mt. Olive", "Warsaw (NC)", "Wallace", "Burgaw", "Wilmington (NC)"],
+                    "project": ["Wilmington to Raleigh Corridor", "This project would reconstruct part of an abandoned alignment to restore service to Wilmington."]
+                },
+                "Raleigh - Winston-Salem": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Raleigh", "Cary", "Durham (NC)", "Burlington (NC)", "Greensboro", "Winston-Salem"],
+                    "project": ["Winston-Salem to Raleigh Corridor", "This route would supplement services on the Piedmont corridor between Raleigh and Charlotte with a connection to Winston-Salem."]
+                },
+                "Salisbury - Asheville": {
+                    "type": "Corridor ID Program",
+                    "stops": ["Salisbury (NC)", "Statesville", "Hickory", "Morganton", "Marion", "Asheville"],
+                    "project": ["Asheville to Salisbury Corridor", "Asheville has not seen passenger rail since 1975. This proposed route would extend service to the Piedmont corridor, thereby offering connections to Charlotte and Raleigh."]
+                },
+                "San Jose - San Luis Obispo": {
+                    "type": "Corridor ID Program",
+                    "stops": ["San Jose", "Gilroy", "Salinas", "Paso Robles", "San Luis Obispo"],
+                    "project": ["Central Coast Corridor", "The only connection between Southern California and the Bay Area is the once-a-day Coast Starlight route. A new service would supplement this corridor with more daily round trips."]
+                },
+                "Wilmington - Salisbury/Berlin": {
+                    "type": "Corridor ID Program",
+                    "branches": [
+                        {
+                            "name": "Wilmington - Berlin",
+                            "stops": ["Wilmington (DE)", "Newark (DE)", "Middletown (DE)", "Dover (DE)", "Harrington", "Milford (DE)", "Georgetown", "Millsboro", "Selbyville", "Berlin (MD)"]
+                        },
+                        {
+                            "name": "Wilmington - Salisbury",
+                            "stops": ["Wilmington (DE)", "Newark (DE)", "Middletown (DE)", "Dover (DE)", "Harrington", "Seaford", "Salisbury (MD)"]
+                        }
+                    ],
+                    "project": ["Diamond State Line", "This route would connect downstate Delaware (including the capital of Dover) to Wilmington or Newark on the Northeast Corridor."]
+                },
+                "Winter Park Express": {
+                    "name": "Denver - Craig",
+                    "type": "Funded",
+                    "stops": ["Denver", "Winter Park Resort", "Fraser-Winter Park", "Granby", "Hot Sulphur Springs", "Kremmling", "Oak Creek", "Steamboat Springs Resort", "Steamboat Springs Downtown", "Hayden", "Craig"],
+                    "project": ["Mountain Rail", "Amtrak's seasonal ski train (the Winter Park Express) would be extended farther up the mountains to Steamboat Springs and Craig."]
+                },
+
+                "Borealis": {
+                    "type": "Corridor ID Program",
+                    "branches": [
+                        {
+                            "name": "Chicago - Minneapolis",
+                            "stops": ["Chicago", "Glenview", "Sturtevant", "Milwaukee Airport", "Milwaukee", "Columbus (WI)", "Portage", "Wisconsin Dells", "Tomah", "La Crosse", "Winona", "Red Wing", "St. Paul", "Minneapolis"]
+                        },
+                        {
+                            "name": "Chicago - Minneapolis (via Madison)",
+                            "stops": ["Chicago", "Glenview", "Sturtevant", "Milwaukee Airport", "Milwaukee", "Madison (WI)", "Portage", "Wisconsin Dells", "Tomah", "Black River Falls", "Eau Claire", "Menomonie", "Hudson", "St. Paul", "Minneapolis"],
+                            "project": ["Milwaukee-Madison-Eau Claire-Twin Cities Corridor", "A new service pattern for the Borealis route would extend service from the Twin Cities-Milwaukee-Chicago corridor to Madison and Eau Claire."]
+                        }
+                    ]
+                },
+                "Capitol Corridor": {
+                    "type": "Corridor ID Program",
+                    "branches": [
+                        {
+                            "name": "Novato - Sparks",
+                            "stops": ["Novato", "Sonoma", "Cordelia", "Suisun-Fairfield", "Fairfield-Vacaville", "Davis", "Sacramento", "Roseville", "Rocklin", "Auburn (CA)", "Colfax", "Truckee", "Reno", "Sparks"]
+                        },
+                        {
+                            "name": "Salinas - Sparks",
+                            "stops": ["Salinas", "Gilroy", "Morgan Hill", "San Jose", "Santa Clara", "Great America", "Fremont (CA)", "Hayward", "Oakland Coliseum", "Oakland (CA)", "Emeryville", "Berkeley", "Richmond (CA)", "Martinez", "Suisun-Fairfield", "Fairfield-Vacaville", "Davis", "Sacramento", "Roseville", "Rocklin", "Auburn (CA)", "Colfax", "Truckee", "Reno", "Sparks"]
+                        }
+                    ],
+                    "project": ["Capitol Corridor", "The Capitol Corridor route would be extended south to Salinas and northeast into Reno/Sparks, Nevada with a branch originating in the North Bay."]
+                },
+                "Downeaster": {
+                    "name": "Boston - Rockland",
+                    "type": "Corridor ID Program",
+                    "stops": ["Boston (North)", "Woburn", "Haverhill", "Exeter", "Durham (NH)", "Dover (NH)", "Wells", "Saco", "Old Orchard Beach", "Portland (ME)", "West Falmouth", "Freeport", "Brunswick", "Newcastle", "Rockland"],
+                    "project": ["Downeaster Corridor", "The Downeaster would receive service upgrades, an extension to Rockland, and a possible infill station in West Falmouth."]
+                },
+                "Ethan Allen Express": {
+                    "name": "New York - Burlington",
+                    "type": "Corridor ID Program",
+                    "branches": [
+                        {
+                            "name": "New York - Burlington",
+                            "stops": ["New York", "Yonkers", "Croton-Harmon", "Poughkeepsie", "Rhinecliff", "Hudson", "Albany-Rensselaer", "Schenectady", "Saratoga Springs", "Fort Edward", "Castleton", "Rutland", "Middlebury", "Ferrisburgh-Vergennes", "Burlington (VT)"]
+                        },
+                        {
+                            "name": "New York - Burlington (via Bennington)",
+                            "stops": ["New York", "Yonkers", "Croton-Harmon", "Poughkeepsie", "Rhinecliff", "Hudson", "Albany-Rensselaer", "Bennington", "Manchester", "Rutland", "Middlebury", "Ferrisburgh-Vergennes", "Burlington (VT)"],
+                            "project": ["Green Mountain Corridor", "This project would add a new service pattern to the Ethan Allen express, serving additional towns in Vermont en route to Burlington."]
+                        }
+                    ]
+                },
+                "Gold Runner": {
+                    "type": "Corridor ID Program",
+                    "branches": [
+                        {
+                            "name": "Bakersfield - Oakland",
+                            "stops": ["Bakersfield", "Wasco", "Corcoran", "Hanford", "Fresno", "Madera", "Merced", "Turlock-Denair", "Modesto", "Stockton (San Joaquin)", "Antioch-Pittsburg", "Martinez", "Richmond (CA)", "Emeryville", "Oakland (CA)"]
+                        },
+                        {
+                            "name": "Bakersfield - Redding",
+                            "stops": ["Bakersfield", "Wasco", "Corcoran", "Hanford", "Fresno", "Madera", "Merced", "Turlock-Denair", "Modesto", "Stockton", "Lodi", "Sacramento", "Yuba City", "Chico", "Red Bluff", "Redding"]
+                        }
+                    ],
+                    "project": ["San Joaquin Valley Corridor", "The Gold Runner (formerly San Joaquins) currently terminates in Sacramento and Oakland. The Sacramento branch would be extended farther north, supplementing the daily Coast Starlight between Sacramento and Redding."]
+                },
+                "Heartland Flyer": {
+                    "name": "Fort Worth - Newton",
+                    "type": "Corridor ID Program",
+                    "stops": ["Fort Worth", "Gainesville (TX)", "Ardmore", "Pauls Valley", "Purcell", "Norman", "Oklahoma City", "Edmond", "Guthrie", "Perry", "Ponca City", "Arkansas City", "Wichita", "Newton"],
+                    "project": ["Heartland Flyer Extension", "The existing Heartland Flyer route would be extended north of Oklahoma City through Wichita to connect to the Southwest Chief route in Newton, Kansas."]
+                },
+                "Hiawatha": {
+                    "type": "Corridor ID Program",
+                    "branches": [
+                        {
+                            "name": "Chicago - Green Bay",
+                            "stops": ["Chicago", "Glenview", "Sturtevant", "Milwaukee Airport", "Milwaukee", "Slinger", "Fond du Lac", "Oshkosh", "Appleton", "Green Bay"],
+                            "project": ["Milwaukee - Green Bay", "The Hiawatha route between Chicago and Milwaukee would be extended farther into Wisconsin to terminate in Green Bay."]
+                        },
+                        {
+                            "name": "Chicago - Madison",
+                            "stops": ["Chicago", "Glenview", "Sturtevant", "Milwaukee Airport", "Milwaukee", "Pewaukee", "Oconomowoc", "Watertown", "Madison (WI)"],
+                            "project": ["Milwaukee - Madison", "The Hiawatha route between Chicago and Milwaukee would be extended farther into Wisconsin to terminate in Madison where it could connect to future TCMC Borealis services."]
+                        }
+                    ]
+                },
+                "Illinois Zephyr": {
+                    "name": "Chicago - Hannibal",
+                    "type": "Corridor ID Program",
+                    "stops": ["Chicago", "La Grange (IL)", "Naperville", "Plano", "Mendota", "Princeton (IL)", "Kewanee", "Galesburg", "Macomb", "Quincy (IL)", "Hannibal"],
+                    "project": ["Hannibal Extension", "The existing Chicago-Quincy corridor would be extended across the border to Hannibal, Missouri."]
+                },
+                "Missouri River Runner": {
+                    "name": "St. Louis - St. Joseph",
+                    "type": "Corridor ID Program",
+                    "stops": ["St. Louis", "Kirkwood", "Washington (MO)", "Hermann", "Jefferson City", "Sedalia", "Warrensburg", "Lee's Summit", "Independence (MO)", "Kansas City", "St. Joseph (MO)"],
+                    "project": ["Kansas City to St. Joseph", "The Missouri River Runner, connecting both sides of Missouri from St. Louis to Kansas City, would be extended north to the town of St. Joseph."]
+                },
+                "Northeast Regional": {
+                    "type": "Corridor ID Program",
+                    "branches": [
+                        {
+                            "name": "New York - Boston",
+                            "stops": ["New York", "New Rochelle", "Stamford", "Bridgeport (CT)", "New Haven", "New Haven (State Street)", "Old Saybrook", "New London", "Mystic", "Westerly", "Kingston", "Providence", "Route 128", "Back Bay", "Boston"]
+                        },
+                        {
+                            "name": "New York - Newport News",
+                            "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "North Philadelphia", "Philadelphia", "Wilmington (DE)", "Newark (DE)", "Aberdeen", "Baltimore (MD)", "BWI Thurgood Marshall Airport", "New Carrollton", "Washington (DC)", "Crystal City", "Alexandria (VA)", "Woodbridge", "Quantico", "Fredericksburg", "Ashland (VA)", "Richmond (Staples Mill)", "Richmond", "Williamsburg", "Newport News"]
+                        },
+                        {
+                            "name": "New York - Norfolk",
+                            "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "North Philadelphia", "Philadelphia", "Wilmington (DE)", "Newark (DE)", "Aberdeen", "Baltimore (MD)", "BWI Thurgood Marshall Airport", "New Carrollton", "Washington (DC)", "Crystal City", "Alexandria (VA)", "Woodbridge", "Quantico", "Fredericksburg", "Ashland (VA)", "Richmond (Staples Mill)", "Petersburg", "Norfolk"]
+                        },
+                        {
+                            "name": "New York - Bristol",
+                            "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "North Philadelphia", "Philadelphia", "Wilmington (DE)", "Newark (DE)", "Aberdeen", "Baltimore (MD)", "BWI Thurgood Marshall Airport", "New Carrollton", "Washington (DC)", "Crystal City", "Alexandria (VA)", "Burke Centre", "Manassas", "Culpeper", "Charlottesville", "Lynchburg", "Bedford", "Roanoke", "Christiansburg", "Wytheville", "Bristol"],
+                            "project": ["Washington to Bristol Corridor", "The Roanoke branch of the Northeast Regional would be extended farther into Virginia with a new infill station at Bedford, Virginia."]
+                        },
+                        {
+                            "name": "New York - Ronkonkoma",
+                            "stops": ["New York", "Jamaica", "Hicksville", "Ronkonkoma"],
+                            "project": ["Amtrak to Long Island", "A new branch of the Northeast Regional would follow Long Island Rail Road right-of-way three times a day with a connection to JFK airport."]
+                        },
+                        {
+                            "name": "New York - Springfield",
+                            "stops": ["New York", "New Rochelle", "Stamford", "Bridgeport (CT)", "New Haven", "New Haven (State Street)", "Wallingford", "Meriden", "Berlin (CT)", "Hartford", "Windsor (CT)", "Windsor Locks", "Springfield (MA)"]
+                        }
+                    ]
+                },
+                "Pacific Surfliner": {
+                    "name": "San Ysidro - San Luis Obispo",
+                    "type": "Corridor ID Program",
+                    "stops": ["San Ysidro", "San Diego", "Old Town", "Solana Beach", "Oceanside", "San Clemente Pier", "San Juan Capistrano", "Irvine", "Santa Ana", "Anaheim", "Fullerton", "Los Angeles", "Glendale", "Burbank Downtown", "Burbank Airport", "Van Nuys", "Northridge", "Chatsworth", "Simi Valley", "Moorpark", "Camarillo", "Oxnard", "Ventura", "Carpinteria", "Santa Barbara", "Goleta", "Lompoc-Surf", "Guadalupe", "Grover Beach", "San Luis Obispo"],
+                    "project": ["LOSSAN Rail Corridor", "The Pacific Surfliner route would be extended south of San Diego to San Ysidro on the Mexican border. This station would connect with the southern terminus of SANDAG's Blue Line trolley."]
+                },
+                "Vermonter": {
+                    "name": "Washington - Montréal",
+                    "type": "Corridor ID Program",
+                    "stops": ["Washington (DC)", "New Carrollton", "BWI Thurgood Marshall Airport", "Baltimore (MD)", "Wilmington (DE)", "Philadelphia", "Trenton (NJ)", "Princeton Junction", "Metropark", "Newark", "New York", "Stamford", "Bridgeport (CT)", "New Haven", "Meriden", "Hartford", "Windsor Locks", "Springfield (MA)", "Holyoke", "Northampton", "Greenfield", "Brattleboro", "Bellows Falls", "Claremont", "Windsor-Mt. Ascutney", "White River Junction", "Randolph", "Montpelier", "Waterbury", "Essex Junction", "St. Albans", "Saint-Jean-sur-Richelieu", "Montréal"],
+                    "project": ["Vermonter Corridor", "The Vermonter currently terminates near the Québec border at St. Albans. This proposal would extend it to Montréal with a new customs and preclearance facility at Gare Centrale."]
+                },
+                "Wolverine": {
+                    "type": "Corridor ID Program",
+                    "branches": [
+                        {
+                            "name": "Chicago - Pontiac",
+                            "stops": ["Chicago", "Hammond-Whiting", "New Buffalo", "Niles", "Dowagiac", "Kalamazoo", "Battle Creek", "Albion", "Jackson (MI)", "Ann Arbor", "Dearborn", "Detroit", "Royal Oak", "Troy (MI)", "Pontiac (MI)"]
+                        },
+                        {
+                            "name": "Chicago - Windsor",
+                            "stops": ["Chicago", "Hammond-Whiting", "New Buffalo", "Niles", "Dowagiac", "Kalamazoo", "Battle Creek", "Albion", "Jackson (MI)", "Ann Arbor", "Dearborn", "Detroit", "Windsor (ON)"]
+                        }
+                    ],
+                    "project": ["Wolverine Corridor", "The Chicago-Detroit-Pontiac service would be rerouted through Detroit's newly reactivated Michigan Central Station, continuing across the Detroit River toward Toronto."]
+                }
+            },
+            "Long-Distance": {
+                "Chicago - Miami": {
+                    "type": "FRA Long-Distance Study",
+                    "stops": ["Chicago", "Dyer", "Rensselaer", "Lafayette (IN)", "Crawfordsville", "Indianapolis", "Franklin", "Columbus (IN)", "Scottsburg", "Louisville (KY)", "Elizabethtown (KY)", "Bowling Green (KY)", "Nashville", "Murfreesboro", "Tullahoma", "Chattanooga", "Dalton", "Cartersville", "Macon", "Atlanta", "East Point", "Griffin", "Forsyth", "Macon", "Cordele", "Fitzgerald", "Waycross", "Folkston", "Jacksonville (Clifford Lane)", "Palatka", "DeLand", "Winter Park", "Orlando", "Kissimmee", "Winter Haven", "Sebring", "Okeechobee", "West Palm Beach", "Delray Beach", "Deerfield Beach", "Fort Lauderdale", "Hollywood", "Miami"]
+                },
+                "Dallas-Fort Worth - Atlanta": {
+                    "type": "FRA Long-Distance Study",
+                    "stops": ["Fort Worth", "Dallas", "Mineola", "Longview", "Marshall (TX)", "Shreveport", "Monroe (LA)", "Jackson (MS)", "Meridian", "Tuscaloosa", "Birmingham", "Anniston", "Atlanta"]
+                },
+                "Dallas-Fort Worth - Miami": {
+                    "type": "FRA Long-Distance Study",
+                    "stops": ["Fort Worth", "Dallas", "Mineola", "Longview", "Marshall (TX)", "Shreveport", "Alexandria (LA)", "Shreveport", "Baton Rouge", "New Orleans", "Mobile", "Atmore", "Pensacola", "Crestview", "Defuniak Springs", "Chipley", "Marianna", "Sneads", "Quincy (FL)", "Tallahassee", "Monticello", "Madison (FL)", "Live Oak", "Lake City", "Macclenny", "Jacksonville", "St. Augustine", "Bunnell", "Daytona Beach", "Titusville", "Cocoa", "Melbourne", "Roseland", "Vero Beach", "Fort Pierce", "Stuart", "Jupiter", "West Palm Beach", "Delray Beach", "Deerfield Beach", "Fort Lauderdale", "Hollywood", "Miami"]
+                },
+                "Dallas-Fort Worth - New York": {
+                    "type": "FRA Long-Distance Study",
+                    "stops": ["Fort Worth", "Gainesville (TX)", "Ardmore", "Norman", "Oklahoma City", "Tulsa", "Neosho", "Springfield (MO)", "Rolla", "St. Louis", "Greenville (IL)", "Effingham", "Casey", "Terre Haute", "Greencastle", "Indianapolis", "Connersville", "Oxford", "Cincinnati", "Hamilton", "Dayton", "Springfield (OH)", "Columbus (OH)", "Coshocton", "Uhrichsville", "Follansbee", "Pittsburgh", "Greensburg", "Latrobe", "Johnstown", "Altoona", "Tyrone", "Huntingdon", "Lewistown", "Harrisburg", "Elizabethtown (PA)", "Lancaster", "Exton", "Paoli", "Ardmore", "Philadelphia", "Trenton (NJ)", "Newark", "New York"]
+                },
+                "Denver - Houston": {
+                    "type": "FRA Long-Distance Study",
+                    "stops": ["Denver", "Littleton", "Castle Rock", "Colorado Springs", "Pueblo", "Walsenburg", "Trinidad", "Clayton", "Dalhart", "Amarillo", "Clarendon", "Childress", "Vernon", "Wichita Falls", "Decatur (TX)", "Fort Worth", "Dallas", "Corsicana", "College Station", "Hempstead", "Cypress", "Houston"]
+                },
+                "Denver - Minneapolis-St. Paul": {
+                    "type": "FRA Long-Distance Study",
+                    "stops": ["Denver", "Boulder", "Longmont", "Loveland", "Fort Collins", "Cheyenne", "Bridgeport (NE)", "Crawford", "Rapid City", "Pierre", "Mitchell", "Sioux Falls", "Pipestone", "Marshall (MN)", "Granite Falls", "Willmar", "Litchfield", "Wayzata", "Minneapolis"]
+                },
+                "Detroit - New Orleans": {
+                    "type": "FRA Long-Distance Study",
+                    "stops": ["Detroit", "Detroit Airport", "Monroe (MI)", "Toledo", "Bowling Green (OH)", "Findlay", "Kenton", "Marysville", "Columbus (OH)", "Springfield (OH)", "Dayton", "Hamilton", "Cincinnati", "Walton", "La Grange (KY)", "Louisville (KY)", "Bowling Green (KY)", "Elizabethtown (KY)", "Nashville", "Decatur (AL)", "Birmingham", "Montgomery", "Greenville (AL)", "Evergreen", "Atmore", "Mobile", "New Orleans"]
+                },
+                "El Paso - Billings": {
+                    "type": "FRA Long-Distance Study",
+                    "stops": ["El Paso", "Las Cruces", "Engle", "Socorro", "Albuquerque", "Lamy", "Las Vegas (NM)", "Raton", "Trinidad", "Walsenburg", "Pueblo", "Colorado Springs", "Castle Rock", "Littleton", "Denver", "Boulder", "Longmont", "Loveland", "Fort Collins", "Cheyenne", "Wheatland", "Douglas", "Casper", "Shoshoni", "Thermopolis", "Worland", "Greybull", "Lovell", "Billings"]
+                },
+                "Houston - New York": {
+                    "type": "FRA Long-Distance Study",
+                    "stops": ["Houston", "Beaumont", "Lake Charles", "Lafayette (LA)", "New Iberia", "Schriever", "New Orleans", "Mobile", "Atmore", "Evergreen", "Greenville (AL)", "Montgomery", "Auburn (GA)", "La Grange (GA)", "Newnan", "Atlanta", "Marietta", "Cartersville", "Dalton", "Chattanooga", "Athens (TN)", "Knoxville", "Morristown (TN)", "Bristol", "Christiansburg", "Roanoke", "Lynchburg", "Charlottesville", "Culpeper", "Manassas", "Alexandria (VA)", "Washington (DC)", "BWI Thurgood Marshall Airport", "Baltimore (MD)", "Wilmington (DE)", "Philadelphia", "Trenton (NJ)", "Metropark", "Newark", "New York"]
+                },
+                "Los Angeles - Denver": {
+                    "type": "FRA Long-Distance Study",
+                    "stops": ["Los Angeles", "Fullerton", "Riverside", "San Bernardino", "Victorville", "Barstow", "Elora", "Las Vegas (NV)", "Moapa", "Caliente", "Milford (UT)", "Delta", "Nephi", "Provo", "Salt Lake City", "Evanston", "Rock Springs", "Rawlins", "Laramie", "Cheyenne", "Fort Collins", "Loveland", "Longmont", "Boulder", "Denver"]
+                },
+                "Phoenix - Minneapolis-St. Paul": {
+                    "type": "FRA Long-Distance Study",
+                    "stops": ["Phoenix", "Peoria (AZ)", "Wickenburg", "Williams", "Flagstaff", "Winslow", "Gallup", "Albuquerque", "Mountainair", "Fort Sumner", "Clovis", "Hereford", "Amarillo", "Pampa", "Canadian", "Woodward", "Alva", "Harper", "Wellington", "Wichita", "Newton", "Emporia", "Topeka", "Lawrence", "Kansas City", "St. Joseph (MO)", "Bigelow", "Hamburg", "Omaha", "Fremont (NE)", "Oakland (NE)", "Sioux City", "Hawarden", "Sioux Falls", "Pipestone", "Marshall (MN)", "Granite Falls", "Willmar", "Litchfield", "Wayzata", "Minneapolis"]
+                },
+                "San Antonio - Minneapolis-St. Paul": {
+                    "type": "FRA Long-Distance Study",
+                    "stops": ["San Antonio", "San Marcos", "Austin", "Taylor", "Temple", "McGregor", "Cleburne", "Fort Worth", "Denton", "Denison", "Madill", "Ada", "Holdenville", "Okmulgee", "Tulsa", "Bartlesville", "Independence (KS)", "Yates Center", "Garnett", "Paola", "Kansas City", "Excelsior Springs", "Trenton (MO)", "Princeton (MO)", "Chariton", "Des Moines", "Nevada", "Iowa Falls", "Hampton", "Mason City", "Albert Lea", "Owatonna", "Faribault", "Northfield", "St. Paul"]
+                },
+                "San Francisco - Dallas-Fort Worth": {
+                    "type": "FRA Long-Distance Study",
+                    "stops": ["Oakland (CA)", "Emeryville", "Richmond (CA)", "Martinez", "Stockton (San Joaquin)", "Modesto", "Turlock-Denair", "Merced", "Madera", "Fresno", "Hanford", "Corcoran", "Wasco", "Bakersfield", "Mojave", "North Edwards", "Barstow", "Mojave Trails", "Parker", "Wickenburg", "Peoria (AZ)", "Phoenix", "Tempe", "San Tan Valley", "Tucson", "Benson", "Lordsburg", "Deming", "El Paso", "Sierra Blanca", "Pecos", "Monahans", "Midland", "Big Spring", "Sweetwater", "Abilene", "Eastland", "Weatherford", "Fort Worth"]
+                },
+                "Seattle - Denver": {
+                    "type": "FRA Long-Distance Study",
+                    "stops": ["Seattle", "Tacoma", "Olympia-Lacey", "Centralia (WA)", "Kelso-Longview", "Vancouver (WA)", "Portland (OR)", "The Dalles", "Hermiston", "La Grande", "Baker City", "Ontario (OR)", "Boise", "Gooding", "Potacello", "Ogden", "Salt Lake City", "Provo", "Helper", "Green River", "Grand Junction", "Glenwood Springs", "Granby", "Fraser-Winter Park", "Denver"]
+                },
+
+                "Crescent": {
+                    "type": "Corridor ID Program",
+                    "branches": [
+                        {
+                            "name": "New York - New Orleans",
+                            "stops": ["New York", "Newark", "Metropark", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore (MD)", "BWI Thurgood Marshall Airport", "Washington (DC)", "Alexandria (VA)", "Manassas", "Culpeper", "Charlottesville", "Lynchburg", "Danville", "Greensboro", "High Point", "Salisbury (NC)", "Charlotte", "Gastonia", "Spartanburg", "Greenville (SC)", "Clemson", "Toccoa", "Gainesville (GA)", "Atlanta", "Anniston", "Birmingham", "Tuscaloosa", "Meridian", "Laurel", "Hattiesburg", "Picayune", "Slidell", "New Orleans"]
+                        },
+                        {
+                            "name": "New York - Fort Worth",
+                            "stops": ["New York", "Newark", "Metropark", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore (MD)", "BWI Thurgood Marshall Airport", "Washington (DC)", "Alexandria (VA)", "Manassas", "Culpeper", "Charlottesville", "Lynchburg", "Danville", "Greensboro", "High Point", "Salisbury (NC)", "Charlotte", "Gastonia", "Spartanburg", "Greenville (SC)", "Clemson", "Toccoa", "Gainesville (GA)", "Atlanta", "Anniston", "Birmingham", "Tuscaloosa", "Meridian", "Jackson (MS)", "Monroe (LA)", "Shreveport", "Marshall (TX)", "Longview", "Mineola", "Dallas", "Fort Worth"]
+                        }
+                    ],
+                    "project": ["I-20 Corridor Intercity Passenger Rail Service", "The proposed corridor would create a branch of the existing Crescent route, enabling direct service from Atlanta to Dallas-Fort Worth. The FRA's Long-Distance Study recommends this as a standalone route between those two metro areas."]
+                },
+                "North Coast Hiawatha": {
+                    "name": "Chicago - Seattle (South)",
+                    "type": "Corridor ID Program, FRA Long-Distance Study",
+                    "stops": ["Chicago", "Glenview", "Milwaukee", "Columbus (WI)", "Portage", "Wisconsin Dells", "Tomah", "La Crosse", "Winona", "Red Wing", "St. Paul", "St. Cloud", "Staples", "Detroit Lakes", "Fargo", "Jamestown", "Bismarck", "Dickinson (ND)", "Glendive", "Miles City", "Billings", "Bozeman", "Helena", "Missoula", "Thompson Falls", "Sandpoint", "Spokane", "Pasco", "Yakima", "Ellensburg", "Seattle"],
+                    "project": ["Big Sky North Coast Corridor", "After being discontinued in 1979, the North Coast Hiawatha could return as a parallel route to the Empire Builder between Chicago and the Pacific Northwest with stops in Montana and North Dakota's biggest population centers."]
+                }
+            }
+        }
+    }
+}

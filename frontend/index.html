@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposed Routes · All Aboard Ohio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap">
+    <link rel="icon" type="image/avif" href="data/map.avif">
+    <link rel="stylesheet" href="frontend/styles.css">
+    <noscript><style>body:not(.ready) * { opacity: 1 !important; } .splash, .brand { display: none; }</style></noscript>
+</head>
+<body>
+    <video class="bg" muted playsinline preload="none"></video>
+    <video class="bg" muted playsinline preload="none"></video>
+
+    <!-- Everything above the background video; its size drives the layout (see .page in frontend/styles.css) -->
+    <div class="page">
+
+    <!-- Static map opening splash -->
+    <div class="splash" aria-hidden="true">
+        <img class="splash-logo" src="data/logo.png" alt="">
+        <button class="brand" tabindex="-1" aria-label="View the All Aboard Ohio rail map">
+            <img class="brand-glow" src="data/map.avif" alt="">
+            <span class="brand-edge"><span></span></span>
+            <img src="data/map.avif" alt="">
+        </button>
+        <p class="splash-title">Proposed Routes</p>
+    </div>
+
+    <!-- Station modal -->
+    <div class="station" hidden role="dialog" aria-modal="true" aria-labelledby="station-name">
+        <div class="station-panel">
+            <div class="station-hero">
+                <div class="station-locator"></div>
+                <video muted playsinline preload="auto"></video>
+                <video muted playsinline preload="auto"></video>
+                <div class="station-inset"></div>
+                <div class="station-tools">
+                    <div class="station-view segmented" role="radiogroup" aria-label="Picture to show">
+                        <button role="radio" data-view="video" aria-checked="true">Video</button>
+                        <button role="radio" data-view="map" aria-checked="false">Map</button>
+                    </div>
+                    <div class="station-era segmented" role="radiogroup" aria-label="Network to show on this map">
+                        <button role="radio" data-era="today" aria-checked="false">Present Day</button>
+                        <button role="radio" data-era="buildout" aria-checked="true">Full Buildout</button>
+                    </div>
+                </div>
+            </div>
+            <div class="station-info"></div>
+            <button class="close" aria-label="Close">×</button>
+        </div>
+    </div>
+
+    <!-- Program window: a program's routes across the country, with its projects (opened from the tabs on the map) -->
+    <div class="program" hidden role="dialog" aria-modal="true" aria-labelledby="program-title">
+        <div class="program-panel">
+            <div class="program-map">
+                <svg class="program-svg" role="img" aria-label="Map of the program's routes"></svg>
+                <div class="program-controls">
+                    <div class="program-switch segmented" role="radiogroup" aria-label="Program to show"></div>
+                </div>
+                <div class="program-types" aria-label="Routes to show">
+                    <button data-type="state" aria-pressed="true"><i aria-hidden="true"></i>State-Supported</button>
+                    <button data-type="ld" aria-pressed="true"><i aria-hidden="true"></i>Long-Distance</button>
+                    <button class="help-btn" aria-label="What these route types mean" aria-expanded="false"><span aria-hidden="true">?</span></button>
+                </div>
+                <button class="program-stations" aria-pressed="false"><i aria-hidden="true"></i>Show stations</button>
+            </div>
+            <div class="program-info"></div>
+            <button class="close" aria-label="Close">×</button>
+        </div>
+        <div class="tip program-tip" hidden></div>
+    </div>
+
+    <!-- Intro time jump: today's date spins forward, then docks in the banner -->
+    <div class="time-jump" aria-hidden="true">
+        <span class="time-jump-date"></span>
+    </div>
+
+    <!-- Expanded static map -->
+    <div class="brand-map-view" hidden role="dialog" aria-label="All Aboard Ohio rail map">
+        <img class="splash-logo" src="data/logo.png" alt="All Aboard Ohio">
+        <img class="brand-big" src="data/map.avif" alt="All Aboard Ohio rail map">
+        <p class="splash-title">Proposed Routes</p>
+        <button class="close" aria-label="Close">×</button>
+    </div>
+
+    <!-- Webpage banner -->
+    <header class="top">
+        <a class="logo" href="/" aria-label="All Aboard Ohio home"><img src="data/logo.png" alt="All Aboard Ohio"></a>
+        <h1 class="title">Proposed Routes<small class="subtitle">Based on active studies, expansions, and AAO recommendations</small></h1>
+        <div class="era-box">
+            <div class="era segmented" role="radiogroup" aria-label="Network to show">
+                <button role="radio" data-era="today" aria-checked="false">Present Day</button>
+                <button role="radio" data-era="buildout" aria-checked="true">Full Buildout</button>
+            </div>
+            <div class="when-tab"><p class="when" role="status"></p></div>
+        </div>
+        <div class="modes" aria-label="Routes to show">
+            <button data-type="state" aria-pressed="true"><i></i>State-Supported<span class="long"> Routes</span></button>
+            <button data-type="long-distance" aria-pressed="true"><i></i>Long-Distance<span class="long"> Routes</span></button>
+            <button class="help-btn" aria-label="What these route types mean" aria-expanded="false"><span aria-hidden="true">?</span></button>
+        </div>
+    </header>
+
+    <!-- Dynamic route map -->
+    <main class="stage">
+        <section class="map" aria-label="Map of proposed routes">
+            <svg class="map-base" aria-hidden="true"></svg>
+            <div class="pins"></div>
+            <div class="map-touch" aria-hidden="true"></div>
+            <div class="tip" hidden></div>
+        </section>
+        <aside class="legend" aria-label="Route legend">
+            <button class="legend-toggle" aria-expanded="false"><span>Amtrak Services</span><i></i></button>
+            <div class="legend-body"></div>
+        </aside>
+        <article class="card" hidden aria-live="polite">
+            <button class="close" aria-label="Close">×</button>
+            <div class="card-body"></div>
+        </article>
+        <button class="now-showing" hidden><span>Now showing</span><strong></strong></button>
+        <nav class="program-tabs" aria-label="Rail programs" hidden></nav>
+        <button class="video-switch" aria-pressed="true" aria-label="Background videos"><i aria-hidden="true"></i><span><span class="full">Background </span>Videos</span></button>
+        <div class="dock">
+            <p class="hint"></p>
+        </div>
+    </main>
+    <div class="help-tip" role="tooltip" hidden></div>
+    <button class="skip-intro" type="button" hidden>Skip intro<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l6 6-6 6M13 6l6 6-6 6"/></svg></button>
+    </div>
+
+    <!-- Scripts, in order: helpers, shared state, then each part of the page; main.js starts it all -->
+    <script src="frontend/util.js"></script>
+    <script src="frontend/state.js"></script>
+    <script src="frontend/video.js"></script>
+    <script src="frontend/camera.js"></script>
+    <script src="frontend/lanes.js"></script>
+    <script src="frontend/map.js"></script>
+    <script src="frontend/relief.js"></script>
+    <script src="frontend/header.js"></script>
+    <script src="frontend/sidebar.js"></script>
+    <script src="frontend/card.js"></script>
+    <script src="frontend/station.js"></script>
+    <script src="frontend/programs.js"></script>
+    <script src="frontend/intro.js"></script>
+    <script src="frontend/main.js"></script>
+</body>
+</html>
