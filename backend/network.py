@@ -3,7 +3,7 @@ import re
 from pathlib import Path
 
 from .geometry import rdp, thin
-from .paths import NETWORK, ON_MAP, OUT_DATA, ROUTES, STATES, listing, newest, read_json, write_json
+from .paths import INTERCITY, NETWORK, ON_MAP, OUT_DATA, REGIONAL, ROUTES, STATES, listing, newest, read_json, write_json
 
 STATUSES = ["Exists", "Exists: Temporary", "Exists: Suspended", "Suspended", "Proposed: Funded", "Proposed: Corridor ID Program", "Proposed: FRA Long-Distance Study", "Proposed: Unofficial"]
 DETAILS = {d.lower(): d for d in ["Temporary", "Suspended", "Corridor ID Program", "FRA Long-Distance Study", "Funded", "Unofficial"]}  # Known details, as they're written on the page
@@ -78,7 +78,7 @@ def build_route(route, files, cities):  # Route as the page uses it: traced line
     return {
         **route, "traced": bool(src), "type": "Long-Distance" if long else "State-Supported", "typeKey": "long-distance" if long else "state",
         "status": next((s for s in STATUSES if s.lower() == status.lower()), status or "Proposed"),
-        "lines": [rounded(rdp(thin(line, .006) if src else line, .008)) for line in raw if len(line) > 1]  # About 0.9 km of detail: under a pixel at the closest zoom (the originals stay as they are)
+        "lines": [rounded(rdp(thin(line, .005) if src else line, .007)) for line in raw if len(line) > 1]  # About 0.75 km of detail (the originals stay as they are)
     }
 
 def inside(pt, rings):  # Point in polygon (any ring)
@@ -157,9 +157,27 @@ def overlaps(routes):  # How much each pair of route groups shares track: the pa
                     share[(a, b)] = share.get((a, b), 0) + 1
     return [[a, b, n] for (a, b), n in sorted(share.items())]
 
-def build(density):  # Write map.json if a source (or the population summary) changed; returns True if it did
-    out, geo = OUT_DATA / "map.json", listing(ROUTES, "*.geojson")
-    if out.exists() and out.stat().st_mtime >= newest([*listing(STATES, "*/*.kml"), *geo, NETWORK, Path(__file__)]) and read_json(out).get("density") == density:
+REGIONAL_NAME = re.compile(r"^\[(?P<operator>[^\]]+)\]\s*(?P<name>[^(\[]*?)\s*(?:\((?P<branch>[^)]*)\))?\s*(?P<tags>(?:\[[^\]]*\]\s*)*)$")  # "[MTA] Hudson Line (Penn Station) [Future]": trailing [tags] never show
+
+FUTURE_TAG = re.compile(r"\[(future|extension|extended|expansion|proposed|planned)\]", re.I)  # Tags marking a version that only exists in the buildout
+
+def read_regional():  # Commuter lines, each with its eras (a future file replaces its branch in the buildout, or is new there)
+    found = {}
+    for path in listing(REGIONAL, "*.geojson"):
+        m = REGIONAL_NAME.match(path.stem)
+        if m and m["name"]:
+            lines = [rounded(rdp(thin(line, .003), .004)) for line in geojson_lines(path)]  # About 0.4 km of detail: short lines, seen close up (coarser, they wander off their track)
+            found.setdefault((m["operator"].strip(), m["name"], (m["branch"] or "").strip().lower()), {})["future" if FUTURE_TAG.search(m["tags"]) else "today"] = [l for l in lines if len(l) > 1]
+    out = []
+    for (operator, name, _), versions in sorted(found.items()):
+        for era, lines in versions.items():
+            eras = ["today"] if era == "today" and "future" in versions else ["today", "buildout"] if era == "today" else ["buildout"]
+            out.append({"operator": operator, "name": name, "eras": eras, "lines": lines})
+    return out
+
+def build(density):  # Write map.json if a route, station or commuter line changed (the states never do); returns True if it did
+    out, geo = OUT_DATA / "map.json", listing(INTERCITY, "*.geojson") or listing(ROUTES, "*.geojson")  # (Older layout: the routes' files straight in routes/)
+    if out.exists() and out.stat().st_mtime >= newest([*geo, *listing(REGIONAL, "*.geojson"), NETWORK, Path(__file__)]) and read_json(out).get("density") == density:
         return False
     net = read_json(NETWORK, {})
     listed_cities = net.get("stations", net.get("cities", {}))
@@ -175,6 +193,7 @@ def build(density):  # Write map.json if a source (or the population summary) ch
         "cities": list(cities.values()),
         "routes": routes,
         "overlaps": overlaps(routes),
+        "regional": read_regional(),
         "snapped": True,
         "density": density
     })

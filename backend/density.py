@@ -98,8 +98,6 @@ def build():  # Pack states whose tract or population files changed; returns the
         densities = sorted(t[0] for sid in built for t in read_json(out(sid))["tracts"])
         cache_set("density_scale", {"scale": densities[min(len(densities) - 1, int(len(densities) * SCALE_AT))] if densities else 0})
     cache_set("density", built)
-    if not todo:
-        print(f"  {len(built)} state(s) up to date" if built else "  No tract data")
     return summary()
 
 def summary():  # Population map info for map.json, from the last build

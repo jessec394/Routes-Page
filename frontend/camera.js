@@ -66,7 +66,7 @@ class Camera {
         this.settle = setTimeout(() => { cancelAnimationFrame(this.shownAt); this.shownAt = 0; map.layout(); }, 200);
     }
 
-    show(f, m) { // Mid-move: shift each layer's last drawing (cheap); redraw a layer once it drifts, at most every 120 ms
+    show(f, m) { // Mid-move: shift each layer's last drawing (cheap); redraw a layer once it drifts, at most every 180 ms
         const now = performance.now(), last = this.lastShow, speed = last && now > last.t ? Math.abs(Math.log(f.s / last.s)) / Math.max(1, (now - last.t) / 16.7) : 0; // Zoom per frame
         this.lastShow = { t: now, s: f.s };
         let drew = false; // One layer redrawn per frame where it can wait: no doubled-up frames
@@ -76,7 +76,7 @@ class Camera {
         for (const g of this.groups()) {
             const b = g.frame || f, stretch = Math.min(g.zoom, 1 + Math.max(.015, speed * g.give)); // Fast zooms stretch further; slow ones redraw early (no visible sharpening at the end)
             const covered = back || (f.x0 >= b.x0 && f.y0 >= b.y0 && f.x0 + f.vw <= b.x0 + b.vw && f.y0 + f.vh <= b.y0 + b.vh); // Nothing blank at the edges
-            if ((!covered || (f.s > b.s * stretch && !drew)) && now - (g.at || 0) > 120) { // Zoomed in enough to soften its lines, or out/across past the drawing
+            if ((!covered || (f.s > b.s * stretch && !drew)) && now - (g.at || 0) > 180) { // Zoomed in enough to soften its lines, or out/across past the drawing
                 if (g.lines && !this.trip) map.zoomClasses(f, m); // (A camera move switches them as it lands: they restyle every dot, so not mid-flight)
                 this.draw(g, f);
                 g.at = now;
@@ -100,9 +100,13 @@ class Camera {
         const zs = frames.map(f => map.zAt(f.s)), last = frames.at(-1), into = last.s > frames[0].s * 1.05;
         const was = has(ui.map, 'far'), thr = (map.wholeS || 0) * 1.6, fade = f => Math.min(1, Math.max(0, (f.s - thr) / (thr * .5))); // Zooming in past "far": medium and small stations fade in as it passes
         if (into) map.zoomClasses(last, this.quick(), true); // Zooming in: the end's dot styles from the start (nothing pops in on landing)
+        const glides = map.labelsAhead(last, time); // Names take their sides for where it lands (they slide there with their dots)
         const far = has(ui.map, 'far'), checks = [0, .25, .5, .75, 1].map(k => frames[Math.round(k * (frames.length - 1))]);
         const seen = p => checks.some(f => { const x = (p._wx - f.x0) * f.s, y = (p._wy - f.y0) * f.s; return x > -80 && y > -80 && x < f.W + 80 && y < f.H + 80; }); // On screen at some point of the move
-        this.flying = (view.pinList || []).filter(p => !has(p, 'gone', 'out', 'absorbed') && !(far && has(p, 'size-S', 'size-M') && !has(p, 'lit', 'picked')) && seen(p)).flatMap(p => { // Only dots that show (the rest are placed when it lands)
+        const going = (view.pinList || []).filter(p => !has(p, 'gone', 'out', 'absorbed') && !(far && has(p, 'size-S', 'size-M') && !has(p, 'lit', 'picked')) && seen(p)); // Only dots that show (the rest are placed when it lands)
+        const plain = p => !p._side && !has(p, 'lit', 'picked', 'ping') && !has(p, 'hot'); // Unnamed: drawn on one canvas (else hundreds of GPU layers)
+        this.flat = { frames, time, fade, dots: going.filter(plain).map(p => ({ x: p._wx, y: p._wy, c: pinClass(p), alpha: has(p, 'off') ? .25 : 1, arrives: was && !far && has(p, 'size-S', 'size-M') })) };
+        this.flying = going.filter(p => !plain(p)).flatMap(p => {
             p.classList.add('live');
             map.applyZ([p]); // Its size where the move ends
             if (p._away) p.classList.toggle('away', p._away = false);
@@ -117,6 +121,34 @@ class Camera {
 
         const flown = new Set(this.flying.map(a => a.effect.target));
         for (const p of view.pinList || []) if (!flown.has(p) && !p._away) { p.classList.toggle('away', p._away = true); p._on = false; } // The rest hide till it lands (a dot just shown would sit where it was last placed)
+        this.flying.push(...glides);
+        const c = ui.flat ??= ui.pins.parentNode.insertBefore(Object.assign(document.createElement('canvas'), { className: 'map-dots', ariaHidden: 'true' }), ui.pins), d = dpr(), { W, H } = last;
+        if (c.width !== Math.round(W * d) || c.height !== Math.round(H * d)) Object.assign(c, { width: Math.round(W * d), height: Math.round(H * d) });
+        this.paintFlat(frames[0]);
+    }
+
+    paintFlat(f) { // The plain dots of a camera move at frame f, on one canvas (sized and bordered as the page draws them)
+        const c = ui.flat, g = c?.getContext('2d'), F = this.flat;
+        if (!g) return;
+        g.setTransform(dpr(), 0, 0, dpr(), 0, 0);
+        g.clearRect(0, 0, c.width, c.height);
+        if (!F?.dots.length) return;
+        const z = map.zAt(f.s), deep = getComputedStyle(document.documentElement).getPropertyValue('--navy').trim() || '#0d2344', fade = F.fade(f);
+        for (const cls of ['S', 'M', 'L']) {
+            const r = map.dotR(cls, z), b = Math.min(r * .45, cls === 'L' ? 2.5 + .5 * z : 2);
+            for (const dot of F.dots) {
+                if (dot.c !== cls) continue;
+                const x = (dot.x - f.x0) * f.s, y = (dot.y - f.y0) * f.s;
+                if (x < -r || y < -r || x > f.W + r || y > f.H + r) continue;
+                g.globalAlpha = dot.alpha * (dot.arrives ? fade : 1);
+                g.fillStyle = deep;
+                g.beginPath(); g.arc(x, y, r, 0, 7); g.fill();
+                g.fillStyle = '#fff';
+                g.beginPath(); g.arc(x, y, Math.max(0, r - b), 0, 7); g.fill();
+            }
+        }
+
+        g.globalAlpha = 1;
     }
 
     land() { // End a camera move's dot animations (their own positions take over)
@@ -125,13 +157,14 @@ class Camera {
     }
 
     stopPins() { // End a GPU dot move (the dots' own positions take over)
+        if (this.flat) { this.flat = null; this.paintFlat(); }
         if (!this.flying) return;
         this.flying.forEach(a => a.cancel());
         this.flying = null;
     }
 
     placePins(f, all = true) { // Position station dots for a frame (mid-move: the layer moves whole until it drifts too far)
-        if (this.flying && !all) { const at = this.trip.t * this.trip.time; for (const a of this.flying) a.currentTime = at; return; } // Mid camera move (flyPins)
+        if (this.flying && !all) { const at = this.trip.t * this.trip.time; for (const a of this.flying) a.currentTime = at; return this.paintFlat(f); } // Mid camera move (flyPins)
         const P = this.pinFrame, layers = [ui.pins, ui.litPins].filter(Boolean);
         if (!all && P) {
             const k = f.s / P.s, dx = (P.x0 - f.x0) * f.s, dy = (P.y0 - f.y0) * f.s;
@@ -167,7 +200,7 @@ class Camera {
 
     groups() { // The map's moving SVG layers, by how soon a zoom needs them redrawn
         return this.layerGroups ??= [
-            { get: () => [ui.base, ui.litLines, ui.ghost].filter(Boolean), zoom: 1.1, give: 10, lines: true }, // Routes: their widths and spacing show any stretch (the hover layer is made on first use)
+            { get: () => [ui.base, ui.litLines, ui.ghost].filter(Boolean), zoom: 1.25, give: 10, lines: true }, // Routes: their widths and spacing show any stretch (the hover layer is made on first use)
             { get: () => [ui.static, ui.edge], zoom: 1.25, give: 16 } // States and Ohio's outline: thin lines, so a little stretch is invisible (and they're the costliest to redraw)
         ];
     }
@@ -175,8 +208,8 @@ class Camera {
     draw(g, f, settled) { // Redraw one layer group for a frame
         const vb = [f.x0, f.y0, f.vw, f.vh].map(v => v.toFixed(1)).join(' ');
         g.frame = f;
-        const els = g.get();
-        els.forEach(el => { el.style.transform = ''; });
+        const els = g.get(), lean = !settled && !!g.lines && document.body.classList.contains('drawn'); // Mid-zoom redraws skip the casings and glows (half the work), back on landing
+        els.forEach(el => { el.style.transform = ''; if (el.classList.contains('lean') !== lean) el.classList.toggle('lean', lean); });
         if (g.vb === vb && !settled) return; // Same view: rewriting it would repaint the whole layer
         if (g.vb !== vb) els.forEach(el => el.setAttribute('viewBox', vb));
         g.vb = vb;
@@ -223,7 +256,6 @@ class Camera {
         this.trip = { t: 0, time, frames };
         ui.map.classList.add('moving');
         this.flyPins(this.trip);
-        this.flying.push(...map.labelsAhead(frames[n], time)); // Names move once, with the dots (worked out before the first frame moves)
         const step = now => { // One frame of the camera move
             start ??= now;
             const t = this.trip.t = Math.min(1, Math.max(0, (now - start) / time));

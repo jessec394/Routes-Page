@@ -10,7 +10,7 @@ class MapView {
 
     render(data) { // Build the whole map from network.json
         const focus = net.load(data);
-        lanesThread.start(view.routes);
+        lanesThread.start([...view.routes, ...view.regional]); // (Commuter lines numbered on from the routes)
         view.home = camera.home();
         const linked = START_ROUTE && view.routes.find(r => slug(r.label) === slug(START_ROUTE) || slug(r.name) === slug(START_ROUTE));
         if (linked) Object.assign(view, { linked, era: statusKind(linked.status) === 'temporary' ? 'today' : 'buildout', selected: linked.i, zoom: linked.i });
@@ -57,16 +57,17 @@ class MapView {
         $$('[data-i]', ui.legendBody).forEach(b => b.style.setProperty('--c', view.routes[b.dataset.i].color));
     }
 
-    routeLayers(plan) { // SVG for every route
+    routeLayers(plan) { // SVG for every route, over the commuter lines
         const layers = ['glow', 'under', 'route'].map(() => svg('g'));
         this.routeEls = new Map(); // Each route's line group, by route (routeAt checks it still shows)
-        view.routes.forEach(r => {
-            const style = `--c:${r.color};--w:${r.w}`, extra = view.instant.has(r.i) ? ' no-fade' : '';
-            const [glow, under, line] = ['glow', 'under', 'route'].map((n, l) => layers[l].appendChild(svg('g', { class: n + extra, 'data-i': r.i, style })));
+        [...view.regional, ...view.routes].forEach(r => {
+            const local = r.lane === Lanes.EDGE, style = local ? `--c:var(--commuter);--w:${r.w}` : `--c:${r.color};--w:${r.w}`, extra = local ? ' regional' : view.instant.has(r.i) ? ' no-fade' : '';
+            const [glow, under, line] = ['glow', 'under', 'route'].map((n, l) => layers[l].appendChild(svg('g', { class: n + extra, [local ? 'data-r' : 'data-i']: local ? r.k : r.i, style })));
             this.routeEls.set(r.i, line);
+            const start = local ? 0 : plan.get(r.i); // (Commuter lines don't draw in: they fade with their era)
             let done = 0;
             r.els = r.runs.map(run => {
-                const len = lengthOf(run), timing = { pathLength: 1, style: `--d:${(plan.get(r.i) + done / r.speed).toFixed(2)}s;--t:${(len / r.speed).toFixed(2)}s` };
+                const len = lengthOf(run), timing = { pathLength: 1, style: `--d:${(start + done / r.speed).toFixed(2)}s;--t:${(len / r.speed).toFixed(2)}s` };
                 done += len;
                 const els = [svg('path', timing), ...['casing', 'line'].map(c => svg('path', { class: c, ...timing }))];
                 glow.append(els[0]);
@@ -110,14 +111,15 @@ class MapView {
     stationDots(cities, reached) { // Station dot buttons (medium and large ones even with no route: places still to connect)
         const rank = { L: 0, M: 1, S: 2 };
         const context = new Set(cities.filter(c => net.contextOnly(c.name)).map(c => c.name)); // Drawn first, so featured stations sit on top
-        return cities.filter(c => view.served[c.name] || sizeOf(c) !== 'S').sort((a, b) => context.has(b.name) - context.has(a.name) || rank[sizeOf(b)] - rank[sizeOf(a)]).map(c => {
+        return cities.filter(c => twinsOf(c.name).some(n => view.served[n]) || sizeOf(c) !== 'S').sort((a, b) => context.has(b.name) - context.has(a.name) || rank[sizeOf(b)] - rank[sizeOf(a)]).map(c => {
             const pin = document.createElement('button'), [x, y] = view.xy([c.lon, c.lat]);
             pin.className = `pin size-${sizeOf(c)}`;
             Object.assign(pin.dataset, { city: c.name, x, y });
             Object.assign(pin, { _wx: x, _wy: y, _ctx: +context.has(c.name), _size: rank[sizeOf(c)] }); // For absorb()
             pin.style.setProperty('--appear', `${(reached[c.name] ?? 0).toFixed(2)}s`);
-            pin.innerHTML = `<i></i><span>${nameHTML(c.name)}</span>`;
-            pin.setAttribute('aria-label', `${place(c.name)}, ${plural(net.uniqueGroups(view.served[c.name] || []).length, 'route')}`);
+            const paren = c.name.slice(place(c.name).length).trim(); // A twin's own part of its name: shown only when a route calls at both
+            pin.innerHTML = `<i></i><span>${nameHTML(c.name)}${paren && view.twins.has(c.name) ? `<b class="paren"> ${esc(paren)}</b>` : ''}</span>`;
+            pin.setAttribute('aria-label', `${place(c.name)}, ${plural(net.uniqueGroups(twinsOf(c.name).flatMap(n => view.served[n] || [])).length, 'route')}`);
             return pin;
         });
     }
@@ -206,7 +208,7 @@ class MapView {
         if (this.routeCache.has(key)) return Promise.resolve(this.routeCache.get(key));
         if (this.pending.has(key)) return this.pending.get(key);
         const big = $$('.pin.size-L:not(.gone)', ui.pins), radius = this.dotR('L', this.zAt(s)); // L dot size at that zoom (no layout to wait for)
-        const job = this.geometryJob = { key, s, laid: view.routes.filter(net.shown).map(r => r.i), ctx: { radius, home: this.homeS || s, majors: big.map(p => [+p.dataset.x, +p.dataset.y]) } };
+        const job = this.geometryJob = { key, s, laid: [...view.routes.filter(net.shown), ...view.regional.filter(net.regionalShown)].map(r => r.i), ctx: { radius, home: this.homeS || s, majors: big.map(p => [+p.dataset.x, +p.dataset.y]) } };
         const promise = lanesThread.run(job).then(c => {
             this.pending.delete(key);
             return remember(this.routeCache, key, () => ({ ...c, job }));
@@ -219,7 +221,7 @@ class MapView {
         const c = this.routeCache.get(this.lineKey);
         if (!c?.spread || this.glide || Math.abs(Math.log(s / (this.spacedAt || s))) < .15) return; // Within 15%: under a pixel off, not worth restyling every line
         this.spacedAt = s;
-        view.routes.forEach(r => c.spread[r.i].forEach((b, n) => {
+        [...view.routes, ...view.regional].forEach(r => c.spread[r.i].forEach((b, n) => {
             if (!b) return;
             const pts = [];
             for (let k = 0; k < b.length / 10; k++) pts.push(Lanes.at(b, k, s, c.radius, c.home));
@@ -231,9 +233,10 @@ class MapView {
     crossfade(apply) { // Swap lines at once, cross-fading old and new drawings on the GPU (fades and glides repaint per frame)
         if (still || !document.body.classList.contains('drawn')) return apply();
         ui.ghost?.remove();
-        const ghost = ui.ghost = ui.base.cloneNode(true); // The old drawing, on top
-        ghost.setAttribute('class', 'map-ghost');
-        ui.base.after(ghost);
+        const shot = this.backdropAt?.f === view.frame && has(ui.backdrop, 'ready') && this.backdropAt.sig === this.backdropSig(); // The backdrop already pictures the old lines here: it stands in (copying hundreds of lines doubled the drawing)
+        const ghost = shot ? ui.backdrop : ui.ghost = ui.base.cloneNode(true); // The old drawing
+        if (shot) { ghost.getAnimations().forEach(a => a.cancel()); ghost.style.transform = ''; ghost.classList.add('ghosting'); }
+        else { ghost.setAttribute('class', 'map-ghost'); ui.base.after(ghost); }
         ui.base.classList.add('swap'); // Routes change without their own fades, lanes without gliding
         this.noGlide = true;
         apply();
@@ -245,7 +248,8 @@ class MapView {
             ui.base.classList.remove('swap');
             hold.cancel();
             ui.base.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 220, easing: 'ease-out' }); // New lines in first...
-            ghost.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 260, delay: 160, easing: 'ease-in', fill: 'both' }).finished.then(() => { // ...then the old ones out: no dip where they match
+            ghost.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 260, delay: 160, easing: 'ease-in', fill: 'both' }).finished.then(a => { // ...then the old ones out: no dip where they match
+                if (shot) { ghost.classList.remove('ghosting'); a.cancel(); return; }
                 ghost.remove();
                 if (ui.ghost === ghost) ui.ghost = null;
             });
@@ -286,7 +290,7 @@ class MapView {
         this.lineKey = key;
         this.spacedAt = s;
         const moves = [];
-        view.routes.forEach(r => {
+        [...view.routes, ...view.regional].forEach(r => {
             const from = r.parts;
             r.parts = c.parts[r.i]; // (Flat x, y numbers)
             c.d[r.i].forEach((d, n) => {
@@ -327,7 +331,8 @@ class MapView {
             if (this.backdropSig() !== sig || view.frame !== f || ui.map.classList.contains('moving')) return;
             const q = .5 * Math.min(2, dpr()), K = Lanes.K(f.s, this.homeS || f.s), k = Math.round(K * 40) / 40; // Half the screen's sharpness; line widths as camera.draw sets them
             const casing = ui.base.querySelector('.casing'), deep = casing ? getComputedStyle(casing).stroke : '#0a1c36';
-            const lines = view.routes.filter(r => net.shownAt(r.i)).map(r => { const g = r.els?.[0]?.[2]?.parentNode; return g && !has(g, 'gone', 'out') ? { i: r.i, color: r.color, w: r.w, alpha: has(g, 'off') ? .12 : 1, on: has(g, 'on') } : null; }).filter(Boolean);
+            const commuter = getComputedStyle(ui.map).getPropertyValue('--commuter').trim() || '#aab9cd', lit = r => { const g = r.els?.[0]?.[2]?.parentNode; return g && !has(g, 'gone', 'out') ? g : null; };
+            const lines = [...view.regional.filter(net.regionalShown), ...view.routes.filter(r => net.shownAt(r.i))].map(r => { const g = lit(r); return g ? { i: r.i, color: r.lane === Lanes.EDGE ? commuter : r.color, w: r.w, alpha: has(g, 'off') ? .12 : 1, on: has(g, 'on') } : null; }).filter(Boolean);
             lanesThread.run({ ...c.job, kind: 'backdrop', area: { x0: f.x0 - f.vw, y0: f.y0 - f.vh, vw: 3 * f.vw, vh: 3 * f.vh }, scale: f.s * q, px: k * q, deep, lines }).then(({ bitmap }) => {
                 if (!bitmap || this.backdropSig() !== sig || ui.map.classList.contains('moving')) return bitmap?.close(); // (Swapped only between moves)
                 ui.backdrop.getContext('bitmaprenderer').transferFromImageBitmap(bitmap);
@@ -404,10 +409,10 @@ class MapView {
         }));
     }
 
-    absorb(pins, size) { // Hide a dot under a bigger or featured one covering it, or under its namesake once they touch, until zoomed in
+    absorb(pins, size) { // Hide a dot under a bigger or featured one covering it, and a twin under its main one
         const kept = new Map(), outranks = (q, p) => q._size < p._size || q._ctx < p._ctx; // Bigger, or featured over context
         const named = new Map(pins.map(p => [p.dataset.city, p])), near = (q, p, k) => Math.hypot(q._x - p._x, q._y - p._y) < k;
-        const namesake = p => { const main = named.get(p.dataset.city.replace(/\s*\(.*\)\s*$/, '')); return main !== p && main && !has(main, 'out') && !has(p, 'lit', 'picked') && near(main, p, size.get(main).r + size.get(p).r * .5) ? main : null; }; // "Stockton (San Joaquin)" into "Stockton": same name plus a parenthetical, close enough to blur together
+        const twin = p => { const c = p.dataset.city, main = mainOf(c) !== c && !view.split?.has(c) && named.get(mainOf(c)); return main && !has(main, 'out') ? main : null; }; // One stop: its main dot stands for it at any zoom
         const cell = 64, cellOf = (x, y) => Math.floor(x / cell) * 65536 + Math.floor(y / cell), covers = (p, r) => { // A kept dot nearby covers it (kept dots by grid cell: not every pair)
             const cx = Math.floor(p._x / cell), cy = Math.floor(p._y / cell);
             for (let x = cx - 1; x <= cx + 1; x++) for (let y = cy - 1; y <= cy + 1; y++) for (const q of kept.get(x * 65536 + y) || []) if (outranks(q, p) && near(q, p, size.get(q).r + r * .3)) return true;
@@ -415,7 +420,7 @@ class MapView {
         };
 
         [...pins].sort((a, b) => a._ctx - b._ctx || a._size - b._size).forEach(p => {
-            const r = size.get(p).r, under = !has(p, 'out') && (!!namesake(p) || covers(p, r)); // Mostly covered
+            const r = size.get(p).r, under = !has(p, 'out') && (!!twin(p) || covers(p, r)); // Mostly covered
             if (!under && !has(p, 'out')) { const k = cellOf(p._x, p._y); (kept.get(k) ?? kept.set(k, []).get(k)).push(p); }
             if (has(p, 'absorbed') !== under) p.classList.toggle('absorbed', under);
         });
@@ -499,24 +504,27 @@ class MapView {
         });
     }
 
-    snapPins() { // A selected route's stations sit on its own line (in a bundle, its lane runs beside the true spot)
-        const lock = view.selected !== null ? net.members(view.selected).filter(net.shownAt) : [], key = lock.length ? `${lock}|${this.lineKey}` : ''; // (Nothing selected: the dots stay put, whatever the zoom)
-        if (this.snapKey === key || !view.pinList) return;
+    snapPins() { // Stations sit on their own lines (a bundle's lanes run beside the true spot); a selected route's, on it
+        const lock = view.selected !== null ? net.members(view.selected).filter(net.shownAt) : [], key = `${lock}|${this.lineKey}`;
+        if (this.snapKey === key || !view.pinList || !this.lineKey) return;
         this.snapKey = key;
-        const stops = new Set(lock.flatMap(i => view.routes[i].stops)), reach = 40 / (view.frame?.s || 1); // (Within about 40px)
+        const { cell, grid, segs } = this.picks?.key === this.lineKey ? this.picks : this.pickGrid(), s = this.spacedAt || view.frame.s, picked = new Set(lock.flatMap(i => view.routes[i].stops));
         for (const p of view.pinList) {
             p._hx ??= p._wx; p._hy ??= p._wy; // Its true spot
+            const mine = picked.has(p.dataset.city) ? lock : net.routesAt(p.dataset.city), reach = (mine === lock ? 40 : 24) / s, n = Math.ceil(reach / cell); // (Within about 24px; a selected route's, 40px)
+            const cx = Math.floor(p._hx / cell), cy = Math.floor(p._hy / cell);
             let best = [p._hx, p._hy], most = reach * reach;
-            if (stops.has(p.dataset.city)) for (const i of lock) for (const f of view.routes[i].parts || []) for (let k = 2; k < f.length; k += 2) { // Nearest point on its line
-                const ax = f[k - 2], ay = f[k - 1], dx = f[k] - ax, dy = f[k + 1] - ay, l = dx * dx + dy * dy, t = l ? Math.max(0, Math.min(1, ((p._hx - ax) * dx + (p._hy - ay) * dy) / l)) : 0;
-                const x = ax + dx * t, y = ay + dy * t, d = (x - p._hx) ** 2 + (y - p._hy) ** 2;
-                if (d < most) { most = d; best = [x, y]; }
+            if (mine.length) for (let x = cx - n; x <= cx + n; x++) for (let y = cy - n; y <= cy + n; y++) for (const k of grid.get(x * 65536 + y) || []) { // Nearest point on one of its lines
+                if (!mine.includes(segs[k * 5])) continue;
+                const ax = segs[k * 5 + 1], ay = segs[k * 5 + 2], dx = segs[k * 5 + 3] - ax, dy = segs[k * 5 + 4] - ay, l = dx * dx + dy * dy, t = l ? Math.max(0, Math.min(1, ((p._hx - ax) * dx + (p._hy - ay) * dy) / l)) : 0;
+                const qx = ax + dx * t, qy = ay + dy * t, d = (qx - p._hx) ** 2 + (qy - p._hy) ** 2;
+                if (d < most) { most = d; best = [qx, qy]; }
             }
 
             [p._wx, p._wy] = best;
         }
 
-        if (view.frame && !camera.flying) camera.placePins(view.frame);
+        if (view.frame && !camera.flying) camera.placePins(camera.pinFrame || view.frame); // (Where the dots are showing now: the lines may be laid out ahead, for where a move lands)
     }
 
     refocus(id) { // Feature another state, as Ohio is by default (outline, sidebar, camera)
@@ -552,7 +560,7 @@ class MapView {
         for (let x = cx - n; x <= cx + n; x++) for (let y = cy - n; y <= cy + n; y++) for (const k of grid.get(x * 65536 + y) || []) {
             const i = segs[k * 5], el = this.routeEls.get(i);
             if (i === best || !el || has(el, 'gone', 'out')) continue;
-            const d = segDist(p, [segs[k * 5 + 1], segs[k * 5 + 2]], [segs[k * 5 + 3], segs[k * 5 + 4]]);
+            const d = segDist(p, [segs[k * 5 + 1], segs[k * 5 + 2]], [segs[k * 5 + 3], segs[k * 5 + 4]]) + (i >= view.routes.length ? 4 / f.s : 0); // (An Amtrak line beside a commuter one wins)
             if (d < near) { near = d; best = i; }
         }
 
@@ -561,7 +569,7 @@ class MapView {
 
     pickGrid() { // The drawn lines' segments by grid cell (once per layout of the lines)
         const s = this.spacedAt || view.frame.s, cell = 24 / s, step = 3 / s, grid = new Map(), segs = []; // (Points 3px apart are plenty for a 12px reach)
-        for (const r of view.routes) for (const f of r.parts || []) for (let k = 2, ax = f[0], ay = f[1]; k + 1 < f.length; k += 2) {
+        for (const r of [...view.routes, ...view.regional]) for (const f of r.parts || []) for (let k = 2, ax = f[0], ay = f[1]; k + 1 < f.length; k += 2) {
             const bx = f[k], by = f[k + 1], n = segs.length / 5;
             if (k + 3 < f.length && Math.abs(bx - ax) + Math.abs(by - ay) < step) continue;
             segs.push(r.i, ax, ay, bx, by);
@@ -602,8 +610,8 @@ class MapView {
     }
 
     pinTip(pin) { // A station's tooltip (built once per station and view)
-        const key = `${pin.dataset.city}|${view.era}|${view.types}`;
-        if (this.pinTipKey !== key) { this.pinTipKey = key; this.pinTipHTML = `<strong>${nameHTML(pin.dataset.city)}</strong><em>${plural(net.uniqueGroups(net.routesAt(pin.dataset.city)).length, 'route')}</em>`; }
+        const key = `${pin.dataset.city}|${view.era}|${view.types}|${view.split?.has(pin.dataset.city)}`;
+        if (this.pinTipKey !== key) { this.pinTipKey = key; this.pinTipHTML = `<strong>${nameHTML(pin.dataset.city, view.split?.has(pin.dataset.city))}</strong><em>${plural(net.uniqueGroups(net.routesAt(pin.dataset.city)).length, 'route')}</em>`; }
         return this.pinTipHTML;
     }
 
@@ -617,9 +625,11 @@ class MapView {
         if (view.city && !net.routesAt(view.city).length) view.city = null;
         const active = view.hover !== null ? net.members(view.hover) : view.selected !== null ? net.members(view.selected) : view.city ? net.routesAt(view.city) : null;
         const lock = view.selected !== null ? net.members(view.selected) : view.city ? net.routesAt(view.city) : null; // Stations off this disappear
-        const stopsOf = ids => new Set((ids || []).flatMap(i => view.routes[i].stops)); // Stops of routes
+        const split = view.split = net.split((active || []).filter(net.shownAt)); // Twins the routes in view call at both of: told apart
+        const stopsOf = ids => new Set((ids || []).flatMap(i => view.routes[i].stops).flatMap(n => split.has(n) ? [n] : twinsOf(n))); // Stops of routes (a twin's: the station as a whole)
         const stops = stopsOf(active), lockStops = stopsOf(lock);
         (this.lineGroups || []).forEach(g => { // Map lines follow the selection only; hover is drawn by liftHovered
+            if (g.dataset.r) { g.classList.toggle('gone', !net.regionalShown(view.regional[g.dataset.r])); return g.classList.toggle('off', !!lock); } // Commuter lines: by era, stepping back for a selection
             const i = +g.dataset.i, on = !lock || lock.includes(i);
             g.classList.toggle('gone', !net.shownAt(i));
             g.classList.toggle('on', !!lock && on);
@@ -634,6 +644,7 @@ class MapView {
             p.classList.toggle('lit', !!active && stops.has(c));
             p.classList.toggle('off', !!lock && !lockStops.has(c));
             p.classList.toggle('picked', c === view.city);
+            p.classList.toggle('full', split.has(c));
         });
 
         sidebar.highlight(active);
@@ -681,7 +692,13 @@ class MapView {
         camera.move();
     }
 
-    selectRoute(i) { view.city = view.hover = null; this.focusRoute(i); this.swapFade(() => this.focusRoutesAndStations()); } // Select a route (null clears)
+    selectRoute(i) { // Select a route (null clears)
+        if (i !== null && pageW() <= NARROW && view.legend) { view.legend = false; sidebar.sync(); } // A phone: the list steps aside for the map and its card
+        view.city = view.hover = null;
+        this.focusRoute(i);
+        this.swapFade(() => this.focusRoutesAndStations());
+    }
+
     swapFade(apply) { // Highlights change at once, the line layer fading back in whole on the GPU (nothing copied: thousands of paths)
         apply();
         if (still || !document.body.classList.contains('drawn')) return;
@@ -701,6 +718,12 @@ class MapView {
         this.hoverFrame ||= requestAnimationFrame(() => { this.hoverFrame = 0; this.focusRoutesAndStations(); });
     }
 
+    hoverLocal(l) { // A hovered commuter line glows (all of its branches)
+        if (this.hotLocal === (l?.label ?? null)) return;
+        this.hotLocal = l?.label ?? null;
+        this.lineGroups.forEach(g => { if (g.dataset.r) g.classList.toggle('hot', view.regional[g.dataset.r].label === this.hotLocal); });
+    }
+
     tip(text, e) { // Hover tooltip
         ui.tip.hidden = !text;
         if (!text) return;
@@ -716,19 +739,22 @@ class MapView {
             moved = e;
         });
 
-        ui.map.addEventListener('pointerleave', () => { moved = null; this.tip(); this.hoverRoute(null); this.setHot(null); ui.map.classList.remove('pointing'); });
+        ui.map.addEventListener('pointerleave', () => { moved = null; this.tip(); this.hoverRoute(null); this.hoverLocal(null); this.setHot(null); ui.map.classList.remove('pointing'); });
         this.pointerMove = e => {
-            const idle = !ui.map.classList.contains('moving') && e.pointerType !== 'touch', [pin, i] = idle ? this.under(e) : [null, null];
+            const idle = !ui.map.classList.contains('moving') && e.pointerType !== 'touch', [pin, hit] = idle ? this.under(e) : [null, null];
+            const local = hit >= view.routes.length ? view.regional[hit - view.routes.length] : null, i = local ? null : hit; // A commuter line, or a route
             this.setHot(pin);
             if (has(ui.map, 'pointing') !== (!!pin || i !== null)) ui.map.classList.toggle('pointing', !!pin || i !== null);
             this.hoverRoute(i);
+            this.hoverLocal(pin ? null : local);
             if (pin) return this.tip(this.pinTip(pin), e);
+            if (local) return this.tip(`<span class="swatch" style="--c:var(--commuter)"></span><strong>${esc(local.name)}</strong><em>${esc(local.operator)}</em>`, e);
             if (i === null) return this.tip();
             const key = `${i}|${view.era}|${view.types}`; // Tooltip text is built once per route and view
             if (this.tipKey !== key) {
                 const r = view.routes[i], stops = new Set(net.members(i).filter(net.shownAt).flatMap(m => view.routes[m].stops)).size;
                 this.tipKey = key;
-                this.tipHTML = `<span class="swatch" style="--c:${r.color}"></span><strong>${esc(r.label)}</strong><em>${esc(r.status)} · ${plural(stops, 'stop')}</em>`;
+                this.tipHTML = `<span class="swatch" style="--c:${r.color}"></span><strong>${esc(r.label)}</strong><em>${esc(statusText(r.status))} · ${plural(stops, 'stop')}</em>`;
             }
 
             this.tip(this.tipHTML, e);
@@ -738,7 +764,7 @@ class MapView {
             if (!document.body.classList.contains('drawn')) return;
             const [pin, i] = this.under(e);
             if (pin) { this.tip(); return stationModal.open(pin.dataset.city); }
-            if (i !== null) { this.tip(); return this.selectRoute(i !== view.selected ? i : null); }
+            if (i !== null && i < view.routes.length) { this.tip(); return this.selectRoute(i !== view.selected ? i : null); } // (Commuter lines can't be picked)
             const id = view.frame && this.stateAt(e);
             if (id && id !== view.focus) this.refocus(id);
             else if (view.selected !== null || view.city) this.reset();

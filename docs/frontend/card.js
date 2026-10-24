@@ -20,7 +20,7 @@ class InfoCard {
 
     stopItem(n, r) { // One stop in a route card
         const others = net.uniqueGroups(net.routesAt(n).filter(j => view.routes[j].label !== r.label));
-        return `<li class="size-${sizeOf(view.cities[n])}" data-city="${esc(n)}"><i></i><span class="stop-name">${nameHTML(n)}</span>` +
+        return `<li class="size-${sizeOf(view.cities[n])}" data-city="${esc(n)}"><i></i><span class="stop-name">${nameHTML(n, this.split?.has(n))}</span>` +
             (others.length ? `<span class="links${others.length > 4 ? ' many' : ''}" title="Also served by ${esc(others.map(o => o.label).join(', '))}">${others.slice(0, others.length > 4 ? 3 : 4).map(o => `<b style="--c:${o.color}"></b>`).join('')}${others.length > 4 ? `<em>+${others.length - 3}</em>` : ''}</span>` : '') + '</li>'; // Up to four colours, or three and a count: names on hover
     }
 
@@ -59,19 +59,24 @@ class InfoCard {
         return rows;
     }
 
-    routeCard(r) { // Route card HTML
-        const list = net.members(r.i).map(i => view.routes[i]).filter(net.shown);
-        if (!list.length) list.push(r);
-        const trunk = common(list.map(b => b.stops)), split = list.length > 1 && trunk ? list[0].stops[trunk - 1] : null;
+    stopList(list, r, color = r.color) { // A route's stops, its branches merged into one list (this.branches: for drawBranches, once it's on the page)
+        this.split = net.split(list.map(b => b.i)); // Twin stations it calls at both of: named in full
         const lanes = [...list].sort((a, b) => b.stops.length - a.stops.length), hub = list.length > 1 && this.hub(lanes.map(b => b.stops)); // Longest branch on the left
         const rows = hub ? [...this.merge(hub.up.map(s => [...s].reverse())), ...this.merge(hub.down).slice(1)] : list.length > 1 ? this.merge(lanes.map(b => b.stops)) : list[0].stops; // Hub: northbound branches above it (read upwards), the rest below
         const order = hub ? [...hub.up, ...hub.down] : lanes.map(b => b.stops), cols = hub ? [...this.columns(hub.up, rows), ...this.columns(hub.down, rows)] : this.columns(order, rows); // Each side numbers its own columns from the left
-        this.branches = list.length > 1 ? { rows, cols, stops: order.map(s => new Set(s)), ends: order.map(s => [s[0], s.at(-1)].map(n => rows.indexOf(n)).sort((a, b) => a - b)) } : null; // Drawn once the list is on the page
+        this.branches = list.length > 1 ? { rows, cols, stops: order.map(s => new Set(s)), ends: order.map(s => [s[0], s.at(-1)].map(n => rows.indexOf(n)).sort((a, b) => a - b)) } : null;
+        return `<ol class="stops${list.length > 1 ? ' branched' : ''}" style="--c:${color};--cols:${this.branches ? Math.max(...this.branches.cols) + 1 : 1}">${rows.map(n => this.stopItem(n, r)).join('')}</ol>`;
+    }
+
+    routeCard(r) { // Route card HTML
+        const list = net.members(r.i).map(i => view.routes[i]).filter(net.shown);
+        if (!list.length) list.push(r);
+        const trunk = common(list.map(b => b.stops)), split = list.length > 1 && trunk ? list[0].stops[trunk - 1] : null, stops = this.stopList(list, r);
         const notes = [split && `Splits at ${esc(place(split))}`, !list.every(b => b.traced) && 'Line approximated'].filter(Boolean); // Only when there's something to say
         return `<div class="card-head" style="--c:${r.color}"><span class="swatch"></span><div>` +
             `<p class="kicker">${esc(r.type)} route</p><h3>${esc(r.label)}</h3><p class="status is-${statusKind(r.status)}">${esc(statusText(r.status))}</p>` +
             (notes.length ? `<p class="meta">${notes.join(' · ')}</p>` : '') + `</div></div>${relief.markup(r.i)}` +
-            `<ol class="stops${list.length > 1 ? ' branched' : ''}" style="--c:${r.color};--cols:${this.branches ? Math.max(...this.branches.cols) + 1 : 1}">${rows.map(n => this.stopItem(n, r)).join('')}</ol>` +
+            stops +
             '<div class="card-actions"><button class="act" data-copy="link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg><span>Share link</span></button></div>';
     }
 
@@ -124,7 +129,7 @@ class InfoCard {
         if (!key || ui.card.dataset.key === key) return;
         ui.card.dataset.key = key;
         ui.body.innerHTML = view.selected !== null ? this.routeCard(view.routes[view.selected]) : this.cityCard(view.city);
-        if (view.selected !== null) { const fig = $('.relief', ui.body), i = view.selected; requestAnimationFrame(() => fig.isConnected && relief.fill(fig, i)); } // Next frame: measuring it now would lay the page out an extra time
+        if (view.selected !== null) { const fig = $('.relief', ui.body), i = view.selected; requestAnimationFrame(() => fig?.isConnected && relief.fill(fig, i)); } // Next frame: measuring it now would lay the page out an extra time
         if (this.branches) this.drawBranches($('.stops', ui.body), this.branches);
         if (!still) ui.card.animate([{ opacity: 0, translate: '0 .75rem' }, { opacity: 1, translate: '0 0' }], { duration: 400, easing: 'cubic-bezier(.16, 1, .3, 1)' });
     }

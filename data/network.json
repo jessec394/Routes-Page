@@ -13,6 +13,7 @@
         "Aldershot": {"coords": [43.31332, -79.85562], "size": "M"},
         "Alexandria (LA)": {"coords": [31.30815, -92.43827], "size": "S"},
         "Alexandria (VA)": {"coords": [38.80632, -77.06249], "size": "M"},
+        "Allentown": {"coords": [40.59712, -75.46008], "size": "M"},
         "Alliance": {"coords": [40.92116, -81.09249], "size": "S"},
         "Alpine": {"coords": [30.35714, -103.66161], "size": "S"},
         "Alton": {"coords": [38.92112, -90.15733], "size": "S"},
@@ -38,6 +39,7 @@
         "Athens (OH)": {"coords": [39.33203, -82.12968], "size": "S"},
         "Athens (TN)": {"coords": [35.4457, -84.60018], "size": "S"},
         "Atlanta": {"coords": [33.79941, -84.3926], "size": "L"},
+        "Atlantic City": {"coords": [39.36293, -74.44028], "size": "M"},
         "Atmore": {"coords": [31.02399, -87.49681], "size": "S"},
         "Auburn (CA)": {"coords": [38.90383, -121.08292], "size": "S"},
         "Auburn (GA)": {"coords": [32.60964, -85.48392], "size": "S"},
@@ -47,15 +49,14 @@
         "Baker City": {"coords": [44.77558, -117.84011], "size": "S"},
         "Bakersfield": {"coords": [35.37219, -119.00769], "size": "L"},
         "Baldwin": {"coords": [44.96761, -92.37196], "size": "S"},
-        "Baltimore (MD)": {"coords": [39.30772, -76.61541], "size": "L"},
-        "Baltimore (OH)": {"coords": [39.84927, -82.59876], "size": "S"},
+        "Baltimore": {"coords": [39.30772, -76.61541], "size": "L"},
         "Bangor": {"coords": [42.31478, -86.11147], "size": "S"},
         "Barstow": {"coords": [34.9047, -117.0247], "size": "S"},
         "Bartlesville": {"coords": [36.75229, -95.97889], "size": "S"},
         "Baton Rouge": {"coords": [30.44514, -91.174], "size": "M"},
         "Battle Creek": {"coords": [42.31833, -85.18767], "size": "S"},
         "Bay St. Louis": {"coords": [30.30873, -89.33399], "size": "S"},
-        "Beaumont": {"coords": [30.07634, -94.12761], "size": "S"},
+        "Beaumont": {"coords": [30.07634, -94.12761], "size": "M"},
         "Beaver Falls": {"coords": [40.75151, -80.32505], "size": "S"},
         "Bedford": {"coords": [37.33573, -79.52195], "size": "S"},
         "Bellingham": {"coords": [48.72045, -122.5111], "size": "S"},
@@ -302,6 +303,7 @@
         "Fullerton": {"coords": [33.86884, -117.92287], "size": "S"},
         "Fulton": {"coords": [36.52356, -88.88726], "size": "S"},
         "Fuquay-Varina": {"coords": [35.58633, -78.8012], "size": "S"},
+        "Gainesville (FL)": {"coords": [29.67827, -82.3252], "size": "M"},
         "Gainesville (GA)": {"coords": [34.28877, -83.81962], "size": "S"},
         "Gainesville (TX)": {"coords": [33.62508, -97.14072], "size": "S"},
         "Galesburg": {"coords": [40.94464, -90.36393], "size": "S"},
@@ -391,7 +393,7 @@
         "Hudson": {"coords": [44.98669, -92.75693], "size": "S"},
         "Humboldt": {"coords": [35.82449, -88.92028], "size": "S"},
         "Huntingdon": {"coords": [40.48366, -78.01178], "size": "S"},
-        "Huntington": {"coords": [38.41594, -82.4397], "size": "S"},
+        "Huntington": {"coords": [38.41594, -82.4397], "size": "M"},
         "Huntsville": {"coords": [34.73497, -86.59008], "size": "M"},
         "Hutchinson": {"coords": [38.05564, -97.93095], "size": "S"},
         "Independence (KS)": {"coords": [37.23222, -95.70932], "size": "S"},
@@ -444,7 +446,8 @@
         "Lakeland": {"coords": [28.04575, -81.95188], "size": "S"},
         "Lamar": {"coords": [38.08974, -102.61841], "size": "S"},
         "Lamy": {"coords": [35.48097, -105.87996], "size": "S"},
-        "Lancaster": {"coords": [40.05431, -76.30774], "size": "S"},
+        "Lancaster (OH)": {"coords": [39.70867, -82.60344], "size": "S"},
+        "Lancaster (PA)": {"coords": [40.05431, -76.30774], "size": "M"},
         "Lansing": {"coords": [42.71893, -84.49589], "size": "M"},
         "Lapeer": {"coords": [43.04944, -83.30615], "size": "S"},
         "Laramie": {"coords": [41.30878, -105.59619], "size": "S"},
@@ -471,6 +474,7 @@
         "Littleton": {"coords": [39.61197, -105.01488], "size": "S"},
         "Live Oak": {"coords": [30.29703, -82.98348], "size": "S"},
         "Lodi": {"coords": [38.1332, -121.27181], "size": "S"},
+        "Logan": {"coords": [39.53588, -82.40892], "size": "S"},
         "Lompoc-Surf": {"coords": [34.68298, -120.60499], "size": "S"},
         "Longmont": {"coords": [40.16025, -105.10557], "size": "S"},
         "Longview": {"coords": [32.49413, -94.72774], "size": "S"},
@@ -492,7 +496,8 @@
         "Malta": {"coords": [48.36042, -107.8719], "size": "S"},
         "Malvern": {"coords": [34.36563, -92.8137], "size": "S"},
         "Manassas": {"coords": [38.75022, -77.4725], "size": "S"},
-        "Manchester": {"coords": [43.17207, -73.0467], "size": "S"},
+        "Manchester (NH)": {"coords": [42.99581, -71.46653], "size": "M"},
+        "Manchester (VT)": {"coords": [43.17207, -73.0467], "size": "S"},
         "Marianna": {"coords": [30.77406, -85.23486], "size": "S"},
         "Maricopa": {"coords": [33.05614, -112.0475], "size": "S"},
         "Marietta": {"coords": [33.94898, -84.54956], "size": "S"},
@@ -576,7 +581,6 @@
         "New Haven": {"coords": [41.29755, -72.92661], "size": "M"},
         "New Haven (State Street)": {"coords": [41.30525, -72.92202], "size": "S"},
         "New Iberia": {"coords": [30.00841, -91.8238], "size": "S"},
-        "New Lexington": {"coords": [39.70936, -82.20832], "size": "S"},
         "New London": {"coords": [41.3542, -72.09314], "size": "S"},
         "New Orleans": {"coords": [29.94623, -90.07869], "size": "L"},
         "New Orleans Airport": {"coords": [29.97731, -90.25419], "size": "S", "airport": true},
@@ -675,10 +679,11 @@
         "Potacello": {"coords": [42.86142, -112.44513], "size": "S"},
         "Pottstown": {"coords": [40.24435, -75.64923], "size": "S"},
         "Poughkeepsie": {"coords": [41.7071, -73.93766], "size": "S"},
+        "Prescott": {"coords": [34.53944, -112.46818], "size": "S"},
         "Prince-Beckley": {"coords": [37.8565, -81.06061], "size": "S"},
         "Princeton (IL)": {"coords": [41.38526, -89.46692], "size": "S"},
         "Princeton (MO)": {"coords": [40.39215, -93.579], "size": "S"},
-        "Princeton Junction": {"coords": [40.31635, -74.62383], "size": "S"},
+        "Princeton Junction": {"coords": [40.31635, -74.62383], "size": "M"},
         "Providence": {"coords": [41.82924, -71.41328], "size": "L"},
         "Provo": {"coords": [40.22587, -111.66398], "size": "M"},
         "Pueblo": {"coords": [38.26251, -104.6174], "size": "S"},
@@ -750,6 +755,7 @@
         "Santa Ana": {"coords": [33.75157, -117.85643], "size": "S"},
         "Santa Barbara": {"coords": [34.41365, -119.69291], "size": "M"},
         "Santa Clara": {"coords": [37.3531, -121.93624], "size": "S"},
+        "Santa Rosa": {"coords": [38.43759, -122.72177], "size": "M"},
         "Saratoga Springs": {"coords": [43.08282, -73.81017], "size": "S"},
         "Savannah": {"coords": [32.08361, -81.14841], "size": "M"},
         "Schenectady": {"coords": [42.81456, -73.94273], "size": "S"},
@@ -844,6 +850,7 @@
         "Tulsa": {"coords": [36.15375, -95.99838], "size": "L"},
         "Turlock-Denair": {"coords": [37.52726, -120.79807], "size": "S"},
         "Tuscaloosa": {"coords": [33.19341, -87.56014], "size": "S"},
+        "Tyler": {"coords": [32.35473, -95.29871], "size": "M"},
         "Tyrone": {"coords": [40.66766, -78.24047], "size": "S"},
         "Uhrichsville": {"coords": [40.39197, -81.33207], "size": "S"},
         "Utica (IL)": {"coords": [41.34264, -89.00718], "size": "S"},
@@ -933,7 +940,7 @@
                 "Acela": {
                     "name": "Washington - Boston",
                     "type": "Exists",
-                    "stops": ["Washington (DC)", "BWI Thurgood Marshall Airport", "Baltimore (MD)", "Wilmington (DE)", "Philadelphia", "Trenton (NJ)", "Metropark", "Newark", "New York", "Stamford", "New Haven", "Providence", "Route 128", "Boston"]
+                    "stops": ["Washington (DC)", "BWI Thurgood Marshall Airport", "Baltimore", "Wilmington (DE)", "Philadelphia", "Trenton (NJ)", "Metropark", "Newark", "New York", "Stamford", "New Haven", "Providence", "Route 128", "Boston"]
                 },
                 "Adirondack": {
                     "name": "New York - Montréal",
@@ -964,7 +971,7 @@
                 "Carolinian": {
                     "name": "New York - Charlotte",
                     "type": "Exists",
-                    "stops": ["New York", "Newark", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore (MD)", "Washington (DC)", "Alexandria (VA)", "Quantico", "Fredericksburg", "Richmond (Staples Mill)", "Petersburg", "Rocky Mount", "Wilson", "Selma", "Raleigh", "Cary", "Durham (NC)", "Burlington (NC)", "Greensboro", "High Point", "Lexington (NC)", "Salisbury (NC)", "Kannapolis", "Charlotte"]
+                    "stops": ["New York", "Newark", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore", "Washington (DC)", "Alexandria (VA)", "Quantico", "Fredericksburg", "Richmond (Staples Mill)", "Petersburg", "Rocky Mount", "Wilson", "Selma", "Raleigh", "Cary", "Durham (NC)", "Burlington (NC)", "Greensboro", "High Point", "Lexington (NC)", "Salisbury (NC)", "Kannapolis", "Charlotte"]
                 },
                 "Cascades": {
                     "name": "Eugene - Vancouver",
@@ -1027,7 +1034,7 @@
                 "Keystone Service": {
                     "name": "New York - Harrisburg",
                     "type": "Exists",
-                    "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "Cornwells Heights", "North Philadelphia", "Philadelphia", "Ardmore", "Paoli", "Exton", "Downingtown", "Coatesville", "Parkesburg", "Lancaster", "Mount Joy", "Elizabethtown (PA)", "Middletown (PA)", "Harrisburg"]
+                    "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "Cornwells Heights", "North Philadelphia", "Philadelphia", "Ardmore", "Paoli", "Exton", "Downingtown", "Coatesville", "Parkesburg", "Lancaster (PA)", "Mount Joy", "Elizabethtown (PA)", "Middletown (PA)", "Harrisburg"]
                 },
                 "Lincoln Service": {
                     "name": "Chicago - St. Louis",
@@ -1059,15 +1066,15 @@
                         },
                         {
                             "name": "New York - Newport News",
-                            "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "North Philadelphia", "Philadelphia", "Wilmington (DE)", "Newark (DE)", "Aberdeen", "Baltimore (MD)", "BWI Thurgood Marshall Airport", "New Carrollton", "Washington (DC)", "Alexandria (VA)", "Woodbridge", "Quantico", "Fredericksburg", "Ashland (VA)", "Richmond (Staples Mill)", "Richmond", "Williamsburg", "Newport News"]
+                            "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "North Philadelphia", "Philadelphia", "Wilmington (DE)", "Newark (DE)", "Aberdeen", "Baltimore", "BWI Thurgood Marshall Airport", "New Carrollton", "Washington (DC)", "Alexandria (VA)", "Woodbridge", "Quantico", "Fredericksburg", "Ashland (VA)", "Richmond (Staples Mill)", "Richmond", "Williamsburg", "Newport News"]
                         },
                         {
                             "name": "New York - Norfolk",
-                            "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "North Philadelphia", "Philadelphia", "Wilmington (DE)", "Newark (DE)", "Aberdeen", "Baltimore (MD)", "BWI Thurgood Marshall Airport", "New Carrollton", "Washington (DC)", "Alexandria (VA)", "Woodbridge", "Quantico", "Fredericksburg", "Ashland (VA)", "Richmond (Staples Mill)", "Petersburg", "Norfolk"]
+                            "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "North Philadelphia", "Philadelphia", "Wilmington (DE)", "Newark (DE)", "Aberdeen", "Baltimore", "BWI Thurgood Marshall Airport", "New Carrollton", "Washington (DC)", "Alexandria (VA)", "Woodbridge", "Quantico", "Fredericksburg", "Ashland (VA)", "Richmond (Staples Mill)", "Petersburg", "Norfolk"]
                         },
                         {
                             "name": "New York - Roanoke",
-                            "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "North Philadelphia", "Philadelphia", "Wilmington (DE)", "Newark (DE)", "Aberdeen", "Baltimore (MD)", "BWI Thurgood Marshall Airport", "New Carrollton", "Washington (DC)", "Alexandria (VA)", "Burke Centre", "Manassas", "Culpeper", "Charlottesville", "Lynchburg", "Roanoke"]
+                            "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "North Philadelphia", "Philadelphia", "Wilmington (DE)", "Newark (DE)", "Aberdeen", "Baltimore", "BWI Thurgood Marshall Airport", "New Carrollton", "Washington (DC)", "Alexandria (VA)", "Burke Centre", "Manassas", "Culpeper", "Charlottesville", "Lynchburg", "Roanoke"]
                         },
                         {
                             "name": "New York - Springfield",
@@ -1078,7 +1085,7 @@
                 "Pennsylvanian": {
                     "name": "New York - Pittsburgh",
                     "type": "Exists",
-                    "stops": ["New York", "Newark", "Trenton (NJ)", "Philadelphia", "Ardmore", "Paoli", "Exton", "Lancaster", "Elizabethtown (PA)", "Harrisburg", "Lewistown", "Huntingdon", "Tyrone", "Altoona", "Johnstown", "Latrobe", "Greensburg", "Pittsburgh"]
+                    "stops": ["New York", "Newark", "Trenton (NJ)", "Philadelphia", "Ardmore", "Paoli", "Exton", "Lancaster (PA)", "Elizabethtown (PA)", "Harrisburg", "Lewistown", "Huntingdon", "Tyrone", "Altoona", "Johnstown", "Latrobe", "Greensburg", "Pittsburgh"]
                 },
                 "Pacific Surfliner": {
                     "name": "San Diego - San Luis Obispo",
@@ -1103,7 +1110,7 @@
                 "Vermonter": {
                     "name": "Washington - St. Albans",
                     "type": "Exists",
-                    "stops": ["Washington (DC)", "New Carrollton", "BWI Thurgood Marshall Airport", "Baltimore (MD)", "Wilmington (DE)", "Philadelphia", "Trenton (NJ)", "Princeton Junction", "Metropark", "Newark", "New York", "Stamford", "Bridgeport (CT)", "New Haven", "Meriden", "Hartford", "Windsor Locks", "Springfield (MA)", "Holyoke", "Northampton", "Greenfield", "Brattleboro", "Bellows Falls", "Claremont", "Windsor-Mt. Ascutney", "White River Junction", "Randolph", "Montpelier", "Waterbury", "Essex Junction", "St. Albans"]
+                    "stops": ["Washington (DC)", "New Carrollton", "BWI Thurgood Marshall Airport", "Baltimore", "Wilmington (DE)", "Philadelphia", "Trenton (NJ)", "Princeton Junction", "Metropark", "Newark", "New York", "Stamford", "Bridgeport (CT)", "New Haven", "Meriden", "Hartford", "Windsor Locks", "Springfield (MA)", "Holyoke", "Northampton", "Greenfield", "Brattleboro", "Bellows Falls", "Claremont", "Windsor-Mt. Ascutney", "White River Junction", "Randolph", "Montpelier", "Waterbury", "Essex Junction", "St. Albans"]
                 },
                 "Winter Park Express": {
                     "name": "Denver - Winter Park",
@@ -1135,7 +1142,7 @@
                 "Cardinal": {
                     "name": "Chicago - New York (via Cincinnati)",
                     "type": "Exists",
-                    "stops": ["Chicago", "Dyer", "Rensselaer", "Lafayette (IN)", "Crawfordsville", "Indianapolis", "Connersville", "Oxford", "Cincinnati", "Maysville", "South Portsmouth", "Ashland (KY)", "Huntington", "Charleston", "Prince-Beckley", "White Sulphur Springs", "Clifton Forge", "Staunton", "Charlottesville", "Culpeper", "Manassas", "Alexandria (VA)", "Washington (DC)", "Baltimore (MD)", "Wilmington (DE)", "Philadelphia", "Trenton (NJ)", "Newark", "New York"]
+                    "stops": ["Chicago", "Dyer", "Rensselaer", "Lafayette (IN)", "Crawfordsville", "Indianapolis", "Connersville", "Oxford", "Cincinnati", "Maysville", "South Portsmouth", "Ashland (KY)", "Huntington", "Charleston", "Prince-Beckley", "White Sulphur Springs", "Clifton Forge", "Staunton", "Charlottesville", "Culpeper", "Manassas", "Alexandria (VA)", "Washington (DC)", "Baltimore", "Wilmington (DE)", "Philadelphia", "Trenton (NJ)", "Newark", "New York"]
                 },
                 "City of New Orleans": {
                     "name": "Chicago - New Orleans",
@@ -1150,7 +1157,7 @@
                 "Crescent": {
                     "name": "New York - New Orleans",
                     "type": "Exists",
-                    "stops": ["New York", "Newark", "Metropark", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore (MD)", "BWI Thurgood Marshall Airport", "Washington (DC)", "Alexandria (VA)", "Manassas", "Culpeper", "Charlottesville", "Lynchburg", "Danville", "Greensboro", "High Point", "Salisbury (NC)", "Charlotte", "Gastonia", "Spartanburg", "Greenville (SC)", "Clemson", "Toccoa", "Gainesville (GA)", "Atlanta", "Anniston", "Birmingham", "Tuscaloosa", "Meridian", "Laurel", "Hattiesburg", "Picayune", "Slidell", "New Orleans"]
+                    "stops": ["New York", "Newark", "Metropark", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore", "BWI Thurgood Marshall Airport", "Washington (DC)", "Alexandria (VA)", "Manassas", "Culpeper", "Charlottesville", "Lynchburg", "Danville", "Greensboro", "High Point", "Salisbury (NC)", "Charlotte", "Gastonia", "Spartanburg", "Greenville (SC)", "Clemson", "Toccoa", "Gainesville (GA)", "Atlanta", "Anniston", "Birmingham", "Tuscaloosa", "Meridian", "Laurel", "Hattiesburg", "Picayune", "Slidell", "New Orleans"]
                 },
                 "Empire Builder": {
                     "type": "Exists",
@@ -1194,23 +1201,23 @@
                 "Palmetto": {
                     "name": "New York - Savannah",
                     "type": "Exists",
-                    "stops": ["New York", "Newark", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore (MD)", "BWI Thurgood Marshall Airport", "New Carrollton", "Washington (DC)", "Alexandria (VA)", "Richmond (Staples Mill)", "Petersburg", "Rocky Mount", "Wilson", "Selma", "Fayetteville (NC)", "Dillon", "Florence", "Kingstree", "Charleston", "Yemassee", "Savannah"]
+                    "stops": ["New York", "Newark", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore", "BWI Thurgood Marshall Airport", "New Carrollton", "Washington (DC)", "Alexandria (VA)", "Richmond (Staples Mill)", "Petersburg", "Rocky Mount", "Wilson", "Selma", "Fayetteville (NC)", "Dillon", "Florence", "Kingstree", "Charleston", "Yemassee", "Savannah"]
                 },
                 "Silver Meteor": {
                     "name": "New York - Miami (via Charleston)",
                     "type": "Exists",
-                    "stops": ["New York", "Newark", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore (MD)", "Washington (DC)", "Fredericksburg", "Richmond (Staples Mill)", "Petersburg", "Rocky Mount", "Fayetteville (NC)", "Florence", "Kingstree", "Charleston", "Yemassee", "Savannah", "Jesup", "Jacksonville (Clifford Lane)", "Palatka", "DeLand", "Winter Park", "Orlando", "Kissimmee", "Winter Haven", "Sebring", "West Palm Beach", "Delray Beach", "Deerfield Beach", "Fort Lauderdale", "Hollywood", "Miami"]
+                    "stops": ["New York", "Newark", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore", "Washington (DC)", "Fredericksburg", "Richmond (Staples Mill)", "Petersburg", "Rocky Mount", "Fayetteville (NC)", "Florence", "Kingstree", "Charleston", "Yemassee", "Savannah", "Jesup", "Jacksonville (Clifford Lane)", "Palatka", "DeLand", "Winter Park", "Orlando", "Kissimmee", "Winter Haven", "Sebring", "West Palm Beach", "Delray Beach", "Deerfield Beach", "Fort Lauderdale", "Hollywood", "Miami"]
                 },
                 "Silver Star": {
                     "type": "Suspended",
                     "branches": [
                         {
                             "name": "New York - Miami (via Columbia)",
-                            "stops": ["New York", "Newark", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore (MD)", "Washington (DC)", "Alexandria (VA)", "Richmond (Staples Mill)", "Petersburg", "Rocky Mount", "Raleigh", "Cary", "Southern Pines", "Hamlet", "Camden (SC)", "Columbia (SC)", "Denmark", "Savannah", "Jacksonville (Clifford Lane)", "Palatka", "DeLand", "Winter Park", "Orlando", "Kissimmee", "Winter Haven", "Sebring", "Okeechobee", "West Palm Beach", "Delray Beach", "Deerfield Beach", "Fort Lauderdale", "Hollywood", "Miami"]
+                            "stops": ["New York", "Newark", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore", "Washington (DC)", "Alexandria (VA)", "Richmond (Staples Mill)", "Petersburg", "Rocky Mount", "Raleigh", "Cary", "Southern Pines", "Hamlet", "Camden (SC)", "Columbia (SC)", "Denmark", "Savannah", "Jacksonville (Clifford Lane)", "Palatka", "DeLand", "Winter Park", "Orlando", "Kissimmee", "Winter Haven", "Sebring", "Okeechobee", "West Palm Beach", "Delray Beach", "Deerfield Beach", "Fort Lauderdale", "Hollywood", "Miami"]
                         },
                         {
                             "name": "New York - Tampa (via Columbia)",
-                            "stops": ["New York", "Newark", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore (MD)", "Washington (DC)", "Alexandria (VA)", "Richmond (Staples Mill)", "Petersburg", "Rocky Mount", "Raleigh", "Cary", "Southern Pines", "Hamlet", "Camden (SC)", "Columbia (SC)", "Denmark", "Savannah", "Jacksonville (Clifford Lane)", "Palatka", "DeLand", "Winter Park", "Orlando", "Kissimmee", "Lakeland", "Tampa"]
+                            "stops": ["New York", "Newark", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore", "Washington (DC)", "Alexandria (VA)", "Richmond (Staples Mill)", "Petersburg", "Rocky Mount", "Raleigh", "Cary", "Southern Pines", "Hamlet", "Camden (SC)", "Columbia (SC)", "Denmark", "Savannah", "Jacksonville (Clifford Lane)", "Palatka", "DeLand", "Winter Park", "Orlando", "Kissimmee", "Lakeland", "Tampa"]
                         }
                     ]
                 },
@@ -1310,7 +1317,7 @@
                 },
                 "Columbus - Charleston": {
                     "type": "Unofficial",
-                    "stops": ["Columbus (OH)", "Baltimore (OH)", "New Lexington", "Athens (OH)", "Point Pleasant", "Charleston"]
+                    "stops": ["Columbus (OH)", "Lancaster (OH)", "Logan", "Athens (OH)", "Point Pleasant", "Charleston"]
                 },
                 "Fort Collins - Pueblo": {
                     "type": "Corridor ID Program",
@@ -1476,7 +1483,7 @@
                         },
                         {
                             "name": "New York - Burlington (via Bennington)",
-                            "stops": ["New York", "Yonkers", "Croton-Harmon", "Poughkeepsie", "Rhinecliff", "Hudson", "Albany-Rensselaer", "Bennington", "Manchester", "Rutland", "Middlebury", "Ferrisburgh-Vergennes", "Burlington (VT)"],
+                            "stops": ["New York", "Yonkers", "Croton-Harmon", "Poughkeepsie", "Rhinecliff", "Hudson", "Albany-Rensselaer", "Bennington", "Manchester (VT)", "Rutland", "Middlebury", "Ferrisburgh-Vergennes", "Burlington (VT)"],
                             "project": ["Green Mountain Corridor", "This project would add a new service pattern to the Ethan Allen express, serving additional towns in Vermont en route to Burlington."]
                         }
                     ]
@@ -1537,15 +1544,15 @@
                         },
                         {
                             "name": "New York - Newport News",
-                            "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "North Philadelphia", "Philadelphia", "Wilmington (DE)", "Newark (DE)", "Aberdeen", "Baltimore (MD)", "BWI Thurgood Marshall Airport", "New Carrollton", "Washington (DC)", "Crystal City", "Alexandria (VA)", "Woodbridge", "Quantico", "Fredericksburg", "Ashland (VA)", "Richmond (Staples Mill)", "Richmond", "Williamsburg", "Newport News"]
+                            "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "North Philadelphia", "Philadelphia", "Wilmington (DE)", "Newark (DE)", "Aberdeen", "Baltimore", "BWI Thurgood Marshall Airport", "New Carrollton", "Washington (DC)", "Crystal City", "Alexandria (VA)", "Woodbridge", "Quantico", "Fredericksburg", "Ashland (VA)", "Richmond (Staples Mill)", "Richmond", "Williamsburg", "Newport News"]
                         },
                         {
                             "name": "New York - Norfolk",
-                            "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "North Philadelphia", "Philadelphia", "Wilmington (DE)", "Newark (DE)", "Aberdeen", "Baltimore (MD)", "BWI Thurgood Marshall Airport", "New Carrollton", "Washington (DC)", "Crystal City", "Alexandria (VA)", "Woodbridge", "Quantico", "Fredericksburg", "Ashland (VA)", "Richmond (Staples Mill)", "Petersburg", "Norfolk"]
+                            "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "North Philadelphia", "Philadelphia", "Wilmington (DE)", "Newark (DE)", "Aberdeen", "Baltimore", "BWI Thurgood Marshall Airport", "New Carrollton", "Washington (DC)", "Crystal City", "Alexandria (VA)", "Woodbridge", "Quantico", "Fredericksburg", "Ashland (VA)", "Richmond (Staples Mill)", "Petersburg", "Norfolk"]
                         },
                         {
                             "name": "New York - Bristol",
-                            "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "North Philadelphia", "Philadelphia", "Wilmington (DE)", "Newark (DE)", "Aberdeen", "Baltimore (MD)", "BWI Thurgood Marshall Airport", "New Carrollton", "Washington (DC)", "Crystal City", "Alexandria (VA)", "Burke Centre", "Manassas", "Culpeper", "Charlottesville", "Lynchburg", "Bedford", "Roanoke", "Christiansburg", "Wytheville", "Bristol"],
+                            "stops": ["New York", "Newark", "Newark Liberty International Airport", "Metropark", "New Brunswick", "Princeton Junction", "Trenton (NJ)", "North Philadelphia", "Philadelphia", "Wilmington (DE)", "Newark (DE)", "Aberdeen", "Baltimore", "BWI Thurgood Marshall Airport", "New Carrollton", "Washington (DC)", "Crystal City", "Alexandria (VA)", "Burke Centre", "Manassas", "Culpeper", "Charlottesville", "Lynchburg", "Bedford", "Roanoke", "Christiansburg", "Wytheville", "Bristol"],
                             "project": ["Washington to Bristol Corridor", "The Roanoke branch of the Northeast Regional would be extended farther into Virginia with a new infill station at Bedford, Virginia."]
                         },
                         {
@@ -1568,7 +1575,7 @@
                 "Vermonter": {
                     "name": "Washington - Montréal",
                     "type": "Corridor ID Program",
-                    "stops": ["Washington (DC)", "New Carrollton", "BWI Thurgood Marshall Airport", "Baltimore (MD)", "Wilmington (DE)", "Philadelphia", "Trenton (NJ)", "Princeton Junction", "Metropark", "Newark", "New York", "Stamford", "Bridgeport (CT)", "New Haven", "Meriden", "Hartford", "Windsor Locks", "Springfield (MA)", "Holyoke", "Northampton", "Greenfield", "Brattleboro", "Bellows Falls", "Claremont", "Windsor-Mt. Ascutney", "White River Junction", "Randolph", "Montpelier", "Waterbury", "Essex Junction", "St. Albans", "Saint-Jean-sur-Richelieu", "Montréal"],
+                    "stops": ["Washington (DC)", "New Carrollton", "BWI Thurgood Marshall Airport", "Baltimore", "Wilmington (DE)", "Philadelphia", "Trenton (NJ)", "Princeton Junction", "Metropark", "Newark", "New York", "Stamford", "Bridgeport (CT)", "New Haven", "Meriden", "Hartford", "Windsor Locks", "Springfield (MA)", "Holyoke", "Northampton", "Greenfield", "Brattleboro", "Bellows Falls", "Claremont", "Windsor-Mt. Ascutney", "White River Junction", "Randolph", "Montpelier", "Waterbury", "Essex Junction", "St. Albans", "Saint-Jean-sur-Richelieu", "Montréal"],
                     "project": ["Vermonter Corridor", "The Vermonter currently terminates near the Québec border at St. Albans. This proposal would extend it to Montréal with a new customs and preclearance facility at Gare Centrale."]
                 },
                 "Wolverine": {
@@ -1601,7 +1608,7 @@
                 },
                 "Dallas-Fort Worth - New York": {
                     "type": "FRA Long-Distance Study",
-                    "stops": ["Fort Worth", "Gainesville (TX)", "Ardmore", "Norman", "Oklahoma City", "Tulsa", "Neosho", "Springfield (MO)", "Rolla", "St. Louis", "Greenville (IL)", "Effingham", "Casey", "Terre Haute", "Greencastle", "Indianapolis", "Connersville", "Oxford", "Cincinnati", "Hamilton", "Dayton", "Springfield (OH)", "Columbus (OH)", "Coshocton", "Uhrichsville", "Follansbee", "Pittsburgh", "Greensburg", "Latrobe", "Johnstown", "Altoona", "Tyrone", "Huntingdon", "Lewistown", "Harrisburg", "Elizabethtown (PA)", "Lancaster", "Exton", "Paoli", "Ardmore", "Philadelphia", "Trenton (NJ)", "Newark", "New York"]
+                    "stops": ["Fort Worth", "Gainesville (TX)", "Ardmore", "Norman", "Oklahoma City", "Tulsa", "Neosho", "Springfield (MO)", "Rolla", "St. Louis", "Greenville (IL)", "Effingham", "Casey", "Terre Haute", "Greencastle", "Indianapolis", "Connersville", "Oxford", "Cincinnati", "Hamilton", "Dayton", "Springfield (OH)", "Columbus (OH)", "Coshocton", "Uhrichsville", "Follansbee", "Pittsburgh", "Greensburg", "Latrobe", "Johnstown", "Altoona", "Tyrone", "Huntingdon", "Lewistown", "Harrisburg", "Elizabethtown (PA)", "Lancaster (PA)", "Exton", "Paoli", "Ardmore", "Philadelphia", "Trenton (NJ)", "Newark", "New York"]
                 },
                 "Denver - Houston": {
                     "type": "FRA Long-Distance Study",
@@ -1621,7 +1628,7 @@
                 },
                 "Houston - New York": {
                     "type": "FRA Long-Distance Study",
-                    "stops": ["Houston", "Beaumont", "Lake Charles", "Lafayette (LA)", "New Iberia", "Schriever", "New Orleans", "Mobile", "Atmore", "Evergreen", "Greenville (AL)", "Montgomery", "Auburn (GA)", "La Grange (GA)", "Newnan", "Atlanta", "Marietta", "Cartersville", "Dalton", "Chattanooga", "Athens (TN)", "Knoxville", "Morristown (TN)", "Bristol", "Christiansburg", "Roanoke", "Lynchburg", "Charlottesville", "Culpeper", "Manassas", "Alexandria (VA)", "Washington (DC)", "BWI Thurgood Marshall Airport", "Baltimore (MD)", "Wilmington (DE)", "Philadelphia", "Trenton (NJ)", "Metropark", "Newark", "New York"]
+                    "stops": ["Houston", "Beaumont", "Lake Charles", "Lafayette (LA)", "New Iberia", "Schriever", "New Orleans", "Mobile", "Atmore", "Evergreen", "Greenville (AL)", "Montgomery", "Auburn (GA)", "La Grange (GA)", "Newnan", "Atlanta", "Marietta", "Cartersville", "Dalton", "Chattanooga", "Athens (TN)", "Knoxville", "Morristown (TN)", "Bristol", "Christiansburg", "Roanoke", "Lynchburg", "Charlottesville", "Culpeper", "Manassas", "Alexandria (VA)", "Washington (DC)", "BWI Thurgood Marshall Airport", "Baltimore", "Wilmington (DE)", "Philadelphia", "Trenton (NJ)", "Metropark", "Newark", "New York"]
                 },
                 "Los Angeles - Denver": {
                     "type": "FRA Long-Distance Study",
@@ -1649,11 +1656,11 @@
                     "branches": [
                         {
                             "name": "New York - New Orleans",
-                            "stops": ["New York", "Newark", "Metropark", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore (MD)", "BWI Thurgood Marshall Airport", "Washington (DC)", "Alexandria (VA)", "Manassas", "Culpeper", "Charlottesville", "Lynchburg", "Danville", "Greensboro", "High Point", "Salisbury (NC)", "Charlotte", "Gastonia", "Spartanburg", "Greenville (SC)", "Clemson", "Toccoa", "Gainesville (GA)", "Atlanta", "Anniston", "Birmingham", "Tuscaloosa", "Meridian", "Laurel", "Hattiesburg", "Picayune", "Slidell", "New Orleans"]
+                            "stops": ["New York", "Newark", "Metropark", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore", "BWI Thurgood Marshall Airport", "Washington (DC)", "Alexandria (VA)", "Manassas", "Culpeper", "Charlottesville", "Lynchburg", "Danville", "Greensboro", "High Point", "Salisbury (NC)", "Charlotte", "Gastonia", "Spartanburg", "Greenville (SC)", "Clemson", "Toccoa", "Gainesville (GA)", "Atlanta", "Anniston", "Birmingham", "Tuscaloosa", "Meridian", "Laurel", "Hattiesburg", "Picayune", "Slidell", "New Orleans"]
                         },
                         {
                             "name": "New York - Fort Worth",
-                            "stops": ["New York", "Newark", "Metropark", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore (MD)", "BWI Thurgood Marshall Airport", "Washington (DC)", "Alexandria (VA)", "Manassas", "Culpeper", "Charlottesville", "Lynchburg", "Danville", "Greensboro", "High Point", "Salisbury (NC)", "Charlotte", "Gastonia", "Spartanburg", "Greenville (SC)", "Clemson", "Toccoa", "Gainesville (GA)", "Atlanta", "Anniston", "Birmingham", "Tuscaloosa", "Meridian", "Jackson (MS)", "Monroe (LA)", "Shreveport", "Marshall (TX)", "Longview", "Mineola", "Dallas", "Fort Worth"]
+                            "stops": ["New York", "Newark", "Metropark", "Trenton (NJ)", "Philadelphia", "Wilmington (DE)", "Baltimore", "BWI Thurgood Marshall Airport", "Washington (DC)", "Alexandria (VA)", "Manassas", "Culpeper", "Charlottesville", "Lynchburg", "Danville", "Greensboro", "High Point", "Salisbury (NC)", "Charlotte", "Gastonia", "Spartanburg", "Greenville (SC)", "Clemson", "Toccoa", "Gainesville (GA)", "Atlanta", "Anniston", "Birmingham", "Tuscaloosa", "Meridian", "Jackson (MS)", "Monroe (LA)", "Shreveport", "Marshall (TX)", "Longview", "Mineola", "Dallas", "Fort Worth"]
                         }
                     ],
                     "project": ["I-20 Corridor Intercity Passenger Rail Service", "The proposed corridor would create a branch of the existing Crescent route, enabling direct service from Atlanta to Dallas-Fort Worth. The FRA's Long-Distance Study recommends this as a standalone route between those two metro areas."]

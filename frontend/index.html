@@ -67,6 +67,10 @@
                     <button class="help-btn" aria-label="What these route types mean" aria-expanded="false"><span aria-hidden="true">?</span></button>
                 </div>
                 <button class="program-stations" aria-pressed="false"><i aria-hidden="true"></i>Show stations</button>
+                <aside class="program-route" hidden aria-label="Stops of the picked route">
+                    <button class="program-route-toggle" aria-expanded="true" aria-label="Hide or show the stops"><i aria-hidden="true"></i></button>
+                    <div class="program-route-body"></div>
+                </aside>
             </div>
             <div class="program-info"></div>
             <button class="close" aria-label="Close">×</button>
@@ -90,7 +94,7 @@
     <!-- Webpage banner -->
     <header class="top">
         <a class="logo" href="/" aria-label="All Aboard Ohio home"><img src="data/logo.png" alt="All Aboard Ohio"></a>
-        <h1 class="title">Proposed Routes<small class="subtitle">Based on active studies, expansions, and AAO recommendations</small></h1>
+        <h1 class="title">Proposed Routes</h1>
         <div class="era-box">
             <div class="era segmented" role="radiogroup" aria-label="Network to show">
                 <button role="radio" data-era="today" aria-checked="false">Present Day</button>
@@ -115,6 +119,7 @@
         </section>
         <aside class="legend" aria-label="Route legend">
             <button class="legend-toggle" aria-expanded="false"><span>Amtrak Services</span><i></i></button>
+            <p class="legend-note">Based on active studies, expansions, and AAO&nbsp;recommendations</p>
             <div class="legend-body"></div>
         </aside>
         <article class="card" hidden aria-live="polite">
@@ -147,5 +152,6 @@
     <script src="frontend/programs.js"></script>
     <script src="frontend/intro.js"></script>
     <script src="frontend/main.js"></script>
+    <script src="frontend/perf.js"></script>
 </body>
 </html>

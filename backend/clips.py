@@ -58,5 +58,4 @@ def build(order):  # Encode new or changed clips, drop removed ones, write clips
     cache_set("clips", {"encode": ENCODE, "clips": made})
     files, ordered = queue([n for n in names if n in made], order)
     write_json(OUT_DATA / "clips.json", {"clips": files, "ordered": ordered}, pretty=True)
-    print(f"  {len(made)} of {len(names)} clips ready" + ("" if len(made) == len(names) else " (the rest failed or need ffmpeg)"))
     return files, ordered

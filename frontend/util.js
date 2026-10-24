@@ -11,7 +11,8 @@ const has = (el, a, b, c) => { const l = el.classList; return l.contains(a) || (
 
 const slug = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); // "Chicago - Cleveland" -> "chicago-cleveland"
 const norm = s => String(s).toLowerCase().replace(/[^a-z0-9]/g, ''); // Letters and digits only, for loose matching
-const place = name => String(name).replace(/\s*\([A-Z]{2}\)\s*$/, ''); // "Springfield (OH)" -> "Springfield"
+const baseName = name => String(name).replace(/\s*\([^)]*\)\s*$/, ''); // "Stockton (San Joaquin)" -> "Stockton"
+const place = (name, full) => !full && view.twins?.has(name) ? baseName(name) : String(name).replace(/\s*\([A-Z]{2}\)\s*$/, ''); // "Springfield (OH)" -> "Springfield"; a station with a twin goes by their shared name (full: told apart)
 const plural = (n, w) => `${n} ${w}${n === 1 ? '' : 's'}`; // (3, 'stop') -> "3 stops"
 const folderOf = f => f?.includes('/') ? f.slice(0, f.lastIndexOf('/')) : ''; // "Columbus (OH)/Bridge.mp4" -> "Columbus (OH)"
 const common = lists => { let n = 0; while (lists.every(s => s[n] !== undefined && s[n] === lists[0][n])) n++; return n; }; // Length of the lists' shared start
@@ -48,12 +49,12 @@ const simplify = (pts, tol) => { // Drop points that move the line less than tol
 };
 
 const pathOf = pts => 'M' + pts.map(p => p[0].toFixed(1) + ',' + p[1].toFixed(1)).join('L'); // Points -> SVG path data
-const curveOf = pts => { // Points -> a smooth SVG path: rounded through each point (midpoint to midpoint), no corners at any zoom
+const curveOf = (pts, r = Infinity) => { // Points -> a smooth SVG path: each corner rounded within r of its point (so the line still passes close by it)
     if (pts.length < 3) return pathOf(pts);
-    const f = v => v.toFixed(1), mid = (a, b) => f((a[0] + b[0]) / 2) + ',' + f((a[1] + b[1]) / 2);
-    let d = `M${f(pts[0][0])},${f(pts[0][1])}L${mid(pts[0], pts[1])}`;
-    for (let k = 1; k < pts.length - 1; k++) d += `Q${f(pts[k][0])},${f(pts[k][1])} ${mid(pts[k], pts[k + 1])}`;
-    return d + `L${f(pts.at(-1)[0])},${f(pts.at(-1)[1])}`;
+    const f = p => p[0].toFixed(1) + ',' + p[1].toFixed(1), toward = (a, b) => { const t = Math.min(.5, r / (dist(a, b) || 1)); return [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t]; };
+    let d = `M${f(pts[0])}`;
+    for (let k = 1; k < pts.length - 1; k++) d += `L${f(toward(pts[k], pts[k - 1]))}Q${f(pts[k])} ${f(toward(pts[k], pts[k + 1]))}`;
+    return d + `L${f(pts.at(-1))}`;
 };
 
 const ringsPath = rings => rings.map(r => pathOf(r) + 'Z').join(''); // Polygon rings -> closed SVG path
@@ -178,3 +179,6 @@ const CREDIT = 'US Census Bureau | Data and Maps'; // Population data source
 const credit = link => `<p class="relief-credit">Source: ${link ? `<a href="https://data.census.gov" target="_blank" rel="noopener">${CREDIT}</a>` : CREDIT}</p>`;
 const routeItem = (r, note = '', go = true) => `<li><button data-i="${r.i}" style="--c:${r.color}" class="${r.typeKey}"><span class="swatch"></span>` + // Route button for lists
     `<span class="name">${esc(r.label)}${note && `<small>${note}</small>`}</span>${go ? '<span class="go">→</span>' : ''}</button></li>`;
+
+const foldSection = (head, body, { cls = '', open = true, key = '' } = {}) => `<section class="fold${open ? '' : ' shut'}"><h4${cls ? ` class="${cls}"` : ''}><button class="fold-head"${key ? ` data-fold="${esc(key)}"` : ''} aria-expanded="${open}">${head}<i aria-hidden="true"></i></button></h4><div class="fold-body"><div>${body}</div></div></section>`; // A heading that folds what's under it away (click it: toggleFold)
+const toggleFold = head => { const open = head.closest('.fold').classList.toggle('shut') === false; head.setAttribute('aria-expanded', open); return open; }; // Open or close a foldSection

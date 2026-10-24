@@ -9,6 +9,7 @@
     --sky: color-mix(in srgb, var(--blue) 50%, var(--white));
     --rose: color-mix(in srgb, var(--red) 65%, var(--white));
     --gold: #e9c46a; /* Funded, coming soon */
+    --commuter: #c3ccd9; /* Commuter lines: one pale silver under Amtrak's colours */
     --muted: color-mix(in srgb, var(--white) 62%, transparent);
     --shadow: 0 10px 30px color-mix(in srgb, var(--deep) 50%, transparent);
     --ease: cubic-bezier(.16, 1, .3, 1);
@@ -71,8 +72,7 @@ body::before {
 .logo img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: left center; }
 .logo:hover { opacity: .85; }
 .logo:active { transform: scale(.98); }
-.title { position: relative; flex: none; display: flex; flex-direction: column; align-items: flex-start; gap: .5rem; font-family: var(--label); font-size: 1.95rem; font-weight: 800; line-height: 1; letter-spacing: .09em; text-transform: uppercase; white-space: nowrap; color: var(--white); text-shadow: 0 2px 10px color-mix(in srgb, var(--navy) 35%, transparent); }
-.subtitle { font-size: .72rem; font-weight: 500; letter-spacing: .03em; text-transform: none; max-width: 21rem; line-height: 1.3; white-space: normal; color: color-mix(in srgb, var(--white) 82%, transparent); } /* What the map shows, under the title (about its width) */
+.title { position: relative; flex: none; display: flex; flex-direction: column; align-items: flex-start; gap: .5rem; font-family: var(--label); font-size: 2.3rem; font-weight: 800; line-height: 1; letter-spacing: .07em; text-transform: uppercase; white-space: nowrap; color: var(--white); text-shadow: 0 2px 10px color-mix(in srgb, var(--navy) 35%, transparent); }
 .modes { position: relative; display: flex; gap: .5rem; margin-left: auto; }
 :is(.modes, .program-types) button { /* Route-type toggle: a chip with a rounded checkbox */
     gap: .55rem; padding: .45rem .95rem .45rem .5rem; font-size: .74rem; letter-spacing: .05em; color: color-mix(in srgb, var(--white) 75%, transparent); background: color-mix(in srgb, var(--navy) 45%, transparent); border: 1px solid rgb(255 255 255 / .16); transition: background .2s, border-color .2s, color .2s;
@@ -141,8 +141,14 @@ body.drawn .route path, body.drawn .glow path, body.drawn .under path, body.read
 .line { stroke: var(--c); stroke-width: calc(var(--px) * 5 * var(--w)); }
 .route.on .line { stroke-width: calc(var(--px) * 6.5 * var(--w)); }
 .under.on .casing { stroke-width: calc(var(--px) * 10 * var(--w)); }
-.glow.on path { stroke-width: calc(var(--px) * 17 * var(--w)); stroke-opacity: .3; }
-.route.off, .glow.off, .under.off { opacity: .12; }
+.glow.on path { stroke-width: calc(var(--px) * 12 * var(--w)); stroke-opacity: .32; }
+.glow.off { visibility: hidden; } /* Other lines step back by their strokes (a faded group is painted apart, then blended: slow by the hundred) */
+.under.off path { stroke-opacity: .1; }
+.route.off path { stroke-opacity: .12; }
+.regional path { stroke-dasharray: none !important; stroke-dashoffset: 0 !important; animation: none !important; } /* Commuter lines: no draw-in... */
+.regional.gone, body.ready .regional:not(.gone) { transition: opacity .6s; } /* ...they fade in and out with the era */
+.glow.regional.hot path { stroke-width: calc(var(--px) * 17 * var(--w)); stroke-opacity: .45; } /* A hovered commuter line glows */
+.route.regional.hot .line { stroke: color-mix(in srgb, var(--commuter) 55%, var(--white)); }
 
 .pins, .pins-lit { inset: -25% !important; transform-origin: calc(100% / 6) calc(100% / 6); pointer-events: none; contain: strict; } /* A quarter screen past each edge (pans slide those in); clipped, or dots spilling out each take a GPU layer */
 .pins .pin, .pins-lit .pin { left: calc(100% / 6); top: calc(100% / 6); } /* (The map's corner, in this bigger box) */
@@ -166,10 +172,12 @@ body.ready:not(.drawn) .pin.size-S.gone, body.ready:not(.drawn) .pin.size-S.gone
 body.drawn .map { cursor: grab; touch-action: none; } /* Drag to pan, scroll or pinch to zoom */
 body.drawn .map:active { cursor: grabbing; }
 .map.far .pin:is(.size-M, .size-S):not(.lit, .picked, .ping) { display: none; } /* Zoomed far out: medium and small stations wait until zoomed in */
-.map.wide .pin.size-L span { letter-spacing: .01em; text-shadow: 0 0 2px var(--deep), 0 1px 4px var(--deep), 0 0 12px var(--deep); }
+.map.wide .pin.size-L span { letter-spacing: .01em; text-shadow: 0 0 2px var(--deep), 0 1px 4px var(--deep), 0 0 6px var(--deep); }
+.pin span .paren { display: none; font-weight: inherit; } /* A twin station's own part of its name... */
+.pin.full span .paren { display: inline; } /* ...shown when a route calls at both */
 .pin span {
     position: absolute; left: calc(100% + .4rem); top: 50%; translate: 0 -50%; pointer-events: none; font-size: .68rem; font-weight: 600; --ls: calc((.72 - .04 * var(--z, 1)) / .68); scale: var(--ls); transform-origin: 0 50%; white-space: nowrap;
-    text-shadow: 0 1px 3px var(--deep), 0 0 8px var(--deep); opacity: 0; transition: opacity .25s;
+    text-shadow: 0 1px 3px var(--deep), 0 0 5px var(--deep); opacity: 0; transition: opacity .25s; /* (Small blurs: big ones are slow to draw behind every name) */
 }
 .pin.size-M span { font-size: .84rem; --ls: calc((.72 + .12 * var(--z, 1)) / .84); opacity: .9; } /* Names shrink with the zoom by scaling, not re-laying out text (map.applyZ) */
 .pin.size-L span { font-size: 1.05rem; --ls: calc((.76 + .29 * var(--z, 1)) / 1.05); font-weight: 700; opacity: 1; }
@@ -179,14 +187,17 @@ body.drawn .map:active { cursor: grabbing; }
 .pin.hot i, .pin.picked i, .pin.ping i { box-shadow: 0 0 0 2px var(--navy), 0 0 0 4px var(--white); } /* Neutral ring (red clashed with route colours) */
 .pin.off { opacity: .25; }
 .pin.absorbed { display: none !important; } /* Covered by a bigger station's dot (map.js) */
+.map-dots { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; } /* A camera move's unnamed dots, drawn together (camera.paintFlat) */
 .pins { transition: opacity .25s; will-change: opacity; } /* Hover dims the whole layer at once (GPU), not dot by dot */
 .pins.dim { opacity: .25; }
 .map-base { transition: opacity .25s; } /* Hover dims all lines as one layer */
 .map-base.dim { opacity: .12; }
+.map-base .glow:not(.on, .hot) { display: none; } /* Glows only on a picked or hovered line (under every line: the costliest thing to draw) */
+.lean :is(.under, .glow) { display: none; } /* Mid-zoom (camera.draw): just the lines */
 .map-base.swap :is(.route, .glow, .under) { transition: none !important; } /* Era/type change: cross-faded as whole layers instead (map.crossfade) */
 .map-ghost { pointer-events: none; }
 .map-backdrop { position: absolute; left: -100%; top: -100%; width: 300%; height: 300%; transform-origin: 0 0; pointer-events: none; opacity: 0; will-change: transform; } /* Lines a screen past each edge, drawn softer off the page (map.backdrop) */
-.map.panning .map-backdrop.ready { opacity: 1; } /* Shown only mid-drag, under the lines that slide over it */
+.map.panning .map-backdrop.ready, .map-backdrop.ghosting { opacity: 1; } /* Shown only mid-drag, under the lines that slide over it */
 .pins-lit { position: absolute; } /* Copies of the hovered route's stops, above the dimmed layer */
 .map-lit, .map-lit *, .pins-lit .pin { pointer-events: none !important; } /* Hovered route's copies: events reach the real ones */
 .pins-lit .pin { animation: none !important; }
@@ -313,6 +324,8 @@ body.drawn .map:active { cursor: grabbing; }
 .legend:not(.open) { bottom: auto; width: auto; border-radius: 0 0 .6rem 0; box-shadow: var(--shadow); }
 .legend-toggle { display: flex; align-items: center; justify-content: space-between; gap: .8rem; padding: 1rem 1.25rem .8rem 1.5rem; font-family: var(--label); font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
 .legend-toggle:hover { color: var(--sky); }
+.legend-note { margin: -.35rem 1.4rem .7rem; font-size: .68rem; line-height: 1.4; text-align: center; color: var(--muted); } /* What the map is based on, under the heading */
+.legend:not(.open) .legend-note { display: none; }
 @container (min-width: 56.26rem) { .legend-toggle { justify-content: center; padding: 1rem 1.25rem .4rem; font-size: .98rem; cursor: default; pointer-events: none; } .legend-toggle i { display: none; } } /* Fixed open on desktop: just the heading, centred */
 .legend-toggle i { width: .45rem; height: .45rem; border: solid currentColor; border-width: 0 2px 2px 0; rotate: -45deg; transition: rotate .3s var(--ease); }
 .legend.open .legend-toggle i { rotate: 135deg; }
@@ -516,6 +529,7 @@ body.playing .now-showing { opacity: 1; }
 .station-info h2 { display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .6rem; margin: .2rem 2.2rem .35rem 0; font-family: var(--label); font-size: clamp(1.6rem, 2.6cqw, 2.4rem); font-weight: 700; line-height: 1.1; }
 .station-info .about { margin: 1rem 0 0; font-size: .92rem; line-height: 1.55; color: color-mix(in srgb, var(--white) 85%, transparent); }
 .station-info h4 { margin: 1.5rem 0 .5rem; padding-bottom: .35rem; font-family: var(--label); font-size: .66rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; border-bottom: 2px solid var(--red); }
+.station-info h4:has(.fold-head) { padding-bottom: 0; }
 .station-routes { display: grid; gap: .3rem; list-style: none; }
 .station-routes button { display: flex; align-items: flex-start; gap: .7rem; width: 100%; padding: .6rem .55rem; text-align: left; border-radius: .55rem; transition: background .2s; }
 .station-routes .swatch { width: 1.2rem; margin-top: .45rem; }
@@ -535,31 +549,30 @@ body.playing .now-showing { opacity: 1; }
 .card-actions .act:hover { background: var(--red); }
 .card-actions svg { width: .95rem; height: .95rem; stroke-width: 2.2; }
 
-@container (min-width: 104rem) {
+@container (min-width: 120rem) {
     .era-box { position: absolute; top: 0; bottom: 0; left: 50%; translate: -50% 0; margin: 0; } /* Wide: the switch in the middle of the banner */
     .era { transform-origin: center; }
 }
 
 @container (max-width: 106rem) {
     .modes .long { display: none; } /* (Room for the "?" beside them) */
+    .title { font-size: 2.1rem; }
 }
 
 @container (max-width: 90rem) {
     .top { gap: 1.5rem; }
-    .title { font-size: 1.5rem; letter-spacing: .08em; }
+    .title { font-size: 1.8rem; letter-spacing: .06em; }
     .modes .long { display: none; }
 }
 
 @container (max-width: 92rem) { /* Laptop widths: everything in the banner closes up to fit */
     .top { gap: .9rem; }
-    .subtitle { max-width: 10rem; line-height: 1.3; white-space: normal; } /* (Wraps under the title) */
     .era button { padding: .5rem .8rem; }
 }
 
 @container (max-width: 82rem) {
     .top { gap: 1.1rem; }
-    .title { gap: .35rem; font-size: 1.25rem; }
-    .subtitle { font-size: .62rem; }
+    .title { font-size: 1.45rem; }
 }
 
 @container (max-width: 77rem) {
@@ -683,6 +696,19 @@ body.drawn .program-tabs { animation: rise-tabs .7s var(--ease) backwards; } /* 
 .program-svg.no-state :is(.pr, .pc):not(.ld), .program-svg.no-ld :is(.pr, .pc).ld { display: none; } /* Type switched off */
 :is(.program-stations, .video-switch) { position: absolute; left: 1.1rem; bottom: 1.1rem; z-index: 1; display: flex; align-items: center; gap: .7rem; padding: .8rem 1.35rem .8rem 1rem; font-family: var(--label); font-size: .84rem; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; color: var(--white); background: var(--navy); border-radius: 999px; box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--white) 15%, transparent), 0 4px 14px rgb(0 0 0 / .45); transition: background .2s; } /* Big switches (stations, video), bottom left of their map */
 .program-stations { left: auto; right: 1.1rem; } /* Bottom right of its map */
+.program-route { position: absolute; z-index: 1; top: 5.4rem; right: 1.1rem; display: flex; flex-direction: column; width: min(19rem, 42%); max-height: calc(100% - 10rem); background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); transition: translate .4s var(--ease); } /* The picked route's stops: right side of the map */
+.program-route[hidden] { display: none; }
+.program-route.shut { translate: calc(100% + 1.1rem) 0; } /* Tucked away: just its tab shows */
+.program-route-toggle { position: absolute; top: .9rem; right: 100%; display: grid; place-items: center; width: 1.9rem; height: 2.6rem; background: var(--panel); border: 1px solid var(--line); border-right: 0; border-radius: .6rem 0 0 .6rem; }
+.program-route-toggle i { width: .45rem; height: .45rem; margin-left: -.2rem; border: solid currentColor; border-width: 0 2px 2px 0; rotate: -45deg; transition: rotate .3s var(--ease); } /* Points the way it goes */
+.program-route.shut .program-route-toggle i { rotate: 135deg; margin: 0 -.2rem 0 0; }
+.program-route-toggle:hover { color: var(--rose); }
+.program-route-body { min-height: 0; overflow-y: auto; padding: 1rem 1.1rem .9rem; scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
+.program-route section + section { margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.program-route h3 { display: flex; align-items: center; gap: .55rem; font-family: var(--label); font-size: 1rem; font-weight: 700; line-height: 1.25; }
+.program-route h3 .swatch { flex: none; width: 1rem; height: .3rem; border-radius: 999px; background: var(--c); }
+.program-route .ends { margin: .25rem 0 .7rem; font-size: .62rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.program-route .stops li[data-city] { cursor: default; } /* (Its dot on the map grows instead) */
 .video-switch { z-index: 2; left: calc(var(--side) + 2 * var(--slant) + 1.25rem); bottom: 1.5rem; transition: background .2s, opacity .6s; } /* Just right of the sidebar */
 body:not(.drawn) .video-switch { opacity: 0; pointer-events: none; }
 :is(.program-stations, .video-switch):hover { background: color-mix(in srgb, var(--blue) 30%, var(--navy)); }
@@ -763,6 +789,14 @@ body:not(.drawn) .video-switch { opacity: 0; pointer-events: none; }
 .project .chips button::before { content: ""; width: .7rem; height: .22rem; background: var(--c); border-radius: 999px; }
 .project .chips button:hover { color: var(--white); background: color-mix(in srgb, var(--blue) 35%, transparent); }
 .program-tip { position: fixed; z-index: 10; }
+@container (max-width: 72rem) { /* Laptops and tablets: the map's foot closes up so its controls never meet */
+    .video-switch .full, .program-tabs small { display: none; }
+    .video-switch { left: calc(var(--side) + 2 * var(--slant) + .8rem); bottom: 1rem; padding: .6rem 1rem .6rem .75rem; font-size: .74rem; }
+    .program-tabs { right: 1rem; gap: .35rem; }
+    .program-tabs button { padding: .45rem .8rem .65rem; }
+    .program-tabs strong { font-size: .78rem; white-space: nowrap; }
+}
+
 @container (max-width: 47.5rem) {
     .program-panel { grid-template-columns: none; grid-template-rows: minmax(14rem, 45%) minmax(0, 1fr); } /* Map above, list below */
     .program-info { order: 0; }
@@ -781,7 +815,7 @@ body:not(.drawn) .video-switch { opacity: 0; pointer-events: none; }
     .modes { flex-basis: auto; margin: 0 0 0 auto; gap: .35rem; }
     .modes button { flex: none; gap: .1rem; padding: .3rem .55rem .3rem .4rem; font-size: .56rem; }
     .modes i { scale: .8; }
-    .modes .long, .title, .when-tab, .hint { display: none; }
+    .modes .long, .title, .when-tab, .hint, .legend-note { display: none; } /* (The list gets the room) */
     .legend-toggle { padding: .5rem .8rem .45rem .9rem; font-size: .6rem; }
     .legend.open { width: min(16rem, 46cqw); }
     .legend .name { font-size: .78rem; }
@@ -796,7 +830,9 @@ body:not(.drawn) .video-switch { opacity: 0; pointer-events: none; }
     .pin span { font-size: .56rem; }
     .pin.size-M span { font-size: .66rem; }
     .pin.size-L span { font-size: .8rem; }
-    .pin.size-L, .map.wide .pin.size-L { --dot: 1rem; }
+    .pin { --dot: .42rem; } /* Small dots: the map is small too */
+    .pin.size-M { --dot: .6rem; }
+    .pin.size-L, .map.wide .pin.size-L { --dot: .82rem; }
     .card { left: auto; right: .5rem; top: calc(var(--top) + .5rem); bottom: .5rem; width: min(18rem, 44%); max-height: none; padding: .7rem .75rem .55rem; }
     .card h3 { font-size: .95rem; }
     .card-head { margin-bottom: .5rem; padding-bottom: .5rem; }
@@ -813,6 +849,8 @@ body:not(.drawn) .video-switch { opacity: 0; pointer-events: none; }
     :is(.program-stations, .video-switch) i::after { top: .14rem; left: .14rem; width: .72rem; height: .72rem; }
     :is(.program-stations, .video-switch)[aria-pressed="true"] i::after { translate: .8rem 0; }
     .video-switch { left: .5rem; bottom: .5rem; }
+    .page:has(.legend.open) .video-switch { left: calc(min(16rem, 46cqw) + .5rem); } /* Beside the open list, not under it */
+    .page:has(.legend.open) .program-tabs { left: calc(min(16rem, 46cqw) + 6.4rem); justify-content: flex-end; overflow: hidden; } /* ...and the tabs beside the switch */
     .program-stations { right: .5rem; bottom: .5rem; }
     .program-types { left: .5rem; bottom: .5rem; gap: .3rem; }
     .program-types button { gap: .1rem; padding: .3rem .55rem .3rem .4rem; font-size: .56rem; }

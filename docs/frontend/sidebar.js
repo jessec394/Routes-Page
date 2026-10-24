@@ -105,7 +105,6 @@ class Sidebar {
         if (!net.hasType(r.typeKey)) need.types = controls.toggleType(r.typeKey, true);
         if (!net.siblings(r.i).some(m => net.inEra(view.era, view.routes[m]))) need.era = view.era === 'today' ? 'buildout' : 'today';
         controls.setView(need);
-        if (pageW() <= NARROW && view.legend) { view.legend = false; this.sync(); } // A phone: the list steps aside for the map
         map.selectRoute(net.siblings(r.i).includes(view.selected) && !keep ? null : net.siblings(r.i).find(net.shownAt));
     }
 }
@@ -118,7 +117,7 @@ class BrandMap {
     isOpen() { return !this.viewer.hidden; }
 
     dockRect() { // Spot at the foot of the sidebar (the route list scrolls above it), or null
-        if (pageW() <= NARROW || !view.legend) return null;
+        if (pageW() <= NARROW || pageH() < 720 || !view.legend) return null; // (Short screens: the list gets the room)
         const w = Math.min(ui.legend.offsetWidth - 48, 260, pageH() * .26 / BrandMap.RATIO), h = w * BrandMap.RATIO; // At most about a quarter of the height
         return h >= 100 ? { w, h, left: (ui.legend.offsetWidth - w) / 2, top: pageH() - 20 - h } : null;
     }

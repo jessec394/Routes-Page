@@ -1,10 +1,10 @@
 // Program windows: tabs on the map open a near-fullscreen map of a program's (or today's) routes and projects
 class ProgramView {
     static LIST = [ // Tabs: today's network, then each program (as routes' types name it), with short names and a blurb
-        { name: 'Current Network', short: 'Current Network', kicker: 'Today', accent: 'var(--sky)', today: true, about: 'Amtrak routes running today, including temporary and suspended routes.', link: ['https://www.amtrak.com/train-routes', 'Amtrak routes and destinations'] },
+        { name: 'Current Network', short: 'Current Network', brief: 'Current', kicker: 'Today', accent: 'var(--sky)', today: true, about: 'Amtrak routes running today, including temporary and suspended routes.', link: ['https://www.amtrak.com/train-routes', 'Amtrak routes and destinations'] },
         { name: 'Corridor ID Program', short: 'Corridor ID', tab: 'Corridor ID Program', unit: ['new route/extension', 'new routes/extensions'], accent: 'var(--red)', about: 'The Federal Railroad Administration\'s Corridor Identification and Development Program: upgrading and expanding the state-supported Amtrak network.', link: ['https://railroads.dot.gov/corridor-ID-program', 'FRA Corridor ID Program'] },
-        { name: 'FRA Long-Distance Study', short: 'Long-Distance Study', list: true, unit: ['new route', 'new routes'], accent: 'var(--blue)', about: 'The Federal Railroad Administration\'s Long-Distance Service Study: adding and restoring long-distance Amtrak services.', link: ['https://railroads.dot.gov/rail-network-development/planning/systems-planning/amtrak-daily-long-distance-service-study', 'FRA Long-Distance Study'] },
-        { name: 'Unofficial', title: 'Unofficial Routes', short: 'Unofficial Routes', list: true, unit: ['new route', 'new routes'], accent: 'var(--gold)', about: 'Routes proposed by AAO that are not planned or under study.' },
+        { name: 'FRA Long-Distance Study', short: 'Long-Distance Study', brief: 'LD Study', list: true, unit: ['new route', 'new routes'], accent: 'var(--blue)', about: 'The Federal Railroad Administration\'s Long-Distance Service Study: adding and restoring long-distance Amtrak services.', link: ['https://railroads.dot.gov/rail-network-development/planning/systems-planning/amtrak-daily-long-distance-service-study', 'FRA Long-Distance Study'] },
+        { name: 'Unofficial', title: 'Unofficial Routes', short: 'Unofficial Routes', brief: 'Unofficial', list: true, unit: ['new route', 'new routes'], accent: 'var(--gold)', about: 'Routes proposed by AAO that are not planned or under study.' },
         { name: 'Other Projects', short: 'Other Projects', unit: ['new route', 'new routes'], accent: 'var(--rose)', other: true, about: 'Planned passenger rail outside the federal programs above, such as state-funded projects.' }
     ];
 
@@ -40,7 +40,7 @@ class ProgramView {
 
     build() { // Tabs for programs with routes (once the network is in)
         this.tabs.innerHTML = ProgramView.LIST.map(p => ({ p, n: this.listed(p.name).length })).filter(({ n }) => n)
-            .map(({ p, n }) => `<button data-program="${esc(p.name)}" style="--a:${p.accent}"><strong>${p.tab ? `<span class="full">${esc(p.tab)}</span><span class="brief">${esc(p.short)}</span>` : esc(p.short)}</strong><small>${n} ${(p.unit || ['route', 'routes'])[+(n !== 1)]}</small></button>`).join('');
+            .map(({ p, n }) => `<button data-program="${esc(p.name)}" style="--a:${p.accent}"><strong><span class="full">${esc(p.tab || p.short)}</span><span class="brief">${esc(p.brief || p.short)}</span></strong><small>${n} ${(p.unit || ['route', 'routes'])[+(n !== 1)]}</small></button>`).join('');
         this.tabs.hidden = !this.tabs.children.length;
         this.switch.innerHTML = [...this.tabs.children].map(b => `<button role="radio" data-program="${esc(b.dataset.program)}">${esc(this.program(b.dataset.program).short)}</button>`).join('');
     }
@@ -76,6 +76,7 @@ class ProgramView {
         this.drawMap(name);
         this.svg.classList.remove('solid');
         this.light(null); // (Nothing picked on the new one)
+        this.showStops([]);
         this.info.innerHTML = this.sidebar(name);
         this.marked = null;
         this.info.scrollTop = 0;
@@ -185,7 +186,8 @@ class ProgramView {
         return [b[i] + (b[i + 2] - b[i]) * calm + b[i + 4] * o, b[i + 1] + (b[i + 3] - b[i + 1]) * calm + b[i + 5] * o, pack < .7];
     }
 
-    smooth(at) { // Round off the corners a lane picks up where bundles meet and part (a few soft passes, ends kept)
+    smooth(at, s) { // Round off the corners a lane picks up where bundles meet and part (ends kept; at most 3px off its track)
+        const was = at.map(p => p.slice()), most = 3 / s;
         for (let pass = 0; pass < 4; pass++) {
             let prev = at[0];
             for (let k = 1; k < at.length - 1; k++) {
@@ -194,6 +196,8 @@ class ProgramView {
                 prev = cur;
             }
         }
+
+        at.forEach((p, k) => { const dx = p[0] - was[k][0], dy = p[1] - was[k][1], d = Math.hypot(dx, dy); if (d > most) at[k] = [was[k][0] + dx * most / d, was[k][1] + dy * most / d, p[2]]; });
     }
 
     square(at, stops, s) { // A line ending in a bundle stops level with the others ending there: square across the track at its last stop
@@ -221,12 +225,12 @@ class ProgramView {
             let outline = '';
             for (const run of runs) {
                 const at = run.b ? run.base.map((_, k) => this.laneAt(run.b, k, s)) : run.base.map(p => [p[0], p[1], false]); // Its lanes at this zoom
-                if (run.b) { this.smooth(at); this.square(at, view.routes[+g.dataset.i].stops, s); }
+                if (run.b) { this.smooth(at, s); this.square(at, view.routes[+g.dataset.i].stops, s); }
                 const where = x => { const a = at[x.k], c = at[Math.min(x.k + 1, at.length - 1)]; return [a[0] + (c[0] - a[0]) * x.t, a[1] + (c[1] - a[1]) * x.t]; };
-                outline += curveOf(at);
+                outline += curveOf(at, 8 / s); // (Corners rounded within 8px: lines keep to their stations)
                 for (const piece of run) { // Split again where the bundle packs tight (thinner there)
                     let cur = [], tight = null;
-                    const flush = () => { if (cur.length > 1) d[(piece.on ? 'line' : 'new') + (tight ? 'Thin' : '')] += curveOf(cur.map(where)); };
+                    const flush = () => { if (cur.length > 1) d[(piece.on ? 'line' : 'new') + (tight ? 'Thin' : '')] += curveOf(cur.map(where), 8 / s); };
                     for (const x of piece.samples) {
                         const t = at[x.k][2];
                         if (t !== tight && cur.length) { cur.push(x); flush(); cur = [x]; } else cur.push(x);
@@ -288,9 +292,25 @@ class ProgramView {
         $$('.pr, .pc', this.svg).forEach(g => g.classList.toggle('picked', !!on && on.has(g.dataset.label)));
         this.over = null; // (The next hover lights afresh)
         this.light(this.picked);
+        this.showStops(routes);
         if (!on) return this.frame(this.home, true);
         const [x0, x1, y0, y1] = bounds(routes.flatMap(r => r.runs.flat())), w = Math.max(x1 - x0, this.home[2] * .08), h = Math.max(y1 - y0, this.home[3] * .08); // (Not closer than about a twelfth of the country)
-        this.frame(this.fit([(x0 + x1 - w * 1.3) / 2, (y0 + y1 - h * 1.3) / 2, w * 1.3, h * 1.3]), true);
+        const box = $('.program-route', this.el), aside = box.hidden || box.classList.contains('shut') ? 0 : box.offsetWidth + 24, [W] = this.dims(); // The stops panel covers the map's right side: framed in what's left
+        const wide = w * 1.3 * W / Math.max(W / 2, W - aside), to = this.fit([(x0 + x1 - wide) / 2, (y0 + y1 - h * 1.3) / 2, wide, h * 1.3]);
+        this.frame([to[0] + to[2] * aside / W / 2, to[1], to[2], to[3]], true);
+    }
+
+    showStops(routes) { // The picked routes' stops in a panel at the right, drawn as on the main map's card (branches and all)
+        const box = $('.program-route', this.el), body = $('.program-route-body', box), byLabel = new Map();
+        routes.forEach(r => (byLabel.get(r.label) ?? byLabel.set(r.label, []).get(r.label)).push(r));
+        box.hidden = !byLabel.size;
+        body.replaceChildren();
+        for (const list of byLabel.values()) {
+            const r = list[0], stops = card.stopList(list, r, this.colorOf(r)), branches = card.branches;
+            body.insertAdjacentHTML('beforeend', `<section><h3><span class="swatch" style="--c:${this.colorOf(r)}"></span>${esc(r.label)}</h3><p class="ends">${this.ends(r, list.map(b => b.i))}</p>${stops}</section>`);
+            if (branches) card.drawBranches($('.stops', body.lastElementChild), branches);
+        }
+        body.scrollTop = 0;
     }
 
     sidebar(name) { // Program, then its projects
@@ -313,7 +333,7 @@ class ProgramView {
         };
 
         return [['state', 'State-Supported'], ['long-distance', 'Long-Distance']].map(([key, title]) => [title, routes.filter(r => r.typeKey === key)]).filter(([, list]) => list.length)
-            .map(([title, list]) => `<section class="fold"><h4><button class="fold-head" aria-expanded="true">${title} <span class="count">${list.length}</span><i aria-hidden="true"></i></button></h4><div class="fold-body"><div><ul class="route-rows">${list.map(row).join('')}</ul></div></div></section>`).join('');
+            .map(([title, list]) => foldSection(`${title} <span class="count">${list.length}</span>`, `<ul class="route-rows">${list.map(row).join('')}</ul>`)).join('');
     }
 
     light(labels) { // Light some routes on the map (null: all of them)
@@ -369,6 +389,10 @@ class ProgramView {
     }
 
     bind() {
+        const box = $('.program-route', this.el), toggle = $('.program-route-toggle', box);
+        toggle.addEventListener('click', () => { const shut = box.classList.toggle('shut'); toggle.setAttribute('aria-expanded', !shut); }); // Tucked away to the right, or out
+        box.addEventListener('pointerover', e => { const name = e.target.closest('li[data-city]')?.dataset.city; $$('.program-stops [data-stop]', this.svg).forEach(d => d.classList.toggle('hot', d.dataset.stop === name)); }); // A stop in the list: its dot on the map grows
+        box.addEventListener('pointerleave', () => $$('.program-stops .hot', this.svg).forEach(d => d.classList.remove('hot')));
         addEventListener('resize', () => { this.box = null; }); // (Measured again when next needed)
         const world = () => [this.home[0], this.home[1], this.home[0] + this.home[2], this.home[1] + this.home[3]];
         panZoom(this.svg, this.svg, { // Drag to pan, scroll or pinch to zoom
@@ -396,7 +420,7 @@ class ProgramView {
             if (card) return this.foldCard(card, !card.classList.contains('shut')); // A project card folds (no pick)
             if (all) { const cards = $$('.project', this.info), shut = !cards.every(c => c.classList.contains('shut')); cards.forEach(c => this.foldCard(c, shut)); return; } // All of them
             const head = e.target.closest('.fold-head');
-            if (head) { const open = head.closest('.fold').classList.toggle('shut') === false; head.setAttribute('aria-expanded', open); return; } // A section folds
+            if (head) return void toggleFold(head); // A section folds
             const stop = e.target.closest('[data-stop]');
             if (stop) return stationModal.open(stop.dataset.stop); // A station: its window, over this one
             const b = e.target.closest('button[data-i]'), project = e.target.closest('[data-labels]:not(.pr)'), line = e.target.closest('.pr');

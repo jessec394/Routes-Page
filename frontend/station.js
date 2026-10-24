@@ -6,6 +6,7 @@ class StationModal {
     eraSwitch = $('.station-era', this.el); // Present Day / Full Buildout, for the minimap
     viewSwitch = $('.station-view', this.el); // Video or map (stations with clips)
     files = []; i = 0; cur = 0; swapping = false; opener = null; // Clip player state
+    shut = new Set(); // Service sections folded away (kept from station to station)
     name = null; era = 'today'; // Station shown, and the minimap's era (starts as the main map's)
     isOpen() { return !this.el.hidden; }
 
@@ -13,7 +14,7 @@ class StationModal {
         return bg.clips.filter(f => f.includes('/') && clipCity(folderOf(f)) === name);
     }
 
-    mine(name) { return view.routes.filter(r => net.inEra(this.era, r) && view.served[name]?.includes(r.i)); } // Routes through a station in the minimap's era
+    mine(name) { return view.routes.filter(r => net.inEra(this.era, r) && twinsOf(name).some(n => view.served[n]?.includes(r.i))); } // Routes through a station in the minimap's era
 
     locator(name) { // Minimap for stations without clips: relief (with the routes on it) or plain lines, states, station
         const mine = this.mine(name), others = view.routes.filter(r => net.inEra(this.era, r) && !mine.includes(r)), density = relief.covers(this.around(name));
@@ -101,13 +102,13 @@ class StationModal {
     }
 
     stationInfo(name) { // Name, state, present vs future service
-        const c = view.cities[name], served = view.served[name] || [], state = net.stateOf(name);
+        const c = view.cities[name], served = [...new Set(twinsOf(name).flatMap(n => view.served[n] || []))], state = net.stateOf(name);
         const routeList = ids => `<ul class="station-routes">${net.uniqueGroups(ids).map(r => routeItem(r, `${esc(r.type)} · <b class="is-${statusKind(r.status)}">${esc(statusText(r.status))}</b>`)).join('')}</ul>`;
         const today = served.filter(i => net.present(view.routes[i])), future = served.filter(i => statusKind(view.routes[i].status) !== 'temporary');
         return `<h2 id="station-name"><span>${nameHTML(name)}</span>${state ? `<small>${esc(state)}</small>` : ''}</h2>` +
             (c.description ? `<p class="about">${esc(c.description)}</p>` : '') +
-            `<h4>Present-Day Service</h4>${today.length ? routeList(today) : '<p class="none">No passenger rail service today.</p>'}` +
-            `<h4 class="future-head">Future service</h4>${routeList(future)}` +
+            foldSection('Present-Day Service', today.length ? routeList(today) : '<p class="none">No passenger rail service today.</p>', { key: 'today', open: !this.shut.has('today') }) +
+            foldSection('Future Service', routeList(future), { cls: 'future-head', key: 'future', open: !this.shut.has('future') }) +
             (c.link ? `<a class="more" href="${esc(c.link)}" target="_blank" rel="noopener">Learn more →</a>` : '');
     }
 
@@ -182,6 +183,8 @@ class StationModal {
             if (shown) return this.showVideo(shown === 'video');
             const era = e.target.closest('.station-era button')?.dataset.era;
             if (era) return era !== this.era && this.showMap(era);
+            const head = e.target.closest('.fold-head');
+            if (head) return toggleFold(head) ? this.shut.delete(head.dataset.fold) : this.shut.add(head.dataset.fold); // (Kept folded for the next station)
             const b = e.target.closest('.station-routes button');
             if (b) { this.closeStationModal(); map.selectRoute(+b.dataset.i); }
         });

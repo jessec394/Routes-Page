@@ -23,7 +23,7 @@ const view = { // All map state
     routes: [], cities: {}, served: {}, hover: null, selected: null, city: null, zoom: null,
     types: TYPES.join(' '),
     era: 'today', // Intro starts on "Present Day"
-    legend: pageW() > NARROW, // Sidebar open on desktop
+    legend: true, // Sidebar open to start, phones too (it steps aside once a route is picked there)
     wasWide: pageW() > NARROW
 };
 
@@ -35,9 +35,11 @@ const PLANE = '<svg class="plane" viewBox="0 0 24 24" aria-label="airport"><path
 const statusKinds = new Map(); // Status text -> kind (cached: called often)
 const statusKind = s => statusKinds.get(s) ?? statusKinds.set(s, /^exists/i.test(s) ? (/temporary/i.test(s) ? 'temporary' : /suspended/i.test(s) ? 'suspended' : 'exists') : /suspended/i.test(s) ? 'suspended' : /funded/i.test(s) ? 'funded' : 'proposed').get(s); // 'exists' | 'temporary' | 'suspended' | 'funded' | 'proposed'
 const TAGS = { temporary: 'Temporary', suspended: 'Suspended', funded: 'Funded – Coming Soon', extension: 'Extension Funded' }; // Tags for routes that aren't simply running
-const statusText = s => statusKind(s) === 'funded' ? TAGS.funded : s; // Status as the page writes it
+const statusText = s => statusKind(s) === 'funded' ? TAGS.funded : s.replace(/^Exists:\s*/, ''); // Status as the page writes it ("Exists: Suspended" is just "Suspended")
 const sizeOf = c => (c?.size || 'S').toUpperCase(); // Station size: 'L' | 'M' | 'S'
-const nameHTML = n => esc(place(n)) + (view.cities[n]?.airport ? PLANE : ''); // Plane icon after stations marked "airport": true
+const nameHTML = (n, full) => esc(place(n, full)) + (view.cities[n]?.airport ? PLANE : ''); // Plane icon after stations marked "airport": true
+const twinsOf = n => view.twins?.get(n)?.all ?? [n]; // A station and its twins (same name, a few km apart: one stop on the map)
+const mainOf = n => view.twins?.get(n)?.main ?? n; // The one whose dot stands for them all
 const clipUrl = f => `data/clips/${f.split('/').map(encodeURIComponent).join('/')}`; // Clip path -> URL
 const clipName = src => decodeURIComponent((src || '').replace(/^.*?clips\//, '')); // URL -> clip path
 const clipCities = new Map(); // Clips folder -> station (cached)
@@ -62,11 +64,16 @@ class Network {
         view.xy = ([lon, lat]) => [(lon - cLon) * k * 100, (cLat - lat) * 100];
         view.proj = { cLon, cLat, k }; // For the relief's drawing thread
         view.cities = Object.fromEntries(data.cities.map(c => [c.name, c]));
+        this.findTwins();
         view.focus = focus.id.toUpperCase();
         view.allStates = data.states.map(st => { const rings = st.rings.map(r => r.map(view.xy)); return { id: st.id, rings, box: bounds(rings.flat()) }; });
         view.fp = fp.map(view.xy);
         this.data = data;
         this.buildRoutes(data.routes);
+        view.regional = (data.regional || []).map((l, k) => { // Commuter lines: drawn (one shared lane: they overlap, beside Amtrak's), never listed or picked
+            const runs = l.lines.map(run => run.map(view.xy)), len = runs.reduce((t, run) => t + lengthOf(run), 0);
+            return { i: view.routes.length + k, k, label: `${l.operator} ${l.name}`, operator: l.operator, name: l.name, eras: l.eras, runs, xy: runs.flat(), lane: Lanes.EDGE, w: .62, len, speed: Math.max(SPEED, len / 2.6) };
+        });
         this.colorGroups();
         return view.allStates[data.states.indexOf(focus)];
     }
@@ -77,12 +84,29 @@ class Network {
     inEra = (era, r) => this.hasType(r.typeKey) && (era === 'today' ? this.present(r) : statusKind(r.status) !== 'temporary' && (this.proposed(r) || !view.replaced.has(r.label))); // Route shown in 'today'/'buildout' (a proposal replaces today's route of the same name)
     shown = r => this.inEra(view.era, r); // Route shown right now
     shownAt = i => this.shown(view.routes[i]); // Same, by route index
+    regionalShown = l => l.eras.includes(view.era); // A commuter line shown now (they show whatever the route types)
     members = i => view.groups.get(view.routes[i].label); // All branches of a route's group
     siblings = i => this.members(i).filter(m => this.proposed(view.routes[m]) === this.proposed(view.routes[i])); // Branches of the same version (today's or the proposal)
     routesAt = name => { // Shown routes serving a station (cached per era and route types)
         const key = view.era + '|' + view.types, now = this.servedBy.get(key) ?? this.servedBy.set(key, new Map()).get(key);
-        return now.get(name) ?? now.set(name, (view.served[name] || []).filter(this.shownAt)).get(name);
+        return now.get(name) ?? now.set(name, [...new Set(twinsOf(name).flatMap(n => view.served[n] || []))].filter(this.shownAt)).get(name); // (Twins: one station)
     };
+
+    findTwins() { // Stations sharing a name within ~15 km ("Detroit", "Detroit (New Center)"): one dot, one name
+        const byName = new Map(), rank = n => (n === baseName(n) ? 0 : 3) + 'LMS'.indexOf(sizeOf(view.cities[n])); // The plain name first, then the biggest
+        Object.keys(view.cities).forEach(n => (byName.get(baseName(n)) ?? byName.set(baseName(n), []).get(baseName(n))).push(n));
+        view.twins = new Map();
+        byName.forEach(names => {
+            if (names.length < 2) return;
+            const xy = n => view.xy([view.cities[n].lon, view.cities[n].lat]), sorted = [...names].sort((a, b) => rank(a) - rank(b));
+            sorted.forEach(n => {
+                const main = sorted.find(m => dist(xy(m), xy(n)) < 15) ?? n, set = view.twins.get(main) ?? { main, all: [main] };
+                if (main !== n) { set.all.push(n); view.twins.set(main, set); view.twins.set(n, set); }
+            });
+        });
+    }
+
+    split(ids) { return new Set(ids.flatMap(i => view.routes[i].stops).filter((n, _, all) => twinsOf(n).filter(t => all.includes(t)).length > 1)); } // Twins these routes call at both of: told apart
 
     uniqueGroups = ids => [...new Map(ids.map(i => [view.routes[i].label, view.routes[i]])).values()]; // One route per group
     cityXY = name => { const c = view.cities[name]; return c && view.xy([c.lon, c.lat]); }; // Station -> map coordinates
@@ -111,7 +135,7 @@ class Network {
         return st;
     }
 
-    contextOnly = name => (view.served[name] || []).every(i => view.routes[i].context); // Station served only by context routes
+    contextOnly = name => twinsOf(name).flatMap(n => view.served[n] || []).every(i => view.routes[i].context); // Station served only by context routes
 
     stateOf = name => STATE_NAMES[this.stateIdOf(name)] || this.stateIdOf(name); // State name of a given station
 

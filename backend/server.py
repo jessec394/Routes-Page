@@ -4,9 +4,16 @@ import webbrowser
 from functools import partial
 from http import HTTPStatus
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
-from threading import Lock, Timer
+from threading import Lock, Thread, Timer
 
 from .paths import DOCS
+
+def attempt(step):  # Run a build step; if it breaks, say what broke and carry on with the last build
+    try:
+        step()
+    except Exception:
+        print("Couldn't refresh the build (showing the last one):")
+        traceback.print_exc()
 
 class Handler(SimpleHTTPRequestHandler):
     refresh, lock = None, Lock()  # Page rebuild (set by serve); one at a time
@@ -21,11 +28,7 @@ class Handler(SimpleHTTPRequestHandler):
     def do_GET(self):  # Rebuild the page on each load, then serve the file
         if self.path.split("?")[0] in ("/", "/index.html") and self.refresh:
             with self.lock:
-                try:
-                    self.refresh()
-                except Exception:  # Never leave the browser with an empty page: say what broke, serve the last build
-                    print("Couldn't refresh the build (showing the last one):")
-                    traceback.print_exc()
+                attempt(self.refresh)
         if self.headers.get("Range") and self.path.split("?")[0].endswith(".mp4"):
             return self.ranged()
         super().do_GET()
@@ -50,8 +53,13 @@ class Handler(SimpleHTTPRequestHandler):
         except (BrokenPipeError, ConnectionResetError):  # The browser moved on
             pass
 
-def serve(refresh, port=5000):  # Preview docs/ and open it in the browser
+def serve(refresh, background=None, port=5000):  # Preview docs/ and open it in the browser (background: slow build steps, run alongside)
     Handler.refresh = staticmethod(refresh)
+    if background:
+        def run():  # (Page loads wait for it rather than build twice)
+            with Handler.lock:
+                attempt(background)
+        Thread(target=run, daemon=True).start()
     url = f"http://127.0.0.1:{port}"
     try:
         server = ThreadingHTTPServer(("127.0.0.1", port), partial(Handler, directory=str(DOCS)))

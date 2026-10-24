@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap">
     <link rel="icon" type="image/avif" href="data/map.avif?v=5081c38ed8">
-    <link rel="stylesheet" href="frontend/styles.css?v=716f45c4e3">
+    <link rel="stylesheet" href="frontend/styles.css?v=df103419f8">
     <noscript><style>body:not(.ready) * { opacity: 1 !important; } .splash, .brand { display: none; }</style></noscript>
 </head>
 <body>
@@ -67,6 +67,10 @@
                     <button class="help-btn" aria-label="What these route types mean" aria-expanded="false"><span aria-hidden="true">?</span></button>
                 </div>
                 <button class="program-stations" aria-pressed="false"><i aria-hidden="true"></i>Show stations</button>
+                <aside class="program-route" hidden aria-label="Stops of the picked route">
+                    <button class="program-route-toggle" aria-expanded="true" aria-label="Hide or show the stops"><i aria-hidden="true"></i></button>
+                    <div class="program-route-body"></div>
+                </aside>
             </div>
             <div class="program-info"></div>
             <button class="close" aria-label="Close">×</button>
@@ -90,7 +94,7 @@
     <!-- Webpage banner -->
     <header class="top">
         <a class="logo" href="/" aria-label="All Aboard Ohio home"><img src="data/logo.png?v=83be09ae49" alt="All Aboard Ohio"></a>
-        <h1 class="title">Proposed Routes<small class="subtitle">Based on active studies, expansions, and AAO recommendations</small></h1>
+        <h1 class="title">Proposed Routes</h1>
         <div class="era-box">
             <div class="era segmented" role="radiogroup" aria-label="Network to show">
                 <button role="radio" data-era="today" aria-checked="false">Present Day</button>
@@ -115,6 +119,7 @@
         </section>
         <aside class="legend" aria-label="Route legend">
             <button class="legend-toggle" aria-expanded="false"><span>Amtrak Services</span><i></i></button>
+            <p class="legend-note">Based on active studies, expansions, and AAO&nbsp;recommendations</p>
             <div class="legend-body"></div>
         </aside>
         <article class="card" hidden aria-live="polite">
@@ -133,19 +138,20 @@
     </div>
 
     <!-- Scripts, in order: helpers, shared state, then each part of the page; main.js starts it all -->
-    <script src="frontend/util.js?v=373c2bb13e"></script>
-    <script src="frontend/state.js?v=7e75dfc1ee"></script>
+    <script src="frontend/util.js?v=2bcb2e1b8d"></script>
+    <script src="frontend/state.js?v=4099ea47e4"></script>
     <script src="frontend/video.js?v=12b0c46f23"></script>
-    <script src="frontend/camera.js?v=3a564a2532"></script>
-    <script src="frontend/lanes.js?v=e7933e819f"></script>
-    <script src="frontend/map.js?v=a67711b23b"></script>
+    <script src="frontend/camera.js?v=0adfc95e90"></script>
+    <script src="frontend/lanes.js?v=acf1192e45"></script>
+    <script src="frontend/map.js?v=e165f6d992"></script>
     <script src="frontend/relief.js?v=84ffb7327f"></script>
     <script src="frontend/header.js?v=7f74771d0a"></script>
-    <script src="frontend/sidebar.js?v=01ba9fd119"></script>
-    <script src="frontend/card.js?v=0a11db1849"></script>
-    <script src="frontend/station.js?v=aa5f6f1c3d"></script>
-    <script src="frontend/programs.js?v=715cc83ff8"></script>
+    <script src="frontend/sidebar.js?v=1ab427c8b9"></script>
+    <script src="frontend/card.js?v=8b46a139f3"></script>
+    <script src="frontend/station.js?v=9cae112d46"></script>
+    <script src="frontend/programs.js?v=e376b26d58"></script>
     <script src="frontend/intro.js?v=44b6359277"></script>
     <script src="frontend/main.js?v=bcb24a3004"></script>
+    <script src="frontend/perf.js?v=eb22042162"></script>
 </body>
 </html>

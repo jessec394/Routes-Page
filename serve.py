@@ -13,15 +13,14 @@ CLIP_ORDER = [
     "Chicago (IL)/Sears.mp4",
 ]
 
+def refresh():
+    network.build(density.summary())
+    site.build(domain=DOMAIN)
+
 def build():
-    print("Clips")
     queue = clips.build(CLIP_ORDER)
-    print("Population maps")
-    summary = density.build()
-    print("Map data")
-    print("  map.json updated" if network.build(summary) else "  map.json up to date")
+    network.build(density.summary() or density.build())
     site.build(*queue, DOMAIN)
 
 if __name__ == "__main__":
-    build()
-    serve(lambda: (network.build(density.summary()), site.build()))
+    serve(refresh, background=build)
