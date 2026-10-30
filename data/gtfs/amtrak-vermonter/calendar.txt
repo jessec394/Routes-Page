@@ -1,0 +1,8 @@
+service_id,service_name,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
+c_70808_b_83677_d_80,Megabus - Burlington (FSu),0,0,0,0,1,0,1,20260501,20261130
+c_20409_b_80131_d_97,Year Round (MSaSu),1,0,0,0,0,1,1,20260501,20261130
+c_20409_b_80131_d_96,Year Round (Weekend),0,0,0,0,0,1,1,20260501,20261130
+c_20409_b_80131_d_31,Year Round (Weekday),1,1,1,1,1,0,0,20260501,20261130
+c_20409_b_80131_d_30,Year Round (TuWThF),0,1,1,1,1,0,0,20260501,20261130
+c_20409_b_80131_d_127,Year Round (All days of week),1,1,1,1,1,1,1,20260501,20261130
+c_20409_b_80131_d_1,Year Round (Monday only),1,0,0,0,0,0,0,20260501,20261130

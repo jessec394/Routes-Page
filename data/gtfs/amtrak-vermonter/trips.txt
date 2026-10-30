@@ -1,0 +1,11 @@
+route_id,service_id,trip_id,trip_short_name,trip_headsign,direction_id,block_id,shape_id,bikes_allowed,wheelchair_accessible,trip_type,drt_max_travel_time,drt_avg_travel_time,drt_advance_book_min,drt_pickup_message,drt_drop_off_message,continuous_pickup_message,continuous_drop_off_message,tts_trip_headsign,tts_trip_short_name
+13509,c_20409_b_80131_d_1,t_6116404_b_80131_tn_0,56,"St. Albans, VT",0,,p_744696,,,,,,,,,,,,
+13509,c_20409_b_80131_d_30,t_769334_b_80131_tn_0,56,"St. Albans, VT",0,,p_744696,,,,,,,,,,,,
+13509,c_20409_b_80131_d_31,t_768234_b_80131_tn_0,55,"Washington, DC - Union Station",1,,p_744693,,,,,,,,,,,,
+13509,c_20409_b_80131_d_96,t_769335_b_80131_tn_0,54,"St. Albans, VT",0,,p_744710,,,,,,,,,,,,
+13509,c_20409_b_80131_d_96,t_768235_b_80131_tn_0,57,"Washington, DC - Union Station",1,,p_744695,,,,,,,,,,,,
+16685,c_20409_b_80131_d_127,t_1244122_b_80131_tn_0,291,"Burlington, VT",0,,p_900754,,,,,,,,,,,,
+16685,c_20409_b_80131_d_30,t_1244119_b_80131_tn_0,290,"New York, NY - Penn Station",1,,p_900761,,,,,,,,,,,,
+16685,c_20409_b_80131_d_97,t_6116405_b_80131_tn_0,290,"New York, NY - Penn Station",1,,p_900761,,,,,,,,,,,,
+16753,c_70808_b_83677_d_80,t_5960934_b_83677_tn_0,5301,"Burlington, VT",0,,p_901098,,,,,,,,,,,,
+16753,c_70808_b_83677_d_80,t_5960935_b_83677_tn_0,5302,"Boston, MA",1,,p_901097,,,,,,,,,,,,

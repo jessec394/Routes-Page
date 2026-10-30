@@ -1,0 +1,4 @@
+agency_id,agency_url,agency_lang,agency_name,agency_phone,agency_timezone,agency_fare_url,tts_agency_name
+1657,https://us.megabus.com/?utm_source=google&utm_medium=maps&utm_campaign=tds-maps&utm_id=tds-maps,en,Megabus,,America/New_York,https://us.megabus.com/?utm_source=google&utm_medium=maps&utm_campaign=tds-maps&utm_id=tds-maps,
+1650,https://www.amtrak.com/ethan-allen-express-train,en,Amtrak Ethan Allen,,America/New_York,,
+1485,https://www.amtrak.com/vermonter-train,en,Amtrak Vermonter,,America/New_York,,

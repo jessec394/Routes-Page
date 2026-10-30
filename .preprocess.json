@@ -1,0 +1,219 @@
+{
+ "clips": {
+  "encode": "3: 1080p30 h264 main crf27 maxrate5M",
+  "clips": {
+   "Chicago (IL)/Sears.mp4": 1791624457.5997717,
+   "Cincinnati (OH)/Union.mp4": 1792364988.3352647,
+   "Cleveland (OH)/Snow.mp4": 1791648301.402761,
+   "Columbus (OH)/Bridge.mp4": 1791732937.8991096,
+   "Dayton (OH)/Stop.mp4": 1791653293.0984578,
+   "Indianapolis (IN)/Stadium.mp4": 1791730602.3598502,
+   "Pittsburgh (PA)/Bridge.mp4": 1791655205.5211408,
+   "Toledo (OH)/Stop.mp4": 1791830639.4430566
+  }
+ },
+ "density": {
+  "AL": {
+   "v": 1792979795,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451828.1892333|1768451827.757965"
+  },
+  "AR": {
+   "v": 1792979796,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768452130.1222503|1768452129.792998"
+  },
+  "AZ": {
+   "v": 1792979798,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768452113.1771834|1768452112.9414217"
+  },
+  "CA": {
+   "v": 1792979805,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451710.094829|1768451709.226144"
+  },
+  "CO": {
+   "v": 1792979807,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451362.203421|1768451362.024167"
+  },
+  "CT": {
+   "v": 1792979808,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451673.9730217|1768451673.8309844"
+  },
+  "DC": {
+   "v": 1792979808,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451505.0893855|1768451504.987718"
+  },
+  "DE": {
+   "v": 1792979808,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768452336.1669376|1768452336.078551"
+  },
+  "FL": {
+   "v": 1792979812,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451964.5181825|1768451964.2061155"
+  },
+  "GA": {
+   "v": 1792979816,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451941.3003676|1768451940.9536154"
+  },
+  "IA": {
+   "v": 1792979817,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768452180.0586686|1768452179.8766007"
+  },
+  "ID": {
+   "v": 1792979819,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768452199.6656156|1768452199.5066068"
+  },
+  "IL": {
+   "v": 1792979822,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451524.432091|1768451524.1264758"
+  },
+  "IN": {
+   "v": 1792979823,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451656.597472|1768451656.4206326"
+  },
+  "KS": {
+   "v": 1792979824,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451748.7306855|1768451748.5912387"
+  },
+  "KY": {
+   "v": 1792979828,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451770.3906078|1768451769.9927213"
+  },
+  "LA": {
+   "v": 1792979831,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451790.3043382|1768451790.081165"
+  },
+  "MA": {
+   "v": 1792979832,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451610.3695788|1768451610.2208948"
+  },
+  "MD": {
+   "v": 1792979834,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451625.1949873|1768451624.978856"
+  },
+  "ME": {
+   "v": 1792979835,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451640.1617925|1768451640.0449226"
+  },
+  "MI": {
+   "v": 1792979837,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451486.2068555|1768451486.0472574"
+  },
+  "MN": {
+   "v": 1792979839,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451380.6062102|1768451380.481684"
+  },
+  "MO": {
+   "v": 1792979842,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451729.1022623|1768451728.849418"
+  },
+  "MS": {
+   "v": 1792979845,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451807.5186288|1768451807.2733793"
+  },
+  "MT": {
+   "v": 1792979847,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451927.6215003|1768451927.38326"
+  },
+  "NC": {
+   "v": 1792979852,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768263601.6149347|1768263601.1970384"
+  },
+  "ND": {
+   "v": 1792979853,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768452227.6583452|1768452227.5630438"
+  },
+  "NE": {
+   "v": 1792979853,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768452388.655482|1768452388.5273285"
+  },
+  "NH": {
+   "v": 1792979854,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451873.022913|1768451872.8963764"
+  },
+  "NJ": {
+   "v": 1792979855,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451985.220116|1768451985.0315144"
+  },
+  "NM": {
+   "v": 1792979857,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768452095.523587|1768452095.3814309"
+  },
+  "NV": {
+   "v": 1792979858,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768452301.1616385|1768452301.047095"
+  },
+  "NY": {
+   "v": 1792979861,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451470.1277125|1768451469.83909"
+  },
+  "OH": {
+   "v": 1792979863,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768263607.728575|1768263607.5348868"
+  },
+  "OK": {
+   "v": 1792979865,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451595.0874634|1768451594.862619"
+  },
+  "OR": {
+   "v": 1792979868,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768452030.3473861|1768452030.0780618"
+  },
+  "PA": {
+   "v": 1792979872,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768452075.595706|1768452075.3080423"
+  },
+  "RI": {
+   "v": 1792979872,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451691.1449237|1768451691.064826"
+  },
+  "SC": {
+   "v": 1792979875,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451913.1814222|1768451912.879354"
+  },
+  "SD": {
+   "v": 1792979876,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768452242.1338775|1768452242.0257037"
+  },
+  "TN": {
+   "v": 1792979880,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768520141.1991029|1768520140.7252123"
+  },
+  "TX": {
+   "v": 1792979889,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451452.6577032|1768451451.7971568"
+  },
+  "UT": {
+   "v": 1792979891,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768452280.341966|1768452280.1840982"
+  },
+  "VA": {
+   "v": 1792979895,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768452007.3380136|1768452006.9493165"
+  },
+  "VT": {
+   "v": 1792979895,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451890.6133032|1768451890.5380478"
+  },
+  "WA": {
+   "v": 1792979898,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768452045.9710588|1768452045.6070368"
+  },
+  "WI": {
+   "v": 1792979900,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768451577.0843806|1768451576.850937"
+  },
+  "WV": {
+   "v": 1792979903,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768452259.8453155|1768452259.6341462"
+  },
+  "WY": {
+   "v": 1792979904,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1768452416.0769875|1768452415.937056"
+  }
+ },
+ "density_scale": {
+  "scale": 32830.4
+ },
+ "schedules": {
+  "stamp": "C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak\\agency.txt:1793018737.3714893|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak\\calendar.txt:1793018737.3734906|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak\\feed_info.txt:1793018737.3744886|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak\\routes.txt:1793018737.3755057|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak\\stop_times.txt:1793018737.3795052|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak\\stops.txt:1793018737.377494|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak\\trips.txt:1793018737.3804893|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-san-joaquins\\agency.txt:1793018737.4024818|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-san-joaquins\\calendar.txt:1793018737.4024818|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-san-joaquins\\calendar_dates.txt:1793018737.4034858|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-san-joaquins\\feed_info.txt:1793018737.4045117|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-san-joaquins\\routes.txt:1793018737.4054875|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-san-joaquins\\stop_times.txt:1793018737.4064918|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-san-joaquins\\stops.txt:1793018737.408494|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-san-joaquins\\trips.txt:1793018737.409498|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-vermonter\\agency.txt:1793018737.4355044|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-vermonter\\calendar.txt:1793018737.4374864|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-vermonter\\calendar_dates.txt:1793018737.4364893|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-vermonter\\feed_info.txt:1793018737.4385011|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-vermonter\\routes.txt:1793018737.4394834|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-vermonter\\stop_times.txt:1793018737.4404879|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-vermonter\\stops.txt:1793018737.4414866|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-vermonter\\trips.txt:1793018737.4425132|1793144379.24387|1792988734.4905927"
+ }
+}

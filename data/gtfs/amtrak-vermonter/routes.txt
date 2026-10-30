@@ -1,0 +1,4 @@
+agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,min_headway_minutes,eligibility_restricted,continuous_pickup,continuous_drop_off,tts_route_short_name,tts_route_long_name
+1485,13509,,Vermonter,"Daily service between Washington, DC and St. Albans in Northern Vermont.",2,https://www.amtrak.com/routes/vermonter-train.html,00537e,ffffff,0,,0,1,1,,
+1650,16685,,Ethan Allen Express,,2,https://www.amtrak.com/routes/ethan-allen-express-train.html,00537e,ffffff,1,,0,1,1,,
+1657,16753,M53,Boston - Burlington,,3,,,,2,,0,1,1,,
