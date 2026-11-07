@@ -1,0 +1,671 @@
+{
+ "clips": {
+  "encode": "3: 1080p30 h264 main crf27 maxrate5M",
+  "clips": {
+   "Chicago (IL)/Sears.mp4": 1791624457.5997717,
+   "Cincinnati (OH)/Union.mp4": 1792364988.3352647,
+   "Cleveland (OH)/Snow.mp4": 1791648301.402761,
+   "Columbus (OH)/Bridge.mp4": 1791732937.8991096,
+   "Dayton (OH)/Stop.mp4": 1791653293.0984578,
+   "Indianapolis (IN)/Stadium.mp4": 1791730602.3598502,
+   "Pittsburgh (PA)/Bridge.mp4": 1791655205.5211408,
+   "Toledo (OH)/Stop.mp4": 1791830639.4430566
+  }
+ },
+ "density": {
+  "AL": {
+   "v": 1793492153,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491127.2460375|1793491127.0735407"
+  },
+  "AR": {
+   "v": 1793492154,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491128.181575|1793491128.0340679"
+  },
+  "AZ": {
+   "v": 1793492155,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491128.7737832|1793491128.6489205"
+  },
+  "CA": {
+   "v": 1793492159,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491129.8892696|1793491129.4532077"
+  },
+  "CO": {
+   "v": 1793492159,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491130.334476|1793491130.229427"
+  },
+  "CT": {
+   "v": 1793492160,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491130.7399096|1793491130.6835105"
+  },
+  "DC": {
+   "v": 1793492160,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491130.9831724|1793491130.9621778"
+  },
+  "DE": {
+   "v": 1793492160,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491131.1965408|1793491131.182119"
+  },
+  "FL": {
+   "v": 1793492162,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491131.8894255|1793491131.7077239"
+  },
+  "GA": {
+   "v": 1793492164,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491132.5114381|1793491132.299844"
+  },
+  "IA": {
+   "v": 1793492165,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491133.0614042|1793491132.9902096"
+  },
+  "ID": {
+   "v": 1793492165,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491133.4631364|1793491133.3841374"
+  },
+  "IL": {
+   "v": 1793492167,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491134.0180247|1793491133.8667343"
+  },
+  "IN": {
+   "v": 1793492168,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491134.4020822|1793491134.3148909"
+  },
+  "KS": {
+   "v": 1793492168,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491134.7494142|1793491134.6839175"
+  },
+  "KY": {
+   "v": 1793492170,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491135.3450422|1793491135.1592379"
+  },
+  "LA": {
+   "v": 1793492171,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491135.9571435|1793491135.8322268"
+  },
+  "MA": {
+   "v": 1793492172,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491136.4058883|1793491136.3408868"
+  },
+  "MD": {
+   "v": 1793492172,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491136.923148|1793491136.8227735"
+  },
+  "ME": {
+   "v": 1793492173,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491137.271855|1793491137.220709"
+  },
+  "MI": {
+   "v": 1793492173,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491137.7518246|1793491137.6647522"
+  },
+  "MN": {
+   "v": 1793492175,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491138.2212741|1793491138.1028764"
+  },
+  "MO": {
+   "v": 1793492176,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491138.7258048|1793491138.561799"
+  },
+  "MS": {
+   "v": 1793492177,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491139.302163|1793491139.160702"
+  },
+  "MT": {
+   "v": 1793492178,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491139.8230896|1793491139.7261517"
+  },
+  "NC": {
+   "v": 1793492181,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491140.5542066|1793491140.272539"
+  },
+  "ND": {
+   "v": 1793492181,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491140.9421146|1793491140.8894765"
+  },
+  "NE": {
+   "v": 1793492182,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491141.295779|1793491141.2517824"
+  },
+  "NH": {
+   "v": 1793492182,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491141.642191|1793491141.602188"
+  },
+  "NJ": {
+   "v": 1793492182,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491142.0608332|1793491141.9569912"
+  },
+  "NM": {
+   "v": 1793492183,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491142.5130112|1793491142.4421885"
+  },
+  "NV": {
+   "v": 1793492184,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491142.945164|1793491142.885918"
+  },
+  "NY": {
+   "v": 1793492185,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491143.416695|1793491143.292933"
+  },
+  "OH": {
+   "v": 1793492186,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491143.872762|1793491143.7534907"
+  },
+  "OK": {
+   "v": 1793492187,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491144.3991275|1793491144.28223"
+  },
+  "OR": {
+   "v": 1793492189,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491144.9742322|1793491144.8179018"
+  },
+  "PA": {
+   "v": 1793492190,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491145.5255299|1793491145.3670557"
+  },
+  "RI": {
+   "v": 1793492190,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491145.803023|1793491145.7760215"
+  },
+  "SC": {
+   "v": 1793492192,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491146.2916968|1793491146.153589"
+  },
+  "SD": {
+   "v": 1793492192,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491146.5501857|1793491146.5131834"
+  },
+  "TN": {
+   "v": 1793492193,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491147.2315142|1793491147.0178618"
+  },
+  "TX": {
+   "v": 1793492196,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491148.1996977|1793491147.7576797"
+  },
+  "UT": {
+   "v": 1793492197,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491148.5850277|1793491148.4884048"
+  },
+  "VA": {
+   "v": 1793492200,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491149.211962|1793491148.9676025"
+  },
+  "VT": {
+   "v": 1793492200,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491149.4595723|1793491149.428575"
+  },
+  "WA": {
+   "v": 1793492203,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491149.9290602|1793491149.7890286"
+  },
+  "WI": {
+   "v": 1793492205,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491150.4645052|1793491150.350493"
+  },
+  "WV": {
+   "v": 1793492207,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491150.8973918|1793491150.7877188"
+  },
+  "WY": {
+   "v": 1793492208,
+   "stamp": "4|ACSDT5Y2023.B01003-Data.csv|1768449291.0671198|1793491151.2432353|1793491151.1772268"
+  }
+ },
+ "density_scale": {
+  "scale": 32830.4
+ },
+ "schedules": {
+  "stamp": "C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak\\agency.txt:1793491122.9466364|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak\\calendar.txt:1793491122.9476361|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak\\feed_info.txt:1793491122.948631|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak\\routes.txt:1793491122.9495897|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak\\stop_times.txt:1793491122.9566448|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak\\stops.txt:1793491122.9535336|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak\\trips.txt:1793491122.9575307|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-san-joaquins\\agency.txt:1793491122.984521|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-san-joaquins\\calendar.txt:1793491122.9855225|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-san-joaquins\\calendar_dates.txt:1793491122.9865224|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-san-joaquins\\feed_info.txt:1793491122.9885378|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-san-joaquins\\routes.txt:1793491122.989524|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-san-joaquins\\stop_times.txt:1793491122.9905264|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-san-joaquins\\stops.txt:1793491122.9915233|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-san-joaquins\\trips.txt:1793491122.9935253|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-vermonter\\agency.txt:1793491123.0145514|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-vermonter\\calendar.txt:1793491123.0165572|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-vermonter\\calendar_dates.txt:1793491123.0155525|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-vermonter\\feed_info.txt:1793491123.0175717|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-vermonter\\routes.txt:1793491123.0185547|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-vermonter\\stop_times.txt:1793491123.0200667|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-vermonter\\stops.txt:1793491123.0210786|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\gtfs\\amtrak-vermonter\\trips.txt:1793491123.0220785|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\docs\\data\\map.json:1794031466.4719486|c:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\backend\\schedules.py:1793750606.5001843",
+  "warnings": []
+ },
+ "network": {
+  "warnings": []
+ },
+ "people": {
+  "stamp": "C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\states\\ACSDT5Y2023.B01003-Data.csv:1768449291.0671198|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\states\\2026_Gaz_tracts_national.txt:1793488179.3902793|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\docs\\data\\map.json:1794031466.4719486|c:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\backend\\people.py:1793667725.7950802"
+ },
+ "clips-small": {
+  "encode": "1: 720p30 h264 main crf30 maxrate1.5M",
+  "clips": {
+   "Chicago (IL)/Sears.mp4": 1791624457.5997717,
+   "Cincinnati (OH)/Union.mp4": 1792364988.3352647,
+   "Cleveland (OH)/Snow.mp4": 1791648301.402761,
+   "Columbus (OH)/Bridge.mp4": 1791732937.8991096,
+   "Dayton (OH)/Stop.mp4": 1791653293.0984578,
+   "Indianapolis (IN)/Stadium.mp4": 1791730602.3598502,
+   "Pittsburgh (PA)/Bridge.mp4": 1791655205.5211408,
+   "Toledo (OH)/Stop.mp4": 1791830639.4430566
+  }
+ },
+ "ridership": {
+  "stamp": "C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\ridership\\routes.json:1793711880.8691833|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\ridership\\stations.json:1793711935.1795423|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\docs\\data\\map.json:1794031466.4719486|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\docs\\data\\schedules.json:1794031466.9566696|C:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\data\\network.json:1794031431.896049|c:\\Users\\jrcoo\\Desktop\\Storage\\Advocacy\\All Aboard Ohio\\Routes Page\\backend\\ridership.py:1793750606.283956",
+  "warnings": []
+ },
+ "identity": {
+  "routes": {
+   "Acela": {
+    "names": [
+     "Acela"
+    ],
+    "ends": [
+     "Boston",
+     "New York",
+     "Washington (DC)"
+    ]
+   },
+   "Adirondack": {
+    "names": [
+     "Adirondack"
+    ],
+    "ends": [
+     "Montr\u00e9al",
+     "New York"
+    ]
+   },
+   "Auto Train": {
+    "names": [
+     "Auto Train"
+    ],
+    "ends": [
+     "Lorton",
+     "Sanford"
+    ]
+   },
+   "Blue Water": {
+    "names": [
+     "Blue Water"
+    ],
+    "ends": [
+     "Chicago",
+     "Port Huron"
+    ]
+   },
+   "Borealis": {
+    "names": [
+     "Borealis"
+    ],
+    "ends": [
+     "Chicago",
+     "St. Paul"
+    ]
+   },
+   "California Zephyr": {
+    "names": [
+     "California Zephyr"
+    ],
+    "ends": [
+     "Chicago",
+     "Emeryville"
+    ]
+   },
+   "Capitol Corridor": {
+    "names": [
+     "Capitol Corridor"
+    ],
+    "ends": [
+     "Auburn (CA)",
+     "Oakland (CA)",
+     "Sacramento",
+     "San Jose"
+    ]
+   },
+   "Cardinal": {
+    "names": [
+     "Cardinal"
+    ],
+    "ends": [
+     "Chicago",
+     "New York"
+    ]
+   },
+   "Carl Sandburg": {
+    "names": [
+     "Carl Sandburg",
+     "Illinois Zephyr"
+    ],
+    "ends": [
+     "Chicago",
+     "Quincy (IL)"
+    ]
+   },
+   "Carolinian": {
+    "names": [
+     "Carolinian"
+    ],
+    "ends": [
+     "Charlotte",
+     "New York"
+    ]
+   },
+   "Cascades": {
+    "names": [
+     "Amtrak Cascades"
+    ],
+    "ends": [
+     "Eugene",
+     "Portland (OR)",
+     "Seattle",
+     "Vancouver (BC)"
+    ]
+   },
+   "City of New Orleans": {
+    "names": [
+     "City of New Orleans"
+    ],
+    "ends": [
+     "Chicago",
+     "New Orleans"
+    ]
+   },
+   "Coast Starlight": {
+    "names": [
+     "Coast Starlight"
+    ],
+    "ends": [
+     "Emeryville",
+     "Los Angeles",
+     "Seattle"
+    ]
+   },
+   "Crescent": {
+    "names": [
+     "Crescent"
+    ],
+    "ends": [
+     "Atlanta",
+     "New Orleans",
+     "New York"
+    ]
+   },
+   "Downeaster": {
+    "names": [
+     "Downeaster"
+    ],
+    "ends": [
+     "Boston (North)",
+     "Brunswick",
+     "Wells"
+    ]
+   },
+   "Empire Builder": {
+    "names": [
+     "Empire Builder"
+    ],
+    "ends": [
+     "Chicago",
+     "Portland (OR)",
+     "Seattle"
+    ]
+   },
+   "Empire Service": {
+    "names": [
+     "Empire Service"
+    ],
+    "ends": [
+     "Albany-Rensselaer",
+     "New York",
+     "Niagara Falls (NY)"
+    ]
+   },
+   "Ethan Allen Express": {
+    "names": [
+     "Ethan Allen Express"
+    ],
+    "ends": [
+     "Burlington (VT)",
+     "New York"
+    ]
+   },
+   "Floridian": {
+    "names": [
+     "Floridian"
+    ],
+    "ends": [
+     "Chicago",
+     "Miami"
+    ]
+   },
+   "Gold Runner": {
+    "names": [
+     "Gold Runner"
+    ],
+    "ends": [
+     "Sacramento (Midtown)",
+     "Stockton",
+     "Stockton (San Joaquin)"
+    ]
+   },
+   "Hartford Line": {
+    "names": [
+     "Amtrak Hartford Line"
+    ],
+    "ends": [
+     "Hartford",
+     "New Haven",
+     "Springfield (MA)"
+    ]
+   },
+   "Heartland Flyer": {
+    "names": [
+     "Heartland Flyer"
+    ],
+    "ends": [
+     "Fort Worth",
+     "Oklahoma City"
+    ]
+   },
+   "Hiawatha": {
+    "names": [
+     "Hiawatha Service"
+    ],
+    "ends": [
+     "Chicago",
+     "Milwaukee"
+    ]
+   },
+   "Illini-Saluki": {
+    "names": [
+     "Illini",
+     "Saluki"
+    ],
+    "ends": [
+     "Carbondale",
+     "Champaign-Urbana",
+     "Chicago"
+    ]
+   },
+   "Keystone Service": {
+    "names": [
+     "Keystone Service"
+    ],
+    "ends": [
+     "Harrisburg (PA)",
+     "New York",
+     "Philadelphia"
+    ]
+   },
+   "Lake Shore Limited": {
+    "names": [
+     "Lake Shore Limited"
+    ],
+    "ends": [
+     "Albany-Rensselaer",
+     "Boston",
+     "Chicago",
+     "New York"
+    ]
+   },
+   "Lincoln Service": {
+    "names": [
+     "Lincoln Service",
+     "Lincoln Service Missouri River Runner"
+    ],
+    "ends": [
+     "Chicago",
+     "St. Louis"
+    ]
+   },
+   "Maple Leaf": {
+    "names": [
+     "Maple Leaf"
+    ],
+    "ends": [
+     "New York",
+     "Niagara Falls (NY)",
+     "Toronto"
+    ]
+   },
+   "Mardi Gras Service": {
+    "names": [
+     "Amtrak Mardi Gras Service"
+    ],
+    "ends": [
+     "Mobile",
+     "New Orleans"
+    ]
+   },
+   "Missouri River Runner": {
+    "names": [
+     "Lincoln Service Missouri River Runner",
+     "Missouri River Runner"
+    ],
+    "ends": [
+     "Kansas City",
+     "St. Louis"
+    ]
+   },
+   "Northeast Regional": {
+    "names": [
+     "Northeast Regional"
+    ],
+    "ends": [
+     "Boston",
+     "New Haven",
+     "New York",
+     "Newport News",
+     "Norfolk",
+     "Philadelphia",
+     "Roanoke",
+     "Springfield (MA)",
+     "Washington (DC)"
+    ]
+   },
+   "Pacific Surfliner": {
+    "names": [
+     "Pacific Surfliner"
+    ],
+    "ends": [
+     "Goleta",
+     "Los Angeles",
+     "San Diego",
+     "San Luis Obispo"
+    ]
+   },
+   "Palmetto": {
+    "names": [
+     "Palmetto"
+    ],
+    "ends": [
+     "New York",
+     "Savannah"
+    ]
+   },
+   "Pennsylvanian": {
+    "names": [
+     "Pennsylvanian"
+    ],
+    "ends": [
+     "New York",
+     "Pittsburgh"
+    ]
+   },
+   "Pere Marquette": {
+    "names": [
+     "Pere Marquette"
+    ],
+    "ends": [
+     "Chicago",
+     "Grand Rapids"
+    ]
+   },
+   "Piedmont": {
+    "names": [
+     "Piedmont"
+    ],
+    "ends": [
+     "Charlotte",
+     "Greensboro",
+     "Raleigh"
+    ]
+   },
+   "Silver Meteor": {
+    "names": [
+     "Silver Meteor"
+    ],
+    "ends": [
+     "Miami",
+     "New York"
+    ]
+   },
+   "Southwest Chief": {
+    "names": [
+     "Southwest Chief"
+    ],
+    "ends": [
+     "Chicago",
+     "Los Angeles"
+    ]
+   },
+   "Sunset Limited": {
+    "names": [
+     "Sunset Limited"
+    ],
+    "ends": [
+     "Los Angeles",
+     "New Orleans"
+    ]
+   },
+   "Texas Eagle": {
+    "names": [
+     "Texas Eagle"
+    ],
+    "ends": [
+     "Chicago",
+     "Fort Worth",
+     "Los Angeles",
+     "San Antonio",
+     "St. Louis"
+    ]
+   },
+   "Valley Flyer": {
+    "names": [
+     "Valley Flyer"
+    ],
+    "ends": [
+     "Greenfield",
+     "Hartford",
+     "New Haven",
+     "Springfield (MA)"
+    ]
+   },
+   "Vermonter": {
+    "names": [
+     "Vermonter"
+    ],
+    "ends": [
+     "Newark (Broad St)",
+     "St. Albans",
+     "Washington (DC)"
+    ]
+   },
+   "Wolverine": {
+    "names": [
+     "Wolverine"
+    ],
+    "ends": [
+     "Chicago",
+     "Pontiac (MI)"
+    ]
+   }
+  }
+ }
+}

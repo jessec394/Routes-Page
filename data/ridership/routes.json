@@ -1,0 +1,289 @@
+{
+ "year": "FY25",
+ "prior": "FY24",
+ "url": "https://media.amtrak.com/wp-content/uploads/2025/11/FY25-Year-End-Ridership-Fact-Sheet.pdf",
+ "routes": [
+  {
+   "name": "Acela",
+   "section": "Ridership",
+   "riders": 3153621,
+   "prior": 3238130
+  },
+  {
+   "name": "Northeast Regional",
+   "section": "Ridership",
+   "riders": 12018536,
+   "prior": 10794566
+  },
+  {
+   "name": "Downeaster ME",
+   "section": "Northeast Routes",
+   "riders": 549120,
+   "prior": 591948
+  },
+  {
+   "name": "Empire South NY",
+   "section": "Northeast Routes",
+   "riders": 1351223,
+   "prior": 1358558
+  },
+  {
+   "name": "Empire West/Maple Leaf NY",
+   "section": "Northeast Routes",
+   "riders": 464421,
+   "prior": 506608
+  },
+  {
+   "name": "Adirondack NY",
+   "section": "Northeast Routes",
+   "riders": 83938,
+   "prior": 69167
+  },
+  {
+   "name": "Ethan Allen NY/VT",
+   "section": "Northeast Routes",
+   "riders": 85314,
+   "prior": 88981
+  },
+  {
+   "name": "Vermonter VT/MA/CT",
+   "section": "Northeast Routes",
+   "riders": 115940,
+   "prior": 114566
+  },
+  {
+   "name": "New Haven-Springfield MA/CT",
+   "section": "Northeast Routes",
+   "riders": 474990,
+   "prior": 577240
+  },
+  {
+   "name": "Keystone PA",
+   "section": "Northeast Routes",
+   "riders": 1330349,
+   "prior": 1283951
+  },
+  {
+   "name": "Pennsylvanian PA",
+   "section": "Northeast Routes",
+   "riders": 236003,
+   "prior": 233942
+  },
+  {
+   "name": "Washington-Newport News VA",
+   "section": "Southern Routes",
+   "riders": 395980,
+   "prior": 373078
+  },
+  {
+   "name": "Washington-Norfolk VA",
+   "section": "Southern Routes",
+   "riders": 557179,
+   "prior": 507812
+  },
+  {
+   "name": "Washington-Richmond VA",
+   "section": "Southern Routes",
+   "riders": 155337,
+   "prior": 148809
+  },
+  {
+   "name": "Washington/Roanoke VA",
+   "section": "Southern Routes",
+   "riders": 361072,
+   "prior": 334469
+  },
+  {
+   "name": "Mardi Gras AL/LA",
+   "section": "Southern Routes",
+   "riders": 18906,
+   "prior": null
+  },
+  {
+   "name": "Carolinian/Piedmont NC",
+   "section": "Southern Routes",
+   "riders": 737879,
+   "prior": 708015
+  },
+  {
+   "name": "Heartland Flyer OK/TX",
+   "section": "Southern Routes",
+   "riders": 80876,
+   "prior": 80371
+  },
+  {
+   "name": "Wolverine MI",
+   "section": "Midwest Routes",
+   "riders": 438427,
+   "prior": 425832
+  },
+  {
+   "name": "Blue Water MI",
+   "section": "Midwest Routes",
+   "riders": 177739,
+   "prior": 174862
+  },
+  {
+   "name": "Pere Marquette MI",
+   "section": "Midwest Routes",
+   "riders": 97177,
+   "prior": 94381
+  },
+  {
+   "name": "Hiawatha WI/IL",
+   "section": "Midwest Routes",
+   "riders": 631990,
+   "prior": 665279
+  },
+  {
+   "name": "Lincoln Service IL",
+   "section": "Midwest Routes",
+   "riders": 592735,
+   "prior": 586170
+  },
+  {
+   "name": "Illini/Saluki IL",
+   "section": "Midwest Routes",
+   "riders": 319114,
+   "prior": 296616
+  },
+  {
+   "name": "Illinois Zephyr/Carl Sandburg IL",
+   "section": "Midwest Routes",
+   "riders": 146049,
+   "prior": 141722
+  },
+  {
+   "name": "Missouri River Runner MO",
+   "section": "Midwest Routes",
+   "riders": 196989,
+   "prior": 187750
+  },
+  {
+   "name": "Borealis IL/MN",
+   "section": "Midwest Routes",
+   "riders": 212909,
+   "prior": 88444
+  },
+  {
+   "name": "Pacific Surfliner CA",
+   "section": "Western Routes",
+   "riders": 2043059,
+   "prior": 1983011
+  },
+  {
+   "name": "Capitol Corridor CA",
+   "section": "Western Routes",
+   "riders": 1138753,
+   "prior": 1032633
+  },
+  {
+   "name": "Gold Runner CA",
+   "section": "Western Routes",
+   "riders": 899903,
+   "prior": 908855
+  },
+  {
+   "name": "Amtrak Cascades WA/OR",
+   "section": "Western Routes",
+   "riders": 951397,
+   "prior": 938439
+  },
+  {
+   "name": "Silver Star",
+   "section": "Southeast Routes",
+   "riders": 38138,
+   "prior": 388122
+  },
+  {
+   "name": "Silver Meteor",
+   "section": "Southeast Routes",
+   "riders": 331917,
+   "prior": 298328
+  },
+  {
+   "name": "Floridian",
+   "section": "Southeast Routes",
+   "riders": 504332,
+   "prior": null
+  },
+  {
+   "name": "Palmetto",
+   "section": "Southeast Routes",
+   "riders": 357200,
+   "prior": 357196
+  },
+  {
+   "name": "Auto Train",
+   "section": "Southeast Routes",
+   "riders": 265952,
+   "prior": 266586
+  },
+  {
+   "name": "City of New Orleans",
+   "section": "Southeast Routes",
+   "riders": 234687,
+   "prior": 241768
+  },
+  {
+   "name": "Crescent",
+   "section": "Southeast Routes",
+   "riders": 316213,
+   "prior": 303098
+  },
+  {
+   "name": "Cardinal",
+   "section": "Central Routes",
+   "riders": 98583,
+   "prior": 92962
+  },
+  {
+   "name": "Capitol Limited",
+   "section": "Central Routes",
+   "riders": 18504,
+   "prior": 163136
+  },
+  {
+   "name": "Lake Shore Limited",
+   "section": "Central Routes",
+   "riders": 382881,
+   "prior": 398420
+  },
+  {
+   "name": "Empire Builder",
+   "section": "Central Routes",
+   "riders": 364495,
+   "prior": 387953
+  },
+  {
+   "name": "California Zephyr",
+   "section": "Central Routes",
+   "riders": 403142,
+   "prior": 351155
+  },
+  {
+   "name": "Southwest Chief",
+   "section": "Southwest Routes",
+   "riders": 294359,
+   "prior": 261485
+  },
+  {
+   "name": "Coast Starlight",
+   "section": "Southwest Routes",
+   "riders": 375571,
+   "prior": 358532
+  },
+  {
+   "name": "Texas Eagle",
+   "section": "Southwest Routes",
+   "riders": 372135,
+   "prior": 325709
+  },
+  {
+   "name": "Sunset Limited",
+   "section": "Southwest Routes",
+   "riders": 91493,
+   "prior": 76937
+  }
+ ]
+}

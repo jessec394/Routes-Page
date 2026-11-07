@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposed Routes · All Aboard Ohio</title>
+    <link rel="icon" type="image/avif" href="data/map.avif">
+    <link rel="preload" href="frontend/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="frontend/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="frontend/styles.css">
+    <noscript><style>body:not(.ready) * { opacity: 1 !important; } .brand, .loader { display: none; }</style></noscript>
+</head>
+<body>
+    <video class="bg" muted playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+    <video class="bg" muted playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+    <div class="bg-cover" aria-hidden="true"></div>
+
+    <!-- Loading: the brand map, light running round it -->
+    <div class="loader" role="status">
+        <div class="loader-head">
+            <p class="loader-kicker">All Aboard Ohio</p>
+            <p class="loader-title" aria-label="Proposed Routes"><span aria-hidden="true"><span class="word"><i style="--i:0">P</i><i style="--i:1">r</i><i style="--i:2">o</i><i style="--i:3">p</i><i style="--i:4">o</i><i style="--i:5">s</i><i style="--i:6">e</i><i style="--i:7">d</i></span> <span class="word lit"><i style="--i:8">R</i><i style="--i:9">o</i><i style="--i:10">u</i><i style="--i:11">t</i><i style="--i:12">e</i><i style="--i:13">s</i></span></span></p>
+        </div>
+        <div class="loader-map">
+            <img class="brand-glow" src="data/map.avif" alt="">
+            <span class="brand-edge"><span></span></span>
+            <img src="data/map.avif" alt="">
+        </div>
+        <div class="loader-train" aria-hidden="true"><span class="train"><img src="frontend/trains/charger-rear.webp" alt="" decoding="async"><img src="frontend/trains/venture-side.webp" alt="" decoding="async"><img src="frontend/trains/venture-side.webp" alt="" decoding="async"><img src="frontend/trains/venture-side.webp" alt="" decoding="async"><img src="frontend/trains/venture-side.webp" alt="" decoding="async"><img src="frontend/trains/venture-side.webp" alt="" decoding="async"><img src="frontend/trains/venture-side.webp" alt="" decoding="async"><img src="frontend/trains/charger-side.webp" alt="" decoding="async"></span></div>
+        <span class="loader-sr">Loading the map</span>
+    </div>
+
+    <!-- Everything above the background video -->
+    <div class="page">
+
+    <!-- Static rail map, docked in the sidebar -->
+    <button class="brand" tabindex="-1" aria-label="View the All Aboard Ohio rail map">
+        <img class="brand-glow" src="data/map.avif" alt="">
+        <span class="brand-edge"><span></span></span>
+        <img src="data/map.avif" alt="">
+    </button>
+
+    <!-- Station modal -->
+    <div class="station" hidden>
+        <div class="station-panel">
+            <div class="station-hero">
+                <div class="station-locator"></div>
+                <video muted playsinline preload="auto"></video>
+                <video muted playsinline preload="auto"></video>
+                <div class="station-inset"></div>
+                <div class="station-tools">
+                    <div class="station-view segmented" role="radiogroup" aria-label="Picture to show">
+                        <button role="radio" data-view="video" aria-checked="true">Video</button>
+                        <button role="radio" data-view="map" aria-checked="false">Map</button>
+                    </div>
+                    <div class="station-era" data-era-switch aria-label="Network to show on this map"></div>
+                </div>
+            </div>
+            <div class="station-info"></div>
+            <button class="close" aria-label="Close">×</button>
+        </div>
+    </div>
+
+    <!-- Program window -->
+    <div class="program" hidden>
+        <div class="program-panel">
+            <div class="program-map">
+                <svg class="program-svg" role="img" aria-label="Map of the program's routes"></svg>
+                <div class="program-controls">
+                    <div class="program-switch segmented" role="radiogroup" aria-label="Program to show"></div>
+                </div>
+                <div class="program-types" aria-label="Routes to show">
+                    <button data-type="state" aria-pressed="true"><i aria-hidden="true"></i>State-Supported</button>
+                    <button data-type="ld" aria-pressed="true"><i aria-hidden="true"></i>Long-Distance</button>
+                    <button class="help-btn" aria-label="What these route types mean" aria-expanded="false"><span aria-hidden="true">?</span></button>
+                    <button class="program-stations" aria-pressed="false"><i aria-hidden="true"></i><span>Stations</span></button>
+                    <div class="program-train" aria-hidden="true"><span class="train"><img src="frontend/trains/charger-rear.webp" alt="" decoding="async"><img src="frontend/trains/venture-side.webp" alt="" decoding="async"><img src="frontend/trains/venture-side.webp" alt="" decoding="async"><img src="frontend/trains/venture-side.webp" alt="" decoding="async"><img src="frontend/trains/venture-side.webp" alt="" decoding="async"><img src="frontend/trains/venture-side.webp" alt="" decoding="async"><img src="frontend/trains/venture-side.webp" alt="" decoding="async"></span></div>
+                </div>
+                <aside class="program-route" hidden aria-label="Stops of the picked route">
+                    <button class="program-route-toggle" aria-expanded="true" aria-label="Hide or show the stops"><i aria-hidden="true"></i></button>
+                    <div class="program-route-body"></div>
+                </aside>
+            </div>
+            <div class="program-info"></div>
+            <button class="close" aria-label="Close">×</button>
+        </div>
+        <div class="tip program-tip" hidden></div>
+    </div>
+
+    <!-- Expanded static map -->
+    <div class="brand-map-view" hidden>
+        <img class="splash-logo" src="data/logo.png" alt="All Aboard Ohio">
+        <img class="brand-big" src="data/map.avif" alt="All Aboard Ohio rail map">
+        <p class="splash-title">Proposed Routes</p>
+        <button class="close" aria-label="Close">×</button>
+    </div>
+
+    <!-- Webpage banner -->
+    <header class="top">
+        <a class="logo" href="/" aria-label="All Aboard Ohio home"><img src="data/logo.png" alt="All Aboard Ohio"></a>
+        <h1 class="title">Proposed Routes</h1>
+        <div class="top-train" aria-hidden="true"><span class="train"><img src="frontend/trains/charger-rear.webp" alt="" decoding="async"><img src="frontend/trains/venture-side.webp" alt="" decoding="async"><img src="frontend/trains/venture-side.webp" alt="" decoding="async"><img src="frontend/trains/venture-side.webp" alt="" decoding="async"><img src="frontend/trains/venture-side.webp" alt="" decoding="async"><img src="frontend/trains/venture-side.webp" alt="" decoding="async"><img src="frontend/trains/venture-side.webp" alt="" decoding="async"></span></div>
+        <div class="era-box">
+            <div class="era" data-era-switch aria-label="Network to show"></div>
+            <div class="when-tab"><p class="when" role="status"></p></div>
+        </div>
+    </header>
+
+    <!-- Dynamic route map -->
+    <main class="stage">
+        <section class="map" aria-label="Map of proposed routes">
+            <div class="map-dim"><svg class="map-base" aria-hidden="true"></svg></div>
+            <div class="pins"></div>
+            <div class="map-touch" aria-hidden="true"></div>
+            <div class="tip" hidden></div>
+        </section>
+        <aside class="legend" aria-label="Route legend">
+            <button class="legend-toggle" aria-expanded="false"><span>Amtrak Services</span><i></i></button>
+            <p class="legend-note">Based on active studies and&nbsp;expansions</p>
+            <div class="station-search" role="search">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 20 20"/></svg>
+                <input type="search" placeholder="Find a station" aria-label="Find a station" autocomplete="off" spellcheck="false">
+                <button class="near-me" type="button" aria-label="Stations near a place" title="Stations near a city, address or ZIP code"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="6.5"/><circle cx="12" cy="12" r="2"/><path d="M12 2v3.5M12 18.5V22M2 12h3.5M18.5 12H22"/></svg></button>
+            </div>
+            <div class="picks" aria-label="Explore"></div>
+            <div class="reach" hidden><button class="reach-why" type="button" aria-label="How this number is counted" title="How this is counted">?</button><p class="reach-num"></p><p class="reach-label"><span class="reach-who"></span> within 10 mi of a station</p><p class="reach-meta"><span class="reach-gain"></span><span class="reach-share"></span></p></div>
+            <div class="modes" aria-label="Route types to show">
+                <div class="types"><button data-type="state" aria-pressed="true">State-supported routes<i></i></button><button data-type="long-distance" aria-pressed="true">Long-distance routes<i></i></button></div>
+                <button class="help-btn" aria-label="What these route types mean" aria-expanded="false"><span aria-hidden="true">?</span></button>
+            </div>
+            <div class="legend-body"></div>
+        </aside>
+        <article class="card" hidden aria-live="polite">
+            <button class="close" aria-label="Close">×</button>
+            <div class="card-body"></div>
+        </article>
+        <div class="zoom-ctl" role="group" aria-label="Zoom"><button data-zoom="1" aria-label="Zoom in">+</button><button data-zoom="-1" aria-label="Zoom out">−</button><button data-split aria-pressed="false" aria-label="Present day beside the full buildout" title="Present day beside the full buildout (S)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M12 3v18"/></svg></button></div>
+        <div class="footage"><button class="now-showing" hidden><span>Now showing</span><strong></strong></button><button class="video-switch" aria-pressed="true" aria-label="Background videos"><i aria-hidden="true"></i><span><span class="full">Background </span>Videos</span></button></div>
+        <nav class="program-tabs" aria-label="Rail programs" hidden></nav>
+        <a class="embed-open" target="_blank" rel="noopener" href="./" hidden>All Aboard Ohio · Open the full map<span aria-hidden="true">↗</span></a>
+        <div class="dock">
+            <p class="hint"></p>
+        </div>
+    </main>
+    <div class="help-tip" role="tooltip" hidden></div>
+    </div>
+
+    <!-- Scripts, in order -->
+    <script src="frontend/util.js"></script>
+    <script src="frontend/state.js"></script>
+    <script src="frontend/video.js"></script>
+    <script src="frontend/camera.js"></script>
+    <script src="frontend/lanes.js"></script>
+    <script src="frontend/map.js"></script>
+    <script src="frontend/relief.js"></script>
+    <script src="frontend/reach.js"></script>
+    <script src="frontend/times.js"></script>
+    <script src="frontend/ridership.js"></script>
+    <script src="frontend/header.js"></script>
+    <script src="frontend/sidebar.js"></script>
+    <script src="frontend/card.js"></script>
+    <script src="frontend/station.js"></script>
+    <script src="frontend/search.js"></script>
+    <script src="frontend/programs.js"></script>
+    <script src="frontend/trips.js"></script>
+    <script src="frontend/compare.js"></script>
+    <script src="frontend/list.js"></script>
+    <script src="frontend/split.js"></script>
+    <script src="frontend/keys.js"></script>
+    <script src="frontend/intro.js"></script>
+    <script src="frontend/main.js"></script>
+</body>
+</html>
