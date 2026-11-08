@@ -1,0 +1,2964 @@
+{
+ "year": "FY25",
+ "url": "https://www.amtrak.com/about-amtrak/amtrak-facts/state-fact-sheets.html",
+ "sheets": {
+  "AL": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/ALABAMA25.pdf",
+  "AR": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/ARKANSAS25.pdf",
+  "AZ": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/ARIZONA25.pdf",
+  "CA": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/CALIFORNIA25.pdf",
+  "CO": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/COLORADO25.pdf",
+  "CT": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/CONNECTICUT25.pdf",
+  "DE": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/DELAWARE25.pdf",
+  "FL": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/FLORIDA25.pdf",
+  "GA": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/GEORGIA25.pdf",
+  "IA": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/IOWA25.pdf",
+  "ID": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/IDAHO25.pdf",
+  "IL": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/ILLINOIS25.pdf",
+  "IN": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/INDIANA25.pdf",
+  "KS": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/KANSAS25.pdf",
+  "KY": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/KENTUCKY25.pdf",
+  "LA": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/LOUISIANA25.pdf",
+  "MA": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/MASSACHUSETTS25.pdf",
+  "MD": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/MARYLAND25.pdf",
+  "ME": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/MAINE25.pdf",
+  "MI": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/MICHIGAN25.pdf",
+  "MN": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/MINNESOTA25.pdf",
+  "MO": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/MISSOURI25.pdf",
+  "MS": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/MISSISSIPPI25.pdf",
+  "MT": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/MONTANA25.pdf",
+  "NC": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/NORTHCAROLINA25.pdf",
+  "ND": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/NORTHDAKOTA25.pdf",
+  "NE": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/NEBRASKA25.pdf",
+  "NH": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/NEWHAMPSHIRE25.pdf",
+  "NJ": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/NEWJERSEY25.pdf",
+  "NM": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/NEWMEXICO25.pdf",
+  "NV": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/NEVADA25.pdf",
+  "NY": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/NEWYORK25.pdf",
+  "OH": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/OHIO25.pdf",
+  "OK": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/OKLAHOMA25.pdf",
+  "OR": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/OREGON25.pdf",
+  "PA": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/PENNSYLVANIA25.pdf",
+  "RI": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/RHODEISLAND25.pdf",
+  "SC": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/SOUTHCAROLINA25.pdf",
+  "TN": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/TENNESSEE25.pdf",
+  "TX": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/TEXAS25.pdf",
+  "UT": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/UTAH25.pdf",
+  "VA": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/VIRGINIA25.pdf",
+  "VT": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/VERMONT25.pdf",
+  "WA": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/WASHINGTON25.pdf",
+  "WI": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/WISCONSIN25.pdf",
+  "WV": "https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/corporate/statefactsheets/WESTVIRGINIA25.pdf"
+ },
+ "stations": [
+  {
+   "code": "ATN",
+   "name": "Anniston",
+   "state": "AL",
+   "riders": 4338
+  },
+  {
+   "code": "BHM",
+   "name": "Birmingham",
+   "state": "AL",
+   "riders": 39492
+  },
+  {
+   "code": "MOE",
+   "name": "Mobile",
+   "state": "AL",
+   "riders": 12356
+  },
+  {
+   "code": "TCL",
+   "name": "Tuscaloosa",
+   "state": "AL",
+   "riders": 10726
+  },
+  {
+   "code": "ARK",
+   "name": "Arkadelphia",
+   "state": "AR",
+   "riders": 1292
+  },
+  {
+   "code": "HOP",
+   "name": "Hope",
+   "state": "AR",
+   "riders": 1767
+  },
+  {
+   "code": "LRK",
+   "name": "Little Rock",
+   "state": "AR",
+   "riders": 25432
+  },
+  {
+   "code": "MVN",
+   "name": "Malvern",
+   "state": "AR",
+   "riders": 2007
+  },
+  {
+   "code": "TXA",
+   "name": "Texarkana",
+   "state": "AR",
+   "riders": 7037
+  },
+  {
+   "code": "WNR",
+   "name": "Walnut Ridge",
+   "state": "AR",
+   "riders": 4259
+  },
+  {
+   "code": "BEN",
+   "name": "Benson",
+   "state": "AZ",
+   "riders": 2196
+  },
+  {
+   "code": "FLG",
+   "name": "Flagstaff",
+   "state": "AZ",
+   "riders": 31694
+  },
+  {
+   "code": "KNG",
+   "name": "Kingman",
+   "state": "AZ",
+   "riders": 9776
+  },
+  {
+   "code": "MRC",
+   "name": "Maricopa",
+   "state": "AZ",
+   "riders": 14830
+  },
+  {
+   "code": "TUS",
+   "name": "Tucson",
+   "state": "AZ",
+   "riders": 25261
+  },
+  {
+   "code": "WLO",
+   "name": "Winslow",
+   "state": "AZ",
+   "riders": 3769
+  },
+  {
+   "code": "YUM",
+   "name": "Yuma",
+   "state": "AZ",
+   "riders": 4722
+  },
+  {
+   "code": "ANA",
+   "name": "Anaheim",
+   "state": "CA",
+   "riders": 207870
+  },
+  {
+   "code": "ACA",
+   "name": "Antioch-Pittsburg",
+   "state": "CA",
+   "riders": 35667
+  },
+  {
+   "code": "ARN",
+   "name": "Auburn",
+   "state": "CA",
+   "riders": 9348
+  },
+  {
+   "code": "BFD",
+   "name": "Bakersfield",
+   "state": "CA",
+   "riders": 376353
+  },
+  {
+   "code": "BAR",
+   "name": "Barstow",
+   "state": "CA",
+   "riders": 3300
+  },
+  {
+   "code": "BKY",
+   "name": "Berkeley",
+   "state": "CA",
+   "riders": 99353
+  },
+  {
+   "code": "CML",
+   "name": "Camarillo",
+   "state": "CA",
+   "riders": 52904
+  },
+  {
+   "code": "CPN",
+   "name": "Carpinteria",
+   "state": "CA",
+   "riders": 27105
+  },
+  {
+   "code": "CWT",
+   "name": "Chatsworth",
+   "state": "CA",
+   "riders": 58788
+  },
+  {
+   "code": "CIC",
+   "name": "Chico",
+   "state": "CA",
+   "riders": 9749
+  },
+  {
+   "code": "COX",
+   "name": "Colfax",
+   "state": "CA",
+   "riders": 6615
+  },
+  {
+   "code": "CNL",
+   "name": "Col. Allensworth Park",
+   "state": "CA",
+   "riders": 1651
+  },
+  {
+   "code": "COC",
+   "name": "Corcoran",
+   "state": "CA",
+   "riders": 21981
+  },
+  {
+   "code": "DAV",
+   "name": "Davis",
+   "state": "CA",
+   "riders": 275354
+  },
+  {
+   "code": "DUN",
+   "name": "Dunsmuir",
+   "state": "CA",
+   "riders": 3794
+  },
+  {
+   "code": "EMY",
+   "name": "Emeryville",
+   "state": "CA",
+   "riders": 444451
+  },
+  {
+   "code": "FFV",
+   "name": "Fairfield-Vacaville",
+   "state": "CA",
+   "riders": 74502
+  },
+  {
+   "code": "FMT",
+   "name": "Fremont",
+   "state": "CA",
+   "riders": 32781
+  },
+  {
+   "code": "FNO",
+   "name": "Fresno",
+   "state": "CA",
+   "riders": 302753
+  },
+  {
+   "code": "FUL",
+   "name": "Fullerton",
+   "state": "CA",
+   "riders": 230141
+  },
+  {
+   "code": "GDL",
+   "name": "Glendale",
+   "state": "CA",
+   "riders": 53489
+  },
+  {
+   "code": "GTA",
+   "name": "Goleta",
+   "state": "CA",
+   "riders": 86988
+  },
+  {
+   "code": "GVB",
+   "name": "Grover Beach",
+   "state": "CA",
+   "riders": 14563
+  },
+  {
+   "code": "GUA",
+   "name": "Guadalupe",
+   "state": "CA",
+   "riders": 12287
+  },
+  {
+   "code": "HNF",
+   "name": "Hanford",
+   "state": "CA",
+   "riders": 121136
+  },
+  {
+   "code": "HAY",
+   "name": "Hayward",
+   "state": "CA",
+   "riders": 36948
+  },
+  {
+   "code": "IRV",
+   "name": "Irvine",
+   "state": "CA",
+   "riders": 244373
+  },
+  {
+   "code": "LOD",
+   "name": "Lodi",
+   "state": "CA",
+   "riders": 2769
+  },
+  {
+   "code": "LPS",
+   "name": "Lompoc-Surf",
+   "state": "CA",
+   "riders": 9625
+  },
+  {
+   "code": "LAX",
+   "name": "Los Angeles",
+   "state": "CA",
+   "riders": 1066614
+  },
+  {
+   "code": "MDR",
+   "name": "Madera",
+   "state": "CA",
+   "riders": 25476
+  },
+  {
+   "code": "MTZ",
+   "name": "Martinez",
+   "state": "CA",
+   "riders": 267797
+  },
+  {
+   "code": "MCD",
+   "name": "Merced",
+   "state": "CA",
+   "riders": 135210
+  },
+  {
+   "code": "MOD",
+   "name": "Modesto",
+   "state": "CA",
+   "riders": 105596
+  },
+  {
+   "code": "MPK",
+   "name": "Moorpark",
+   "state": "CA",
+   "riders": 37744
+  },
+  {
+   "code": "NDL",
+   "name": "Needles",
+   "state": "CA",
+   "riders": 7395
+  },
+  {
+   "code": "NRG",
+   "name": "Northridge",
+   "state": "CA",
+   "riders": 24364
+  },
+  {
+   "code": "OSD",
+   "name": "Oceanside",
+   "state": "CA",
+   "riders": 211534
+  },
+  {
+   "code": "ONA",
+   "name": "Ontario",
+   "state": "CA",
+   "riders": 4884
+  },
+  {
+   "code": "OXN",
+   "name": "Oxnard",
+   "state": "CA",
+   "riders": 92195
+  },
+  {
+   "code": "PSN",
+   "name": "Palm Springs",
+   "state": "CA",
+   "riders": 1688
+  },
+  {
+   "code": "PRB",
+   "name": "Paso Robles",
+   "state": "CA",
+   "riders": 9510
+  },
+  {
+   "code": "POS",
+   "name": "Pomona",
+   "state": "CA",
+   "riders": 1434
+  },
+  {
+   "code": "RDD",
+   "name": "Redding",
+   "state": "CA",
+   "riders": 8505
+  },
+  {
+   "code": "RIC",
+   "name": "Richmond",
+   "state": "CA",
+   "riders": 202257
+  },
+  {
+   "code": "RIV",
+   "name": "Riverside",
+   "state": "CA",
+   "riders": 9468
+  },
+  {
+   "code": "RLN",
+   "name": "Rocklin",
+   "state": "CA",
+   "riders": 8912
+  },
+  {
+   "code": "RSV",
+   "name": "Roseville",
+   "state": "CA",
+   "riders": 37157
+  },
+  {
+   "code": "SAC",
+   "name": "Sacramento",
+   "state": "CA",
+   "riders": 764100
+  },
+  {
+   "code": "SNS",
+   "name": "Salinas",
+   "state": "CA",
+   "riders": 20833
+  },
+  {
+   "code": "SNB",
+   "name": "San Bernardino",
+   "state": "CA",
+   "riders": 9576
+  },
+  {
+   "code": "SJC",
+   "name": "San Jose",
+   "state": "CA",
+   "riders": 156081
+  },
+  {
+   "code": "SNC",
+   "name": "San Juan Capistrano",
+   "state": "CA",
+   "riders": 162211
+  },
+  {
+   "code": "SLO",
+   "name": "San Luis Obispo",
+   "state": "CA",
+   "riders": 91556
+  },
+  {
+   "code": "SNA",
+   "name": "Santa Ana",
+   "state": "CA",
+   "riders": 109990
+  },
+  {
+   "code": "SBA",
+   "name": "Santa Barbara",
+   "state": "CA",
+   "riders": 339569
+  },
+  {
+   "code": "SIM",
+   "name": "Simi Valley",
+   "state": "CA",
+   "riders": 40003
+  },
+  {
+   "code": "SOL",
+   "name": "Solana Beach",
+   "state": "CA",
+   "riders": 202986
+  },
+  {
+   "code": "SUI",
+   "name": "Suisun",
+   "state": "CA",
+   "riders": 65360
+  },
+  {
+   "code": "TRU",
+   "name": "Truckee",
+   "state": "CA",
+   "riders": 16496
+  },
+  {
+   "code": "TRK",
+   "name": "Turlock-Denair",
+   "state": "CA",
+   "riders": 31978
+  },
+  {
+   "code": "VNC",
+   "name": "Van Nuys",
+   "state": "CA",
+   "riders": 67885
+  },
+  {
+   "code": "VEC",
+   "name": "Ventura",
+   "state": "CA",
+   "riders": 79936
+  },
+  {
+   "code": "VRV",
+   "name": "Victorville",
+   "state": "CA",
+   "riders": 7228
+  },
+  {
+   "code": "WAC",
+   "name": "Wasco",
+   "state": "CA",
+   "riders": 23549
+  },
+  {
+   "code": "DEN",
+   "name": "Denver",
+   "state": "CO",
+   "riders": 151915
+  },
+  {
+   "code": "FMG",
+   "name": "Ft. Morgan",
+   "state": "CO",
+   "riders": 3623
+  },
+  {
+   "code": "GSC",
+   "name": "Glenwood Springs",
+   "state": "CO",
+   "riders": 42841
+  },
+  {
+   "code": "GRA",
+   "name": "Granby",
+   "state": "CO",
+   "riders": 3682
+  },
+  {
+   "code": "GJT",
+   "name": "Grand Junction",
+   "state": "CO",
+   "riders": 27402
+  },
+  {
+   "code": "LAJ",
+   "name": "La Junta",
+   "state": "CO",
+   "riders": 6247
+  },
+  {
+   "code": "LMR",
+   "name": "Lamar",
+   "state": "CO",
+   "riders": 1406
+  },
+  {
+   "code": "TRI",
+   "name": "Trinidad",
+   "state": "CO",
+   "riders": 6917
+  },
+  {
+   "code": "WPR",
+   "name": "Winter Park Ski Resort",
+   "state": "CO",
+   "riders": 41134
+  },
+  {
+   "code": "WIP",
+   "name": "Winter Park/Fraser",
+   "state": "CO",
+   "riders": 12525
+  },
+  {
+   "code": "BER",
+   "name": "Berlin",
+   "state": "CT",
+   "riders": 34926
+  },
+  {
+   "code": "BRP",
+   "name": "Bridgeport",
+   "state": "CT",
+   "riders": 141023
+  },
+  {
+   "code": "HFD",
+   "name": "Hartford",
+   "state": "CT",
+   "riders": 226313
+  },
+  {
+   "code": "MDN",
+   "name": "Meriden",
+   "state": "CT",
+   "riders": 26578
+  },
+  {
+   "code": "MYS",
+   "name": "Mystic",
+   "state": "CT",
+   "riders": 48883
+  },
+  {
+   "code": "NLC",
+   "name": "New London",
+   "state": "CT",
+   "riders": 179876
+  },
+  {
+   "code": "OSB",
+   "name": "Old Saybrook",
+   "state": "CT",
+   "riders": 87196
+  },
+  {
+   "code": "STM",
+   "name": "Stamford",
+   "state": "CT",
+   "riders": 398958
+  },
+  {
+   "code": "WFD",
+   "name": "Wallingford",
+   "state": "CT",
+   "riders": 12605
+  },
+  {
+   "code": "WND",
+   "name": "Windsor",
+   "state": "CT",
+   "riders": 21054
+  },
+  {
+   "code": "WNL",
+   "name": "Windsor Locks",
+   "state": "CT",
+   "riders": 32655
+  },
+  {
+   "code": "NRK",
+   "name": "Newark",
+   "state": "DE",
+   "riders": 49510
+  },
+  {
+   "code": "WIL",
+   "name": "Wilmington",
+   "state": "DE",
+   "riders": 814517
+  },
+  {
+   "code": "DFB",
+   "name": "Deerfield Beach",
+   "state": "FL",
+   "riders": 20916
+  },
+  {
+   "code": "DLD",
+   "name": "DeLand",
+   "state": "FL",
+   "riders": 19366
+  },
+  {
+   "code": "DLB",
+   "name": "Delray Beach",
+   "state": "FL",
+   "riders": 13831
+  },
+  {
+   "code": "FTL",
+   "name": "Fort Lauderdale",
+   "state": "FL",
+   "riders": 45989
+  },
+  {
+   "code": "HOL",
+   "name": "Hollywood",
+   "state": "FL",
+   "riders": 24707
+  },
+  {
+   "code": "JAX",
+   "name": "Jacksonville",
+   "state": "FL",
+   "riders": 94915
+  },
+  {
+   "code": "KIS",
+   "name": "Kissimmee",
+   "state": "FL",
+   "riders": 35007
+  },
+  {
+   "code": "MIA",
+   "name": "Miami",
+   "state": "FL",
+   "riders": 89463
+  },
+  {
+   "code": "OKE",
+   "name": "Okeechobee",
+   "state": "FL",
+   "riders": 4672
+  },
+  {
+   "code": "ORL",
+   "name": "Orlando",
+   "state": "FL",
+   "riders": 145057
+  },
+  {
+   "code": "PAK",
+   "name": "Palatka",
+   "state": "FL",
+   "riders": 17241
+  },
+  {
+   "code": "SBG",
+   "name": "Sebring",
+   "state": "FL",
+   "riders": 17805
+  },
+  {
+   "code": "TPA",
+   "name": "Tampa",
+   "state": "FL",
+   "riders": 145295
+  },
+  {
+   "code": "WPB",
+   "name": "West Palm Beach",
+   "state": "FL",
+   "riders": 43603
+  },
+  {
+   "code": "WTH",
+   "name": "Winter Haven",
+   "state": "FL",
+   "riders": 30309
+  },
+  {
+   "code": "WPK",
+   "name": "Winter Park",
+   "state": "FL",
+   "riders": 25452
+  },
+  {
+   "code": "ATL",
+   "name": "Atlanta",
+   "state": "GA",
+   "riders": 86040
+  },
+  {
+   "code": "GNS",
+   "name": "Gainesville",
+   "state": "GA",
+   "riders": 4743
+  },
+  {
+   "code": "JSP",
+   "name": "Jesup",
+   "state": "GA",
+   "riders": 9165
+  },
+  {
+   "code": "SAV",
+   "name": "Savannah",
+   "state": "GA",
+   "riders": 73969
+  },
+  {
+   "code": "TCA",
+   "name": "Toccoa",
+   "state": "GA",
+   "riders": 2095
+  },
+  {
+   "code": "BRL",
+   "name": "Burlington",
+   "state": "IA",
+   "riders": 6845
+  },
+  {
+   "code": "CRN",
+   "name": "Creston",
+   "state": "IA",
+   "riders": 2174
+  },
+  {
+   "code": "FMD",
+   "name": "Ft. Madison",
+   "state": "IA",
+   "riders": 5940
+  },
+  {
+   "code": "MTP",
+   "name": "Mt. Pleasant",
+   "state": "IA",
+   "riders": 9228
+  },
+  {
+   "code": "OSC",
+   "name": "Osceola",
+   "state": "IA",
+   "riders": 13580
+  },
+  {
+   "code": "OTM",
+   "name": "Ottumwa",
+   "state": "IA",
+   "riders": 8548
+  },
+  {
+   "code": "SPT",
+   "name": "Sandpoint",
+   "state": "ID",
+   "riders": 5809
+  },
+  {
+   "code": "ALN",
+   "name": "Alton",
+   "state": "IL",
+   "riders": 75548
+  },
+  {
+   "code": "BNL",
+   "name": "Bloomington-Normal",
+   "state": "IL",
+   "riders": 230448
+  },
+  {
+   "code": "CDL",
+   "name": "Carbondale",
+   "state": "IL",
+   "riders": 82122
+  },
+  {
+   "code": "CRV",
+   "name": "Carlinville",
+   "state": "IL",
+   "riders": 9349
+  },
+  {
+   "code": "CEN",
+   "name": "Centralia",
+   "state": "IL",
+   "riders": 17638
+  },
+  {
+   "code": "CHM",
+   "name": "Champaign-Urbana",
+   "state": "IL",
+   "riders": 254996
+  },
+  {
+   "code": "DQN",
+   "name": "Du Quoin",
+   "state": "IL",
+   "riders": 6909
+  },
+  {
+   "code": "DWT",
+   "name": "Dwight",
+   "state": "IL",
+   "riders": 4964
+  },
+  {
+   "code": "EFG",
+   "name": "Effingham",
+   "state": "IL",
+   "riders": 22775
+  },
+  {
+   "code": "GBB",
+   "name": "Galesburg",
+   "state": "IL",
+   "riders": 71850
+  },
+  {
+   "code": "GLM",
+   "name": "Gilman",
+   "state": "IL",
+   "riders": 2172
+  },
+  {
+   "code": "GLN",
+   "name": "Glenview",
+   "state": "IL",
+   "riders": 57752
+  },
+  {
+   "code": "HMW",
+   "name": "Homewood",
+   "state": "IL",
+   "riders": 46211
+  },
+  {
+   "code": "JOL",
+   "name": "Joliet",
+   "state": "IL",
+   "riders": 69420
+  },
+  {
+   "code": "KKI",
+   "name": "Kankakee",
+   "state": "IL",
+   "riders": 18244
+  },
+  {
+   "code": "KEE",
+   "name": "Kewanee",
+   "state": "IL",
+   "riders": 13172
+  },
+  {
+   "code": "LAG",
+   "name": "La Grange",
+   "state": "IL",
+   "riders": 9129
+  },
+  {
+   "code": "LCN",
+   "name": "Lincoln",
+   "state": "IL",
+   "riders": 18239
+  },
+  {
+   "code": "MAC",
+   "name": "Macomb",
+   "state": "IL",
+   "riders": 40454
+  },
+  {
+   "code": "MAT",
+   "name": "Mattoon",
+   "state": "IL",
+   "riders": 34319
+  },
+  {
+   "code": "MDT",
+   "name": "Mendota",
+   "state": "IL",
+   "riders": 18178
+  },
+  {
+   "code": "NPV",
+   "name": "Naperville",
+   "state": "IL",
+   "riders": 34737
+  },
+  {
+   "code": "PLO",
+   "name": "Plano",
+   "state": "IL",
+   "riders": 5725
+  },
+  {
+   "code": "PON",
+   "name": "Pontiac",
+   "state": "IL",
+   "riders": 14840
+  },
+  {
+   "code": "PCT",
+   "name": "Princeton",
+   "state": "IL",
+   "riders": 29018
+  },
+  {
+   "code": "QCY",
+   "name": "Quincy",
+   "state": "IL",
+   "riders": 29252
+  },
+  {
+   "code": "RTL",
+   "name": "Rantoul",
+   "state": "IL",
+   "riders": 5865
+  },
+  {
+   "code": "SPI",
+   "name": "Springfield",
+   "state": "IL",
+   "riders": 159999
+  },
+  {
+   "code": "SMT",
+   "name": "Summit",
+   "state": "IL",
+   "riders": 19729
+  },
+  {
+   "code": "COI",
+   "name": "Connersville",
+   "state": "IN",
+   "riders": 726
+  },
+  {
+   "code": "CRF",
+   "name": "Crawfordsville",
+   "state": "IN",
+   "riders": 1928
+  },
+  {
+   "code": "DYE",
+   "name": "Dyer",
+   "state": "IN",
+   "riders": 1331
+  },
+  {
+   "code": "EKH",
+   "name": "Elkhart",
+   "state": "IN",
+   "riders": 20541
+  },
+  {
+   "code": "HMI",
+   "name": "Hammond-Whiting",
+   "state": "IN",
+   "riders": 4639
+  },
+  {
+   "code": "IND",
+   "name": "Indianapolis",
+   "state": "IN",
+   "riders": 12655
+  },
+  {
+   "code": "LAF",
+   "name": "Lafayette",
+   "state": "IN",
+   "riders": 4842
+  },
+  {
+   "code": "REN",
+   "name": "Rensselaer",
+   "state": "IN",
+   "riders": 430
+  },
+  {
+   "code": "SOB",
+   "name": "South Bend",
+   "state": "IN",
+   "riders": 18677
+  },
+  {
+   "code": "WTI",
+   "name": "Waterloo",
+   "state": "IN",
+   "riders": 21178
+  },
+  {
+   "code": "DDG",
+   "name": "Dodge City",
+   "state": "KS",
+   "riders": 4682
+  },
+  {
+   "code": "GCK",
+   "name": "Garden City",
+   "state": "KS",
+   "riders": 6517
+  },
+  {
+   "code": "HUT",
+   "name": "Hutchinson",
+   "state": "KS",
+   "riders": 4125
+  },
+  {
+   "code": "LRC",
+   "name": "Lawrence",
+   "state": "KS",
+   "riders": 8294
+  },
+  {
+   "code": "NEW",
+   "name": "Newton",
+   "state": "KS",
+   "riders": 14500
+  },
+  {
+   "code": "TOP",
+   "name": "Topeka",
+   "state": "KS",
+   "riders": 9096
+  },
+  {
+   "code": "AKY",
+   "name": "Ashland",
+   "state": "KY",
+   "riders": 1792
+  },
+  {
+   "code": "FTN",
+   "name": "Fulton",
+   "state": "KY",
+   "riders": 4547
+  },
+  {
+   "code": "MAY",
+   "name": "Maysville",
+   "state": "KY",
+   "riders": 2610
+  },
+  {
+   "code": "SPM",
+   "name": "S. Shore-S. Portsmouth",
+   "state": "KY",
+   "riders": 1454
+  },
+  {
+   "code": "HMD",
+   "name": "Hammond",
+   "state": "LA",
+   "riders": 10108
+  },
+  {
+   "code": "LFT",
+   "name": "Lafayette",
+   "state": "LA",
+   "riders": 5169
+  },
+  {
+   "code": "LCH",
+   "name": "Lake Charles",
+   "state": "LA",
+   "riders": 3656
+  },
+  {
+   "code": "NIB",
+   "name": "New Iberia",
+   "state": "LA",
+   "riders": 1340
+  },
+  {
+   "code": "NOL",
+   "name": "New Orleans",
+   "state": "LA",
+   "riders": 188071
+  },
+  {
+   "code": "SCH",
+   "name": "Schriever",
+   "state": "LA",
+   "riders": 1286
+  },
+  {
+   "code": "SDL",
+   "name": "Slidell",
+   "state": "LA",
+   "riders": 6682
+  },
+  {
+   "code": "FRA",
+   "name": "Framingham",
+   "state": "MA",
+   "riders": 1321
+  },
+  {
+   "code": "GFD",
+   "name": "Greenfield",
+   "state": "MA",
+   "riders": 13291
+  },
+  {
+   "code": "HHL",
+   "name": "Haverhill",
+   "state": "MA",
+   "riders": 31123
+  },
+  {
+   "code": "HLK",
+   "name": "Holyoke",
+   "state": "MA",
+   "riders": 2698
+  },
+  {
+   "code": "NHT",
+   "name": "Northampton",
+   "state": "MA",
+   "riders": 38907
+  },
+  {
+   "code": "PIT",
+   "name": "Pittsfield",
+   "state": "MA",
+   "riders": 9197
+  },
+  {
+   "code": "SPG",
+   "name": "Springfield",
+   "state": "MA",
+   "riders": 162614
+  },
+  {
+   "code": "WOB",
+   "name": "Woburn",
+   "state": "MA",
+   "riders": 17708
+  },
+  {
+   "code": "WOR",
+   "name": "Worcester",
+   "state": "MA",
+   "riders": 5170
+  },
+  {
+   "code": "ABE",
+   "name": "Aberdeen",
+   "state": "MD",
+   "riders": 53358
+  },
+  {
+   "code": "CUM",
+   "name": "Cumberland",
+   "state": "MD",
+   "riders": 9404
+  },
+  {
+   "code": "NCR",
+   "name": "New Carrollton",
+   "state": "MD",
+   "riders": 244906
+  },
+  {
+   "code": "RKV",
+   "name": "Rockville",
+   "state": "MD",
+   "riders": 5616
+  },
+  {
+   "code": "BRK",
+   "name": "Brunswick",
+   "state": "ME",
+   "riders": 82813
+  },
+  {
+   "code": "FRE",
+   "name": "Freeport",
+   "state": "ME",
+   "riders": 32176
+  },
+  {
+   "code": "ORB",
+   "name": "Old Orchard Beach",
+   "state": "ME",
+   "riders": 17494
+  },
+  {
+   "code": "POR",
+   "name": "Portland",
+   "state": "ME",
+   "riders": 167342
+  },
+  {
+   "code": "SAO",
+   "name": "Saco",
+   "state": "ME",
+   "riders": 51816
+  },
+  {
+   "code": "WEM",
+   "name": "Wells",
+   "state": "ME",
+   "riders": 63093
+  },
+  {
+   "code": "ALI",
+   "name": "Albion",
+   "state": "MI",
+   "riders": 2668
+  },
+  {
+   "code": "ARB",
+   "name": "Ann Arbor",
+   "state": "MI",
+   "riders": 150296
+  },
+  {
+   "code": "BAM",
+   "name": "Bangor",
+   "state": "MI",
+   "riders": 4038
+  },
+  {
+   "code": "BTL",
+   "name": "Battle Creek",
+   "state": "MI",
+   "riders": 28930
+  },
+  {
+   "code": "DER",
+   "name": "Dearborn",
+   "state": "MI",
+   "riders": 67715
+  },
+  {
+   "code": "DET",
+   "name": "Detroit",
+   "state": "MI",
+   "riders": 74610
+  },
+  {
+   "code": "DOA",
+   "name": "Dowagiac",
+   "state": "MI",
+   "riders": 5165
+  },
+  {
+   "code": "DRD",
+   "name": "Durand",
+   "state": "MI",
+   "riders": 11579
+  },
+  {
+   "code": "LNS",
+   "name": "East Lansing",
+   "state": "MI",
+   "riders": 73895
+  },
+  {
+   "code": "FLN",
+   "name": "Flint",
+   "state": "MI",
+   "riders": 27858
+  },
+  {
+   "code": "GRR",
+   "name": "Grand Rapids",
+   "state": "MI",
+   "riders": 46664
+  },
+  {
+   "code": "HOM",
+   "name": "Holland",
+   "state": "MI",
+   "riders": 32775
+  },
+  {
+   "code": "JXN",
+   "name": "Jackson",
+   "state": "MI",
+   "riders": 18371
+  },
+  {
+   "code": "KAL",
+   "name": "Kalamazoo",
+   "state": "MI",
+   "riders": 84043
+  },
+  {
+   "code": "LPE",
+   "name": "Lapeer",
+   "state": "MI",
+   "riders": 8261
+  },
+  {
+   "code": "NBU",
+   "name": "New Buffalo",
+   "state": "MI",
+   "riders": 32572
+  },
+  {
+   "code": "NLS",
+   "name": "Niles",
+   "state": "MI",
+   "riders": 16259
+  },
+  {
+   "code": "PNT",
+   "name": "Pontiac",
+   "state": "MI",
+   "riders": 13593
+  },
+  {
+   "code": "PTH",
+   "name": "Port Huron",
+   "state": "MI",
+   "riders": 13555
+  },
+  {
+   "code": "ROY",
+   "name": "Royal Oak",
+   "state": "MI",
+   "riders": 24856
+  },
+  {
+   "code": "SJM",
+   "name": "St. Joseph",
+   "state": "MI",
+   "riders": 14732
+  },
+  {
+   "code": "TRM",
+   "name": "Troy",
+   "state": "MI",
+   "riders": 38237
+  },
+  {
+   "code": "DLK",
+   "name": "Detroit Lakes",
+   "state": "MN",
+   "riders": 4724
+  },
+  {
+   "code": "RDW",
+   "name": "Red Wing",
+   "state": "MN",
+   "riders": 21666
+  },
+  {
+   "code": "SCD",
+   "name": "St. Cloud",
+   "state": "MN",
+   "riders": 8247
+  },
+  {
+   "code": "MSP",
+   "name": "St. Paul-Minneapolis",
+   "state": "MN",
+   "riders": 199613
+  },
+  {
+   "code": "SPL",
+   "name": "Staples",
+   "state": "MN",
+   "riders": 6692
+  },
+  {
+   "code": "WIN",
+   "name": "Winona",
+   "state": "MN",
+   "riders": 23673
+  },
+  {
+   "code": "ACD",
+   "name": "Arcadia",
+   "state": "MO",
+   "riders": 1306
+  },
+  {
+   "code": "HEM",
+   "name": "Hermann",
+   "state": "MO",
+   "riders": 27306
+  },
+  {
+   "code": "IDP",
+   "name": "Independence",
+   "state": "MO",
+   "riders": 6875
+  },
+  {
+   "code": "JEF",
+   "name": "Jefferson City",
+   "state": "MO",
+   "riders": 41916
+  },
+  {
+   "code": "KCY",
+   "name": "Kansas City",
+   "state": "MO",
+   "riders": 164809
+  },
+  {
+   "code": "KWD",
+   "name": "Kirkwood",
+   "state": "MO",
+   "riders": 59959
+  },
+  {
+   "code": "LAP",
+   "name": "La Plata",
+   "state": "MO",
+   "riders": 10493
+  },
+  {
+   "code": "LEE",
+   "name": "Lee’s Summit",
+   "state": "MO",
+   "riders": 30452
+  },
+  {
+   "code": "PBF",
+   "name": "Poplar Bluff",
+   "state": "MO",
+   "riders": 5263
+  },
+  {
+   "code": "SED",
+   "name": "Sedalia",
+   "state": "MO",
+   "riders": 10276
+  },
+  {
+   "code": "STL",
+   "name": "St. Louis",
+   "state": "MO",
+   "riders": 395716
+  },
+  {
+   "code": "WAR",
+   "name": "Warrensburg",
+   "state": "MO",
+   "riders": 11158
+  },
+  {
+   "code": "WAH",
+   "name": "Washington",
+   "state": "MO",
+   "riders": 17021
+  },
+  {
+   "code": "BAS",
+   "name": "Bay St. Louis",
+   "state": "MS",
+   "riders": 2310
+  },
+  {
+   "code": "BIX",
+   "name": "Biloxi",
+   "state": "MS",
+   "riders": 3009
+  },
+  {
+   "code": "BRH",
+   "name": "Brookhaven",
+   "state": "MS",
+   "riders": 3492
+  },
+  {
+   "code": "GWD",
+   "name": "Greenwood",
+   "state": "MS",
+   "riders": 13794
+  },
+  {
+   "code": "GUF",
+   "name": "Gulfport",
+   "state": "MS",
+   "riders": 2278
+  },
+  {
+   "code": "HBG",
+   "name": "Hattiesburg",
+   "state": "MS",
+   "riders": 10531
+  },
+  {
+   "code": "HAZ",
+   "name": "Hazlehurst",
+   "state": "MS",
+   "riders": 1517
+  },
+  {
+   "code": "JAN",
+   "name": "Jackson",
+   "state": "MS",
+   "riders": 38187
+  },
+  {
+   "code": "LAU",
+   "name": "Laurel",
+   "state": "MS",
+   "riders": 6282
+  },
+  {
+   "code": "MKS",
+   "name": "Marks",
+   "state": "MS",
+   "riders": 5455
+  },
+  {
+   "code": "MCB",
+   "name": "McComb",
+   "state": "MS",
+   "riders": 4024
+  },
+  {
+   "code": "MEI",
+   "name": "Meridian",
+   "state": "MS",
+   "riders": 8932
+  },
+  {
+   "code": "PAG",
+   "name": "Pascagoula",
+   "state": "MS",
+   "riders": 1029
+  },
+  {
+   "code": "PIC",
+   "name": "Picayune",
+   "state": "MS",
+   "riders": 2507
+  },
+  {
+   "code": "YAZ",
+   "name": "Yazoo City",
+   "state": "MS",
+   "riders": 3516
+  },
+  {
+   "code": "BRO",
+   "name": "Browning",
+   "state": "MT",
+   "riders": 1203
+  },
+  {
+   "code": "CUT",
+   "name": "Cut Bank",
+   "state": "MT",
+   "riders": 1257
+  },
+  {
+   "code": "GPK",
+   "name": "East Glacier Park",
+   "state": "MT",
+   "riders": 10996
+  },
+  {
+   "code": "ESM",
+   "name": "Essex",
+   "state": "MT",
+   "riders": 1005
+  },
+  {
+   "code": "GGW",
+   "name": "Glasgow",
+   "state": "MT",
+   "riders": 3053
+  },
+  {
+   "code": "HAV",
+   "name": "Havre",
+   "state": "MT",
+   "riders": 7591
+  },
+  {
+   "code": "LIB",
+   "name": "Libby",
+   "state": "MT",
+   "riders": 4285
+  },
+  {
+   "code": "MAL",
+   "name": "Malta",
+   "state": "MT",
+   "riders": 5100
+  },
+  {
+   "code": "SBY",
+   "name": "Shelby",
+   "state": "MT",
+   "riders": 7107
+  },
+  {
+   "code": "WGL",
+   "name": "West Glacier",
+   "state": "MT",
+   "riders": 4799
+  },
+  {
+   "code": "WFH",
+   "name": "Whitefish",
+   "state": "MT",
+   "riders": 42767
+  },
+  {
+   "code": "WPT",
+   "name": "Wolf Point",
+   "state": "MT",
+   "riders": 3307
+  },
+  {
+   "code": "BNC",
+   "name": "Burlington",
+   "state": "NC",
+   "riders": 32695
+  },
+  {
+   "code": "CYN",
+   "name": "Cary",
+   "state": "NC",
+   "riders": 144942
+  },
+  {
+   "code": "CLT",
+   "name": "Charlotte",
+   "state": "NC",
+   "riders": 365614
+  },
+  {
+   "code": "DNC",
+   "name": "Durham",
+   "state": "NC",
+   "riders": 154793
+  },
+  {
+   "code": "FAY",
+   "name": "Fayetteville",
+   "state": "NC",
+   "riders": 57742
+  },
+  {
+   "code": "GAS",
+   "name": "Gastonia",
+   "state": "NC",
+   "riders": 2146
+  },
+  {
+   "code": "GRO",
+   "name": "Greensboro",
+   "state": "NC",
+   "riders": 210652
+  },
+  {
+   "code": "HAM",
+   "name": "Hamlet",
+   "state": "NC",
+   "riders": 4083
+  },
+  {
+   "code": "HPT",
+   "name": "High Point",
+   "state": "NC",
+   "riders": 43391
+  },
+  {
+   "code": "KAN",
+   "name": "Kannapolis",
+   "state": "NC",
+   "riders": 41333
+  },
+  {
+   "code": "RMT",
+   "name": "Rocky Mount",
+   "state": "NC",
+   "riders": 54383
+  },
+  {
+   "code": "SAL",
+   "name": "Salisbury",
+   "state": "NC",
+   "riders": 28675
+  },
+  {
+   "code": "SSM",
+   "name": "Selma - Smithfield",
+   "state": "NC",
+   "riders": 17698
+  },
+  {
+   "code": "SOP",
+   "name": "Southern Pines",
+   "state": "NC",
+   "riders": 7059
+  },
+  {
+   "code": "WLN",
+   "name": "Wilson",
+   "state": "NC",
+   "riders": 59187
+  },
+  {
+   "code": "DVL",
+   "name": "Devils Lake",
+   "state": "ND",
+   "riders": 3432
+  },
+  {
+   "code": "FAR",
+   "name": "Fargo",
+   "state": "ND",
+   "riders": 17710
+  },
+  {
+   "code": "GFK",
+   "name": "Grand Forks",
+   "state": "ND",
+   "riders": 11036
+  },
+  {
+   "code": "MOT",
+   "name": "Minot",
+   "state": "ND",
+   "riders": 18775
+  },
+  {
+   "code": "RUG",
+   "name": "Rugby",
+   "state": "ND",
+   "riders": 2807
+  },
+  {
+   "code": "STN",
+   "name": "Stanley",
+   "state": "ND",
+   "riders": 2660
+  },
+  {
+   "code": "WTN",
+   "name": "Williston",
+   "state": "ND",
+   "riders": 16556
+  },
+  {
+   "code": "HAS",
+   "name": "Hastings",
+   "state": "NE",
+   "riders": 4089
+  },
+  {
+   "code": "HLD",
+   "name": "Holdrege",
+   "state": "NE",
+   "riders": 1761
+  },
+  {
+   "code": "LNK",
+   "name": "Lincoln",
+   "state": "NE",
+   "riders": 11799
+  },
+  {
+   "code": "MCK",
+   "name": "McCook",
+   "state": "NE",
+   "riders": 3264
+  },
+  {
+   "code": "OMA",
+   "name": "Omaha",
+   "state": "NE",
+   "riders": 25946
+  },
+  {
+   "code": "CLA",
+   "name": "Claremont",
+   "state": "NH",
+   "riders": 3308
+  },
+  {
+   "code": "DOV",
+   "name": "Dover",
+   "state": "NH",
+   "riders": 57772
+  },
+  {
+   "code": "DHM",
+   "name": "Durham",
+   "state": "NH",
+   "riders": 48248
+  },
+  {
+   "code": "EXR",
+   "name": "Exeter",
+   "state": "NH",
+   "riders": 69062
+  },
+  {
+   "code": "EWR",
+   "name": "Newark Airport",
+   "state": "NJ",
+   "riders": 201751
+  },
+  {
+   "code": "NBK",
+   "name": "New Brunswick",
+   "state": "NJ",
+   "riders": 53435
+  },
+  {
+   "code": "PJC",
+   "name": "Princeton Junction",
+   "state": "NJ",
+   "riders": 136236
+  },
+  {
+   "code": "TRE",
+   "name": "Trenton",
+   "state": "NJ",
+   "riders": 442137
+  },
+  {
+   "code": "ABQ",
+   "name": "Albuquerque",
+   "state": "NM",
+   "riders": 58919
+  },
+  {
+   "code": "DEM",
+   "name": "Deming",
+   "state": "NM",
+   "riders": 1523
+  },
+  {
+   "code": "GLP",
+   "name": "Gallup",
+   "state": "NM",
+   "riders": 13568
+  },
+  {
+   "code": "LMY",
+   "name": "Lamy",
+   "state": "NM",
+   "riders": 7169
+  },
+  {
+   "code": "LSV",
+   "name": "Las Vegas",
+   "state": "NM",
+   "riders": 4165
+  },
+  {
+   "code": "LDB",
+   "name": "Lordsburg",
+   "state": "NM",
+   "riders": 909
+  },
+  {
+   "code": "RAT",
+   "name": "Raton",
+   "state": "NM",
+   "riders": 9171
+  },
+  {
+   "code": "ELK",
+   "name": "Elko",
+   "state": "NV",
+   "riders": 7058
+  },
+  {
+   "code": "RNO",
+   "name": "Reno",
+   "state": "NV",
+   "riders": 62827
+  },
+  {
+   "code": "WNN",
+   "name": "Winnemucca",
+   "state": "NV",
+   "riders": 5230
+  },
+  {
+   "code": "ALB",
+   "name": "Albany-Rensselaer",
+   "state": "NY",
+   "riders": 920779
+  },
+  {
+   "code": "AMS",
+   "name": "Amsterdam",
+   "state": "NY",
+   "riders": 13737
+  },
+  {
+   "code": "CRT",
+   "name": "Croton-Harmon",
+   "state": "NY",
+   "riders": 61926
+  },
+  {
+   "code": "FED",
+   "name": "Ft. Edward - Glens Falls",
+   "state": "NY",
+   "riders": 8590
+  },
+  {
+   "code": "FTC",
+   "name": "Ft. Ticonderoga",
+   "state": "NY",
+   "riders": 1750
+  },
+  {
+   "code": "HUD",
+   "name": "Hudson",
+   "state": "NY",
+   "riders": 274515
+  },
+  {
+   "code": "NRO",
+   "name": "New Rochelle",
+   "state": "NY",
+   "riders": 155000
+  },
+  {
+   "code": "NYF",
+   "name": "New York State Fair",
+   "state": "NY",
+   "riders": 3821
+  },
+  {
+   "code": "NFL",
+   "name": "Niagara Falls",
+   "state": "NY",
+   "riders": 36522
+  },
+  {
+   "code": "PLB",
+   "name": "Plattsburgh",
+   "state": "NY",
+   "riders": 10744
+  },
+  {
+   "code": "POH",
+   "name": "Port Henry",
+   "state": "NY",
+   "riders": 1026
+  },
+  {
+   "code": "POU",
+   "name": "Poughkeepsie",
+   "state": "NY",
+   "riders": 137123
+  },
+  {
+   "code": "RHI",
+   "name": "Rhinecliff",
+   "state": "NY",
+   "riders": 218942
+  },
+  {
+   "code": "ROC",
+   "name": "Rochester",
+   "state": "NY",
+   "riders": 153125
+  },
+  {
+   "code": "ROM",
+   "name": "Rome",
+   "state": "NY",
+   "riders": 12486
+  },
+  {
+   "code": "RSP",
+   "name": "Rouses Point",
+   "state": "NY",
+   "riders": 1276
+  },
+  {
+   "code": "SAR",
+   "name": "Saratoga Springs",
+   "state": "NY",
+   "riders": 37146
+  },
+  {
+   "code": "SDY",
+   "name": "Schenectady",
+   "state": "NY",
+   "riders": 63212
+  },
+  {
+   "code": "SYR",
+   "name": "Syracuse",
+   "state": "NY",
+   "riders": 161900
+  },
+  {
+   "code": "UCA",
+   "name": "Utica",
+   "state": "NY",
+   "riders": 83975
+  },
+  {
+   "code": "WSP",
+   "name": "Westport",
+   "state": "NY",
+   "riders": 3625
+  },
+  {
+   "code": "WHL",
+   "name": "Whitehall",
+   "state": "NY",
+   "riders": 1527
+  },
+  {
+   "code": "YNY",
+   "name": "Yonkers",
+   "state": "NY",
+   "riders": 47156
+  },
+  {
+   "code": "ALC",
+   "name": "Alliance",
+   "state": "OH",
+   "riders": 4580
+  },
+  {
+   "code": "BYN",
+   "name": "Bryan",
+   "state": "OH",
+   "riders": 5306
+  },
+  {
+   "code": "CIN",
+   "name": "Cincinnati",
+   "state": "OH",
+   "riders": 10846
+  },
+  {
+   "code": "CLE",
+   "name": "Cleveland",
+   "state": "OH",
+   "riders": 61685
+  },
+  {
+   "code": "ELY",
+   "name": "Elyria",
+   "state": "OH",
+   "riders": 13135
+  },
+  {
+   "code": "SKY",
+   "name": "Sandusky",
+   "state": "OH",
+   "riders": 10442
+  },
+  {
+   "code": "TOL",
+   "name": "Toledo",
+   "state": "OH",
+   "riders": 46755
+  },
+  {
+   "code": "ADM",
+   "name": "Ardmore",
+   "state": "OK",
+   "riders": 6553
+  },
+  {
+   "code": "NOR",
+   "name": "Norman",
+   "state": "OK",
+   "riders": 13858
+  },
+  {
+   "code": "OKC",
+   "name": "Oklahoma City",
+   "state": "OK",
+   "riders": 57159
+  },
+  {
+   "code": "PVL",
+   "name": "Pauls Valley",
+   "state": "OK",
+   "riders": 3260
+  },
+  {
+   "code": "PUR",
+   "name": "Purcell",
+   "state": "OK",
+   "riders": 2015
+  },
+  {
+   "code": "ALY",
+   "name": "Albany",
+   "state": "OR",
+   "riders": 46161
+  },
+  {
+   "code": "CMO",
+   "name": "Chemult",
+   "state": "OR",
+   "riders": 2610
+  },
+  {
+   "code": "EUG",
+   "name": "Eugene",
+   "state": "OR",
+   "riders": 120102
+  },
+  {
+   "code": "KFS",
+   "name": "Klamath Falls",
+   "state": "OR",
+   "riders": 26103
+  },
+  {
+   "code": "ORC",
+   "name": "Oregon City",
+   "state": "OR",
+   "riders": 21924
+  },
+  {
+   "code": "PDX",
+   "name": "Portland",
+   "state": "OR",
+   "riders": 586257
+  },
+  {
+   "code": "SLM",
+   "name": "Salem",
+   "state": "OR",
+   "riders": 59735
+  },
+  {
+   "code": "ALT",
+   "name": "Altoona",
+   "state": "PA",
+   "riders": 22164
+  },
+  {
+   "code": "ARD",
+   "name": "Ardmore",
+   "state": "PA",
+   "riders": 80900
+  },
+  {
+   "code": "COT",
+   "name": "Coatesville",
+   "state": "PA",
+   "riders": 15220
+  },
+  {
+   "code": "COV",
+   "name": "Connellsville",
+   "state": "PA",
+   "riders": 4023
+  },
+  {
+   "code": "CWH",
+   "name": "Cornwells Heights",
+   "state": "PA",
+   "riders": 3012
+  },
+  {
+   "code": "DOW",
+   "name": "Downingtown",
+   "state": "PA",
+   "riders": 60830
+  },
+  {
+   "code": "ELT",
+   "name": "Elizabethtown",
+   "state": "PA",
+   "riders": 58311
+  },
+  {
+   "code": "ERI",
+   "name": "Erie",
+   "state": "PA",
+   "riders": 18294
+  },
+  {
+   "code": "EXT",
+   "name": "Exton",
+   "state": "PA",
+   "riders": 143463
+  },
+  {
+   "code": "GNB",
+   "name": "Greensburg",
+   "state": "PA",
+   "riders": 12784
+  },
+  {
+   "code": "HAR",
+   "name": "Harrisburg",
+   "state": "PA",
+   "riders": 357524
+  },
+  {
+   "code": "HGD",
+   "name": "Huntingdon",
+   "state": "PA",
+   "riders": 5586
+  },
+  {
+   "code": "JST",
+   "name": "Johnstown",
+   "state": "PA",
+   "riders": 20436
+  },
+  {
+   "code": "LNC",
+   "name": "Lancaster",
+   "state": "PA",
+   "riders": 458299
+  },
+  {
+   "code": "LAB",
+   "name": "Latrobe",
+   "state": "PA",
+   "riders": 3420
+  },
+  {
+   "code": "LEW",
+   "name": "Lewistown",
+   "state": "PA",
+   "riders": 12494
+  },
+  {
+   "code": "MID",
+   "name": "Middletown",
+   "state": "PA",
+   "riders": 66252
+  },
+  {
+   "code": "MJY",
+   "name": "Mount Joy",
+   "state": "PA",
+   "riders": 27540
+  },
+  {
+   "code": "PAO",
+   "name": "Paoli",
+   "state": "PA",
+   "riders": 243995
+  },
+  {
+   "code": "PAR",
+   "name": "Parkesburg",
+   "state": "PA",
+   "riders": 27273
+  },
+  {
+   "code": "PGH",
+   "name": "Pittsburgh",
+   "state": "PA",
+   "riders": 141146
+  },
+  {
+   "code": "TYR",
+   "name": "Tyrone",
+   "state": "PA",
+   "riders": 4416
+  },
+  {
+   "code": "KIN",
+   "name": "Kingston",
+   "state": "RI",
+   "riders": 213016
+  },
+  {
+   "code": "PVD",
+   "name": "Providence",
+   "state": "RI",
+   "riders": 797019
+  },
+  {
+   "code": "WLY",
+   "name": "Westerly",
+   "state": "RI",
+   "riders": 58289
+  },
+  {
+   "code": "CAM",
+   "name": "Camden",
+   "state": "SC",
+   "riders": 3217
+  },
+  {
+   "code": "CHS",
+   "name": "Charleston",
+   "state": "SC",
+   "riders": 72042
+  },
+  {
+   "code": "CSN",
+   "name": "Clemson",
+   "state": "SC",
+   "riders": 4416
+  },
+  {
+   "code": "CLB",
+   "name": "Columbia",
+   "state": "SC",
+   "riders": 31084
+  },
+  {
+   "code": "DNK",
+   "name": "Denmark",
+   "state": "SC",
+   "riders": 2858
+  },
+  {
+   "code": "DIL",
+   "name": "Dillon",
+   "state": "SC",
+   "riders": 7117
+  },
+  {
+   "code": "FLO",
+   "name": "Florence",
+   "state": "SC",
+   "riders": 41695
+  },
+  {
+   "code": "GRV",
+   "name": "Greenville",
+   "state": "SC",
+   "riders": 8802
+  },
+  {
+   "code": "KTR",
+   "name": "Kingstree",
+   "state": "SC",
+   "riders": 10184
+  },
+  {
+   "code": "SPB",
+   "name": "Spartanburg",
+   "state": "SC",
+   "riders": 3707
+  },
+  {
+   "code": "YEM",
+   "name": "Yemassee",
+   "state": "SC",
+   "riders": 8911
+  },
+  {
+   "code": "MEM",
+   "name": "Memphis",
+   "state": "TN",
+   "riders": 65941
+  },
+  {
+   "code": "NBN",
+   "name": "Newbern-Dyersburg",
+   "state": "TN",
+   "riders": 4008
+  },
+  {
+   "code": "ALP",
+   "name": "Alpine",
+   "state": "TX",
+   "riders": 4207
+  },
+  {
+   "code": "AUS",
+   "name": "Austin",
+   "state": "TX",
+   "riders": 47030
+  },
+  {
+   "code": "BMT",
+   "name": "Beaumont",
+   "state": "TX",
+   "riders": 3225
+  },
+  {
+   "code": "CBR",
+   "name": "Cleburne",
+   "state": "TX",
+   "riders": 4192
+  },
+  {
+   "code": "DAL",
+   "name": "Dallas",
+   "state": "TX",
+   "riders": 61939
+  },
+  {
+   "code": "DRT",
+   "name": "Del Rio",
+   "state": "TX",
+   "riders": 2148
+  },
+  {
+   "code": "ELP",
+   "name": "El Paso",
+   "state": "TX",
+   "riders": 14676
+  },
+  {
+   "code": "FTW",
+   "name": "Ft. Worth",
+   "state": "TX",
+   "riders": 136888
+  },
+  {
+   "code": "GLE",
+   "name": "Gainesville",
+   "state": "TX",
+   "riders": 7032
+  },
+  {
+   "code": "HOS",
+   "name": "Houston",
+   "state": "TX",
+   "riders": 22921
+  },
+  {
+   "code": "LVW",
+   "name": "Longview",
+   "state": "TX",
+   "riders": 27858
+  },
+  {
+   "code": "MHL",
+   "name": "Marshall",
+   "state": "TX",
+   "riders": 14482
+  },
+  {
+   "code": "MCG",
+   "name": "McGregor",
+   "state": "TX",
+   "riders": 4370
+  },
+  {
+   "code": "MIN",
+   "name": "Mineola",
+   "state": "TX",
+   "riders": 7422
+  },
+  {
+   "code": "SAS",
+   "name": "San Antonio",
+   "state": "TX",
+   "riders": 63676
+  },
+  {
+   "code": "SMC",
+   "name": "San Marcos",
+   "state": "TX",
+   "riders": 10404
+  },
+  {
+   "code": "SND",
+   "name": "Sanderson",
+   "state": "TX",
+   "riders": 277
+  },
+  {
+   "code": "TAY",
+   "name": "Taylor",
+   "state": "TX",
+   "riders": 6210
+  },
+  {
+   "code": "TPL",
+   "name": "Temple",
+   "state": "TX",
+   "riders": 15232
+  },
+  {
+   "code": "GRI",
+   "name": "Green River",
+   "state": "UT",
+   "riders": 2551
+  },
+  {
+   "code": "HER",
+   "name": "Helper",
+   "state": "UT",
+   "riders": 2302
+  },
+  {
+   "code": "PRO",
+   "name": "Provo",
+   "state": "UT",
+   "riders": 8590
+  },
+  {
+   "code": "SLC",
+   "name": "Salt Lake City",
+   "state": "UT",
+   "riders": 36073
+  },
+  {
+   "code": "ALX",
+   "name": "Alexandria",
+   "state": "VA",
+   "riders": 372327
+  },
+  {
+   "code": "ASD",
+   "name": "Ashland",
+   "state": "VA",
+   "riders": 42110
+  },
+  {
+   "code": "BCV",
+   "name": "Burke Centre",
+   "state": "VA",
+   "riders": 14721
+  },
+  {
+   "code": "CVS",
+   "name": "Charlottesville",
+   "state": "VA",
+   "riders": 199357
+  },
+  {
+   "code": "CLF",
+   "name": "Clifton Forge",
+   "state": "VA",
+   "riders": 2178
+  },
+  {
+   "code": "CLP",
+   "name": "Culpeper",
+   "state": "VA",
+   "riders": 21372
+  },
+  {
+   "code": "DAN",
+   "name": "Danville",
+   "state": "VA",
+   "riders": 8324
+  },
+  {
+   "code": "FBG",
+   "name": "Fredericksburg",
+   "state": "VA",
+   "riders": 114797
+  },
+  {
+   "code": "LYH",
+   "name": "Lynchburg",
+   "state": "VA",
+   "riders": 79575
+  },
+  {
+   "code": "MSS",
+   "name": "Manassas",
+   "state": "VA",
+   "riders": 52758
+  },
+  {
+   "code": "NPN",
+   "name": "Newport News",
+   "state": "VA",
+   "riders": 109799
+  },
+  {
+   "code": "NFK",
+   "name": "Norfolk",
+   "state": "VA",
+   "riders": 224375
+  },
+  {
+   "code": "PTB",
+   "name": "Petersburg",
+   "state": "VA",
+   "riders": 60480
+  },
+  {
+   "code": "QAN",
+   "name": "Quantico",
+   "state": "VA",
+   "riders": 20492
+  },
+  {
+   "code": "RNK",
+   "name": "Roanoke",
+   "state": "VA",
+   "riders": 105926
+  },
+  {
+   "code": "STA",
+   "name": "Staunton",
+   "state": "VA",
+   "riders": 5519
+  },
+  {
+   "code": "WBG",
+   "name": "Williamsburg",
+   "state": "VA",
+   "riders": 74190
+  },
+  {
+   "code": "WDB",
+   "name": "Woodbridge",
+   "state": "VA",
+   "riders": 37278
+  },
+  {
+   "code": "BLF",
+   "name": "Bellows Falls",
+   "state": "VT",
+   "riders": 5388
+  },
+  {
+   "code": "BRA",
+   "name": "Brattleboro",
+   "state": "VT",
+   "riders": 16682
+  },
+  {
+   "code": "BTN",
+   "name": "Burlington",
+   "state": "VT",
+   "riders": 26477
+  },
+  {
+   "code": "CNV",
+   "name": "Castleton",
+   "state": "VT",
+   "riders": 3042
+  },
+  {
+   "code": "ESX",
+   "name": "Essex Junction",
+   "state": "VT",
+   "riders": 17453
+  },
+  {
+   "code": "VRN",
+   "name": "Ferrisburgh-Vergennes",
+   "state": "VT",
+   "riders": 3745
+  },
+  {
+   "code": "MBY",
+   "name": "Middlebury",
+   "state": "VT",
+   "riders": 8630
+  },
+  {
+   "code": "MPR",
+   "name": "Montpelier",
+   "state": "VT",
+   "riders": 8035
+  },
+  {
+   "code": "RPH",
+   "name": "Randolph",
+   "state": "VT",
+   "riders": 2933
+  },
+  {
+   "code": "RUD",
+   "name": "Rutland",
+   "state": "VT",
+   "riders": 10537
+  },
+  {
+   "code": "SAB",
+   "name": "St. Albans",
+   "state": "VT",
+   "riders": 3954
+  },
+  {
+   "code": "WAB",
+   "name": "Waterbury",
+   "state": "VT",
+   "riders": 6273
+  },
+  {
+   "code": "WRJ",
+   "name": "White River Junction",
+   "state": "VT",
+   "riders": 16450
+  },
+  {
+   "code": "WNM",
+   "name": "Windsor",
+   "state": "VT",
+   "riders": 1666
+  },
+  {
+   "code": "BEL",
+   "name": "Bellingham",
+   "state": "WA",
+   "riders": 66526
+  },
+  {
+   "code": "BNG",
+   "name": "Bingen-White Salmon",
+   "state": "WA",
+   "riders": 3455
+  },
+  {
+   "code": "CTL",
+   "name": "Centralia",
+   "state": "WA",
+   "riders": 32166
+  },
+  {
+   "code": "EDM",
+   "name": "Edmonds",
+   "state": "WA",
+   "riders": 27887
+  },
+  {
+   "code": "EPH",
+   "name": "Ephrata",
+   "state": "WA",
+   "riders": 3727
+  },
+  {
+   "code": "KEL",
+   "name": "Kelso-Longview",
+   "state": "WA",
+   "riders": 38915
+  },
+  {
+   "code": "LWA",
+   "name": "Leavenworth",
+   "state": "WA",
+   "riders": 12460
+  },
+  {
+   "code": "MVW",
+   "name": "Mount Vernon",
+   "state": "WA",
+   "riders": 15256
+  },
+  {
+   "code": "OLW",
+   "name": "Olympia/Lacey",
+   "state": "WA",
+   "riders": 82519
+  },
+  {
+   "code": "PSC",
+   "name": "Pasco",
+   "state": "WA",
+   "riders": 19275
+  },
+  {
+   "code": "SPK",
+   "name": "Spokane",
+   "state": "WA",
+   "riders": 37480
+  },
+  {
+   "code": "STW",
+   "name": "Stanwood",
+   "state": "WA",
+   "riders": 4984
+  },
+  {
+   "code": "WIH",
+   "name": "Wishram",
+   "state": "WA",
+   "riders": 1546
+  },
+  {
+   "code": "CBS",
+   "name": "Columbus",
+   "state": "WI",
+   "riders": 23504
+  },
+  {
+   "code": "LSE",
+   "name": "La Crosse",
+   "state": "WI",
+   "riders": 39963
+  },
+  {
+   "code": "POG",
+   "name": "Portage",
+   "state": "WI",
+   "riders": 10162
+  },
+  {
+   "code": "SVT",
+   "name": "Sturtevant",
+   "state": "WI",
+   "riders": 55779
+  },
+  {
+   "code": "TOH",
+   "name": "Tomah",
+   "state": "WI",
+   "riders": 17998
+  },
+  {
+   "code": "WDL",
+   "name": "Wisconsin Dells",
+   "state": "WI",
+   "riders": 24036
+  },
+  {
+   "code": "ALD",
+   "name": "Alderson",
+   "state": "WV",
+   "riders": 466
+  },
+  {
+   "code": "CHW",
+   "name": "Charleston",
+   "state": "WV",
+   "riders": 7167
+  },
+  {
+   "code": "HFY",
+   "name": "Harpers Ferry",
+   "state": "WV",
+   "riders": 8427
+  },
+  {
+   "code": "HIN",
+   "name": "Hinton",
+   "state": "WV",
+   "riders": 2514
+  },
+  {
+   "code": "HUN",
+   "name": "Huntington",
+   "state": "WV",
+   "riders": 4490
+  },
+  {
+   "code": "MRB",
+   "name": "Martinsburg",
+   "state": "WV",
+   "riders": 9082
+  },
+  {
+   "code": "MNG",
+   "name": "Montgomery",
+   "state": "WV",
+   "riders": 618
+  },
+  {
+   "code": "PRC",
+   "name": "Prince",
+   "state": "WV",
+   "riders": 1645
+  },
+  {
+   "code": "THN",
+   "name": "Thurmond",
+   "state": "WV",
+   "riders": 593
+  },
+  {
+   "code": "WSS",
+   "name": "White Sulphur Springs",
+   "state": "WV",
+   "riders": 6508
+  }
+ ]
+}
